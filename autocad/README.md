@@ -1,4 +1,4 @@
-﻿# Autodesk AutoCAD
+﻿# Autodesk AutoCAD Bindings
 
 This repository folder facilitates AreaCAD-GIS Autodesk AutoCAD (and it's verticals) bindings and related projects, source code and documentation. For more information please see repository Wiki, or contact project manager [Maksim Sestic](https://github.com/SesticM).
 
