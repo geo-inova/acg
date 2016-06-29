@@ -1,4 +1,4 @@
-﻿# Autodesk AutoCAD C# Bindings
+﻿# AutoCAD C# Bindings
 
 This repository folder facilitates AreaCAD-GIS Autodesk AutoCAD (and it's verticals) C# source code. For more information please see repository Wiki, or contact project manager [Maksim Sestic](https://github.com/SesticM).
 
