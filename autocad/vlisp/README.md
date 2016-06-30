@@ -4,7 +4,7 @@ This repository folder facilitates AreaCAD-GIS Autodesk AutoCAD (and it's vertic
 
 Repository folder contents:
 
-* ACGEXPORT.LSP file facilitates `ACGEXPORT` command for exporting AreaCAD-GIS entities to a DXF file.
+* `ACGEXPORT.LSP` file facilitates `ACGEXPORT` command for exporting AreaCAD-GIS entities to a DXF file.
 
 Copyright © 2001-2016 INOVA informaticki inzenjering. All Rights Reserved. 
 
