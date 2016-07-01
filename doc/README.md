@@ -1,0 +1,11 @@
+﻿# Documentation
+
+This repository folder facilitates AreaCAD-GIS documentation, manuals, and more. For more information please see repository Wiki, or contact project manager [Maksim Sestic](https://github.com/SesticM).
+
+Repository folder contents:
+
+* `..\dwg` - facilitates AutoCAD DWG format files.
+* `..\dxf` - facilitates AutoCAD DXF format files.
+
+Copyright © 2001-2016 INOVA informaticki inzenjering. All Rights Reserved. 
+

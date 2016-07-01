@@ -4,6 +4,7 @@ This repository facilitates AreaCAD-GIS project data. It exposes following conte
 
 * `..\bin` - target (output) folder for all compiled binaries.
 * `..\dat` - sample data files used for unit testing.
+* `..\doc` - contains documentation, manuals, etc.
 * `..\ext` - contains 3rd party libraries referenced by solution.
 * `..\src` - root solution folder with source code.
 
