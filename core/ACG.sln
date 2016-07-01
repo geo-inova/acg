@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACG.Core", "ACG.Core\ACG.Core.csproj", "{E3232040-D4EF-4742-AF70-A2F8378CC940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACG.Core.Tests", "ACG.Core.Tests\ACG.Core.Tests.csproj", "{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3232040-D4EF-4742-AF70-A2F8378CC940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3232040-D4EF-4742-AF70-A2F8378CC940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3232040-D4EF-4742-AF70-A2F8378CC940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3232040-D4EF-4742-AF70-A2F8378CC940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
