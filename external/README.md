@@ -1,4 +1,4 @@
-﻿# Imports
+﻿# External Binaries
 
 This repository folder facilitates 3rd party libraries being referenced by AreaCAD-GIS source code. For more information please see repository Wiki, or contact project manager [Maksim Sestic](https://github.com/SesticM).
 
