@@ -6,7 +6,7 @@ This repository folder facilitates AreaCAD-GIS sample data provided in multiple 
 * `..\dxf` - facilitates [AutoCAD DXF](http://images.autodesk.com/adsk/files/autocad_2012_pdf_dxf-reference_enu.pdf) format files.
 * `..\fbx` - facilitates [Blender Filmbox](https://code.blender.org/2013/08/fbx-binary-file-format-specification/) format files.
 * `..\kml` - facilitates [Google KML/KMZ](https://developers.google.com/kml/documentation/) format files.
-* `..\shp` - facilitates [ESRI Shape](https://developers.google.com/kml/documentation/) format files.
+* `..\shp` - facilitates [ESRI Shape](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf) format files.
 
 ---
 For more information please see repository [Wiki](https://github.com/geo-inova/acg/wiki), or contact project manager [Maksim Sestic](https://github.com/SesticM).
