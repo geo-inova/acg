@@ -4,10 +4,10 @@ This repository facilitates a project related to INOVA AreaCAD-GIS concept - set
 
 Repository contents:
 
-* `..\binaries` - target (output) folder for all compiled binaries.
-* `..\external` - contains 3rd party libraries referenced by solution.
-* `..\samples` - sample data files used for unit testing.
-* `..\source` - root solution folder with source code.
+* `..\bin` - target (output) folder for all compiled binaries.
+* `..\dat` - sample data files used for unit testing.
+* `..\ext` - contains 3rd party libraries referenced by solution.
+* `..\src` - root solution folder with source code.
 
 Copyright © 2001-2016 INOVA informaticki inzenjering. All Rights Reserved. 
 
