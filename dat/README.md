@@ -2,7 +2,7 @@
 
 This repository folder facilitates AreaCAD-GIS sample data provided in multiple supported formats. It exposes following contents:
 
-* `..\dwg` - facilitates AutoCAD DWG format files.
+* `..\dwg` - facilitates [AutoCAD DWG](https://www.opendesign.com/files/.../OpenDesign_Specification_for_.dwg_files.pdf) format files.
 * `..\dxf` - facilitates AutoCAD DXF format files.
 
 ---
