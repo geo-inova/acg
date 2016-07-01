@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="ACG.Core.Interfaces namespace" Url="html/9ed02bf8-023e-3c87-ad72-b78852c9b2f7.htm" />
+  <HelpKINode Title="ACG.Core.Interfaces.IAcgObject interface" Url="html/4ff483f0-f5e6-6a28-5321-5b67371d7e66.htm" />
+  <HelpKINode Title="ACG.Core.Interfaces.IAcgReader interface" Url="html/4c5d4b7c-7f0f-ca93-b338-52534e679327.htm" />
+  <HelpKINode Title="ACG.Core.Objects namespace" Url="html/a7bd2811-1f5d-e273-3aeb-dedcdd48dcaf.htm" />
+  <HelpKINode Title="ACG.Core.Objects.AcgBuilding class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm" />
+  <HelpKINode Title="ACG.Core.Objects.AcgObject class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm" />
+  <HelpKINode Title="ACG.Core.Readers namespace" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm" />
+  <HelpKINode Title="ACG.Core.Readers.AcgShpReader class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm" />
+  <HelpKINode Title="AcgBuilding class">
+    <HelpKINode Title="AcgBuilding Class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm" />
+    <HelpKINode Title="about AcgBuilding class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm" />
+    <HelpKINode Title="constructor" Url="html/2af65494-ae57-807a-f3a7-4e69817b8f5b.htm" />
+    <HelpKINode Title="methods" Url="html/012139a7-69ca-67d7-854e-062905f44a02.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgBuilding.AcgBuilding constructor" Url="html/2af65494-ae57-807a-f3a7-4e69817b8f5b.htm" />
+  <HelpKINode Title="AcgObject class">
+    <HelpKINode Title="AcgObject Class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm" />
+    <HelpKINode Title="about AcgObject class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm" />
+    <HelpKINode Title="constructor" Url="html/db2e5741-011a-990b-2b37-3e3a40f65c14.htm" />
+    <HelpKINode Title="methods" Url="html/587d83c8-fc83-986c-3520-9f51828779fc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgObject.AcgObject constructor" Url="html/db2e5741-011a-990b-2b37-3e3a40f65c14.htm" />
+  <HelpKINode Title="AcgShpReader class">
+    <HelpKINode Title="AcgShpReader Class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm" />
+    <HelpKINode Title="about AcgShpReader class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm" />
+    <HelpKINode Title="constructor" Url="html/330a3d9e-44f4-ca93-e15b-d644cf6b08e1.htm" />
+    <HelpKINode Title="methods" Url="html/4840b005-91a2-b8a8-a86b-130b3c219c97.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgShpReader.AcgShpReader constructor" Url="html/330a3d9e-44f4-ca93-e15b-d644cf6b08e1.htm" />
+  <HelpKINode Title="AcgShpReader.Read method" Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />
+  <HelpKINode Title="IAcgObject interface">
+    <HelpKINode Title="IAcgObject Interface" Url="html/4ff483f0-f5e6-6a28-5321-5b67371d7e66.htm" />
+    <HelpKINode Title="about IAcgObject interface" Url="html/4ff483f0-f5e6-6a28-5321-5b67371d7e66.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAcgReader interface">
+    <HelpKINode Title="IAcgReader Interface" Url="html/4c5d4b7c-7f0f-ca93-b338-52534e679327.htm" />
+    <HelpKINode Title="about IAcgReader interface" Url="html/4c5d4b7c-7f0f-ca93-b338-52534e679327.htm" />
+    <HelpKINode Title="methods" Url="html/934e46c0-1acb-43c9-0714-6d20d93f6b33.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAcgReader.Read method" Url="html/c3827175-5c08-76d3-3774-fc6282857039.htm" />
+  <HelpKINode Title="Read method">
+    <HelpKINode Title="AcgShpReader.Read Method " Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />
+    <HelpKINode Title="IAcgReader.Read Method " Url="html/c3827175-5c08-76d3-3774-fc6282857039.htm" />
+  </HelpKINode>
+</HelpKI>

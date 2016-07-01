@@ -6,7 +6,10 @@ using ACG.Core.Interfaces;
 
 namespace ACG.Core.Objects
 {
-    class AcgObject: IAcgObject
+    /// <summary>
+    /// Represents base class for any AreaCAD-GIS object.
+    /// </summary>
+    public class AcgObject : IAcgObject
     {
     }
 }

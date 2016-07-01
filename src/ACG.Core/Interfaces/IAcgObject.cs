@@ -4,7 +4,10 @@ using System.Text;
 
 namespace ACG.Core.Interfaces
 {
-    interface IAcgObject
+    /// <summary>
+    /// Interface pertaining to AreaCAD-GIS objects.
+    /// </summary>
+    public interface IAcgObject
     {
     }
 }

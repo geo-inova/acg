@@ -4,9 +4,14 @@ using System.Text;
 
 namespace ACG.Core.Objects
 {
-    class AcgBuilding: AcgObject
+    /// <summary>
+    /// Represents a building.
+    /// </summary>
+    public class AcgBuilding : AcgObject
     {
-
+        /// <summary>
+        /// Gets or sets building height (m).
+        /// </summary>
         double Height = 0;
 
     }

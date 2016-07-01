@@ -7,9 +7,12 @@ using ACG.Core.Objects;
 
 namespace ACG.Core.Readers
 {
-    class AcgShpReader:IAcgReader
+    /// <summary>
+    /// Data reader for ESRI SHP files.
+    /// </summary>
+    public class AcgShpReader : IAcgReader
     {
-
+        /// <inheritdoc/>
         public List<IAcgObject> Read(string filePath)
         {
             throw new NotImplementedException();
