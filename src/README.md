@@ -5,7 +5,7 @@ This repository folder facilitates AreaCAD-GIS solution, projects and source cod
 * `..\ACG.sln` - Microsoft Visual Studio solution.
 * `..\ACG.shfbproj` - Sandcastle Help File Builder project.
 * `..\ACG.Core\..` - platform-neutral core C# library project.
-* `..\ACG.Core.Tests\..` - unit tests for core library project.
+* `..\ACG.Core.Tests\..` - core library project's unit tests.
 * `..\ACG.Plugins.Unity\..` - Unity-related C# library project.
 
 ---
