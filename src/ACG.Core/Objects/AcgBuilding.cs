@@ -12,7 +12,7 @@ namespace ACG.Core.Objects
         /// <summary>
         /// Gets or sets building height (m).
         /// </summary>
-        double Height = 0;
+        public double Height = 0;
 
     }
 }

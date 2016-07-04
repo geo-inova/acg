@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\IAcgObject.cs" />
     <Compile Include="Interfaces\IAcgReader.cs" />
+    <Compile Include="Interfaces\IAcgWriter.cs" />
     <Compile Include="Objects\AcgBuilding.cs" />
     <Compile Include="Objects\AcgObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -5,7 +5,7 @@ using System.Text;
 namespace ACG.Core.Interfaces
 {
     /// <summary>
-    /// Interface pertaining to data readers.
+    /// Interface pertaining to <seealso cref="IAcgObject"/> data readers.
     /// </summary>
     public interface IAcgReader
     {
