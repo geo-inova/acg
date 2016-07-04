@@ -20,5 +20,10 @@ namespace ACG.Core.Objects
         /// Gets or sets name of the data source authority.
         /// </summary>
         public string DataSourceAuthority = "";
+
+        /// <summary>
+        /// Gets or sets object metadata (temporary).
+        /// </summary>
+        public string Metadata = "";
     }
 }

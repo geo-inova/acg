@@ -15,6 +15,8 @@ namespace ACG.Core.Readers
         /// <inheritdoc/>
         public List<IAcgObject> Read(string filePath)
         {
+            /// Ovde ide implementacija...
+            /// 
             throw new NotImplementedException();
         }
     }

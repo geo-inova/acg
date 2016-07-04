@@ -3,17 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACG.Core", "ACG.Core\ACG.Core.csproj", "{E3232040-D4EF-4742-AF70-A2F8378CC940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACG.Core.Tests", "ACG.Core.Tests\ACG.Core.Tests.csproj", "{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E3232040-D4EF-4742-AF70-A2F8378CC940} = {E3232040-D4EF-4742-AF70-A2F8378CC940}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACG.Plugins.Unity", "ACG.Plugins.Unity\ACG.Plugins.Unity.csproj", "{214A6101-7625-4DA5-A288-3E7841244FE5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E3232040-D4EF-4742-AF70-A2F8378CC940} = {E3232040-D4EF-4742-AF70-A2F8378CC940}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACG.Core.Tests", "ACG.Core.Tests\ACG.Core.Tests.csproj", "{97DCFCF1-1092-4E9E-A66F-2F420169043C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3232040-D4EF-4742-AF70-A2F8378CC940} = {E3232040-D4EF-4742-AF70-A2F8378CC940}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B65C0389-F886-459A-BFCC-F48E556B5B1A}"
+	ProjectSection(SolutionItems) = preProject
+		ACG.vsmdi = ACG.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ACG.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -23,14 +33,14 @@ Global
 		{E3232040-D4EF-4742-AF70-A2F8378CC940}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3232040-D4EF-4742-AF70-A2F8378CC940}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3232040-D4EF-4742-AF70-A2F8378CC940}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACCF7E6F-C1CE-426E-AE0C-B2FD781BA007}.Release|Any CPU.Build.0 = Release|Any CPU
 		{214A6101-7625-4DA5-A288-3E7841244FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{214A6101-7625-4DA5-A288-3E7841244FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{214A6101-7625-4DA5-A288-3E7841244FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{214A6101-7625-4DA5-A288-3E7841244FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DCFCF1-1092-4E9E-A66F-2F420169043C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DCFCF1-1092-4E9E-A66F-2F420169043C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DCFCF1-1092-4E9E-A66F-2F420169043C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DCFCF1-1092-4E9E-A66F-2F420169043C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
