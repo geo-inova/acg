@@ -2,8 +2,10 @@
 
 This repository folder facilitates 3rd party libraries being referenced by AreaCAD-GIS solution. It exposes following contents:
 
-* `..\autocad` - Autodesk AutoCAD managed binaries and VisualLISP scripts.
-* `..\unity` - Unity 3D managed binaries.
+* `..\autocad` - AutoCAD managed binaries and VisualLISP scripts.
+* `..\geoapi` - GeoAPI 1.7.4 managed binaries (NET 3.5).
+* `..\nts` - Net Topology Suite 1.14 managed binaries (NET 3.5).
+* `..\unity` - Unity 5.3.5f1 Personal (64-bit) managed binaries.
 
 ---
 For more information please see repository [Wiki](https://github.com/geo-inova/acg/wiki), or contact project manager [Maksim Sestic](https://github.com/SesticM).

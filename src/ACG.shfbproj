@@ -77,4 +77,9 @@
     </PostBuildEvent>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoAPI">
+      <HintPath>..\ext\geoapi\GeoAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

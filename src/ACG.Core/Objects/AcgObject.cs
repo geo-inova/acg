@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using GeoAPI.Geometries;
 
 using ACG.Core.Interfaces;
 
@@ -25,5 +26,10 @@ namespace ACG.Core.Objects
         /// Gets or sets object metadata (temporary).
         /// </summary>
         public string Metadata = "";
+
+        /// <summary>
+        /// Gets or sets object geometry.
+        /// </summary>
+        public IGeometry Geometry = null;
     }
 }
