@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using GeoAPI.Geometries;
 
-using ACG.Core.Interfaces;
-
 namespace ACG.Core.Objects
 {
     /// <summary>

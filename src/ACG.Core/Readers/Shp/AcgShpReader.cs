@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 
-using ACG.Core.Interfaces;
 using ACG.Core.Objects;
 
 namespace ACG.Core.Readers

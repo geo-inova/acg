@@ -45,9 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IAcgObject.cs" />
-    <Compile Include="Interfaces\IAcgReader.cs" />
-    <Compile Include="Interfaces\IAcgWriter.cs" />
+    <Compile Include="Objects\IAcgObject.cs" />
+    <Compile Include="Readers\IAcgReader.cs" />
+    <Compile Include="Writers\IAcgWriter.cs" />
     <Compile Include="Objects\AcgBuilding.cs" />
     <Compile Include="Objects\AcgObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +65,7 @@
     <Compile Include="Readers\Shp\ShapePolyLine.cs" />
     <Compile Include="Readers\Shp\ShapePolyLineM.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

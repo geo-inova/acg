@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ACG.Core.Interfaces
+namespace ACG.Core.Objects
 {
     /// <summary>
     /// Interface pertaining to AreaCAD-GIS objects.

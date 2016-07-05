@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ACG.Core.Interfaces
+using ACG.Core.Objects;
+
+namespace ACG.Core.Writers
 {
     /// <summary>
     /// Interface pertaining to <seealso cref="IAcgObject"/> data writers.

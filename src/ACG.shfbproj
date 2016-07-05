@@ -26,8 +26,9 @@
     <CleanIntermediates>True</CleanIntermediates>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\bin\debug\ACG.Core.dll" />
-      <DocumentationSource sourceFile="..\bin\debug\ACG.Core.xml" />
-    </DocumentationSources>
+<DocumentationSource sourceFile="..\bin\debug\ACG.Core.xml" />
+<DocumentationSource sourceFile="..\bin\debug\ACG.Plugins.Unity.dll" />
+<DocumentationSource sourceFile="..\bin\debug\ACG.Plugins.Unity.xml" /></DocumentationSources>
     <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <HtmlHelp1xCompilerPath>
     </HtmlHelp1xCompilerPath>
