@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="Core" id="1bd1b272-e219-4645-aa25-c219660fec56" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>AreaCAD-GIS Core Test List</Description>
+    <TestLinks>
+      <TestLink id="52b1cefc-ca9e-acfa-ed9f-5f531fc9c7e4" name="AcgShpReaderTest" storage="..\bin\debug\acg.core.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
   <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
     <RunConfiguration id="8b43bf14-a91c-49c6-8777-15f9b46184df" name="Local" storage="local.testsettings" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   </TestList>

@@ -39,16 +39,17 @@ namespace ACG.Core.Readers
                     {
                         case ShapeType.Polygon:
                             ShapePolygon shapePolygon = shape as ShapePolygon;
-                            Coordinate[] points = null;
-                            int i = 0;
+                            List<Coordinate> points = new List<Coordinate>();
                             foreach (PointD[] part in shapePolygon.Parts)
                             {
+                                Coordinate coordinate = new Coordinate();
                                 foreach (PointD point in part)
                                 {
-                                    Coordinate coordinate = new Coordinate(point.X, point.Y);
-                                    points[i++] = coordinate;
+                                    coordinate.X = point.X;
+                                    coordinate.Y = point.Y;
+                                    points.Add(coordinate);
                                 }
-                                LinearRing linearRing = new LinearRing(points);
+                                LinearRing linearRing = new LinearRing(points.ToArray());
                                 Polygon polygon = new Polygon(linearRing);
                                 building.Geometry = polygon;
                             }
