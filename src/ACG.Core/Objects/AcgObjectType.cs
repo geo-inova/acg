@@ -8,7 +8,6 @@ namespace ACG.Core.Objects
     /// <summary>
     /// Represents AreaCAD-GIS object type(s).
     /// </summary>
-    [Flags]
     public enum AcgObjectType
     {
         /// <summary>
