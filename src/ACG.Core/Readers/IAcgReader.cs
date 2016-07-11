@@ -7,7 +7,7 @@ using ACG.Core.Objects;
 namespace ACG.Core.Readers
 {
     /// <summary>
-    /// Interface pertaining to <seealso cref="IAcgObject"/> data readers.
+    /// Interface pertaining to <see cref="IAcgObject"/> data readers.
     /// </summary>
     public interface IAcgReader
     {
@@ -15,7 +15,12 @@ namespace ACG.Core.Readers
         /// Reads the data given physical path.
         /// </summary>
         /// <param name="filePath">Physical path of source file or folder.</param>
-        /// <returns>List of <seealso cref="IAcgObject"/> objects.</returns>
-        List<IAcgObject> Read(string filePath, AcgObjectType objectType = AcgObjectType.Any);
+        /// <returns>List of <see cref="IAcgObject"/> objects.</returns>
+        List<IAcgObject> Read(string filePath);
+
+        /// <summary>
+        /// Gets or sets <see cref="AcgObjectType"/> to read.
+        /// </summary>
+        AcgObjectType ObjectType { get; set; }
     }
 }

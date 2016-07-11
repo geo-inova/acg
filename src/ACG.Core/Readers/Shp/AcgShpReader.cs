@@ -12,10 +12,10 @@ namespace ACG.Core.Readers
     /// <summary>
     /// Data reader for ESRI SHP files.
     /// </summary>
-    public class AcgShpReader : IAcgReader
+    public class AcgShpReader : AcgReader
     {
         /// <inheritdoc/>
-        public List<IAcgObject> Read(string filePath, AcgObjectType objectType = AcgObjectType.Any)
+        public override List<IAcgObject> Read(string filePath)
         {
             List<IAcgObject> objectList = new List<IAcgObject>();
 

@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\NamespaceDoc.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Objects\AcgObjectType.cs" />
     <Compile Include="Objects\IAcgObject.cs" />
+    <Compile Include="Readers\AcgReader.cs" />
     <Compile Include="Readers\IAcgReader.cs" />
     <Compile Include="Writers\IAcgWriter.cs" />
     <Compile Include="Objects\AcgBuilding.cs" />
@@ -66,7 +70,10 @@
     <Compile Include="Readers\Shp\ShapePolyLine.cs" />
     <Compile Include="Readers\Shp\ShapePolyLineM.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Objects\AcgObjectClassDiagram.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -6,12 +6,12 @@ using System.Text;
 namespace ACG.Core.Objects
 {
     /// <summary>
-    /// Represents AreaCAD-GIS object type(s).
+    /// Represents AreaCAD-GIS object type.
     /// </summary>
     public enum AcgObjectType
     {
         /// <summary>
-        /// Any object type.
+        /// Object(s) of any type.
         /// </summary>
         Any = 0,
 

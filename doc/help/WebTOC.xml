@@ -1,84 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="bb89842b-dd44-4bcf-a047-89f0657421c2" Title="ACG.Core.Objects" Url="html/a7bd2811-1f5d-e273-3aeb-dedcdd48dcaf.htm">
-    <HelpTOCNode Id="5ec9e01f-6ad3-4488-880d-2833d05e0721" Title="AcgBuilding Class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm">
+  <HelpTOCNode Id="08c83976-8394-41e9-b8e8-922a270cc578" Title="ACG.Core.Objects" Url="html/a7bd2811-1f5d-e273-3aeb-dedcdd48dcaf.htm">
+    <HelpTOCNode Id="348fc8bb-f88c-40ba-b1f7-d359b73aeada" Title="AcgBuilding Class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm">
       <HelpTOCNode Title="AcgBuilding Constructor " Url="html/2af65494-ae57-807a-f3a7-4e69817b8f5b.htm" />
       <HelpTOCNode Title="AcgBuilding Methods" Url="html/012139a7-69ca-67d7-854e-062905f44a02.htm" />
-      <HelpTOCNode Id="ad7dbbdf-d141-4c5a-9a52-a8064bbbd433" Title="AcgBuilding Fields" Url="html/0e1e9f73-0e58-3c37-6b6b-30be25d47a3c.htm">
+      <HelpTOCNode Id="89a9a61f-9eae-4b91-8b16-b96f970ac2bb" Title="AcgBuilding Fields" Url="html/0e1e9f73-0e58-3c37-6b6b-30be25d47a3c.htm">
         <HelpTOCNode Title="Height Field" Url="html/7dcfdaba-9932-13a1-435c-b5abe8883a8b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d923e84b-5222-4025-a912-4d3a6907984e" Title="AcgObject Class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm">
+    <HelpTOCNode Id="4c12e6b6-cb46-4063-a441-b546599ee014" Title="AcgObject Class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm">
       <HelpTOCNode Title="AcgObject Constructor " Url="html/db2e5741-011a-990b-2b37-3e3a40f65c14.htm" />
       <HelpTOCNode Title="AcgObject Methods" Url="html/587d83c8-fc83-986c-3520-9f51828779fc.htm" />
-      <HelpTOCNode Id="d23421c3-d586-4dd1-b115-e98448fe296f" Title="AcgObject Fields" Url="html/812a448e-a62f-89ac-2e77-8e156a25015c.htm">
+      <HelpTOCNode Id="489a2c65-a1d6-4f1f-8c96-fbaebd58bd83" Title="AcgObject Fields" Url="html/812a448e-a62f-89ac-2e77-8e156a25015c.htm">
         <HelpTOCNode Title="DataSourceAuthority Field" Url="html/6ebad5db-808d-88b8-5bcf-1085475652fa.htm" />
         <HelpTOCNode Title="Geometry Field" Url="html/9bd173b3-1cab-ef98-feda-d6ca69b04594.htm" />
         <HelpTOCNode Title="GUID Field" Url="html/b9e5cdad-3b11-8d6f-8d4e-19b212b3f5c0.htm" />
         <HelpTOCNode Title="Metadata Field" Url="html/6c6a5a0b-cc3a-b137-8743-79f1dfdb3a7e.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
+    <HelpTOCNode Title="AcgObjectType Enumeration" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
     <HelpTOCNode Title="IAcgObject Interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="aa3491fa-a12d-4e7c-abad-685d64b84cc6" Title="ACG.Core.Readers" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm">
-    <HelpTOCNode Id="9572354b-94ed-4e7f-a8fd-3075487c5ab9" Title="AcgShpReader Class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm">
+  <HelpTOCNode Id="4ba4036c-58fa-4518-aab3-9b2b819db8ba" Title="ACG.Core.Readers" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm">
+    <HelpTOCNode Id="3e22de60-493e-4223-baf7-34c4c1b0b670" Title="AcgReader Class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm">
+      <HelpTOCNode Title="AcgReader Constructor " Url="html/f10202c6-57d8-9484-1dd4-116d2b22866a.htm" />
+      <HelpTOCNode Id="8981b1d5-ad99-4a4c-a2ef-5321e4fb2c72" Title="AcgReader Properties" Url="html/e37cdb4e-ebcd-19e5-7705-6235428b4973.htm">
+        <HelpTOCNode Title="ObjectType Property " Url="html/8ea2f96c-8fd9-6123-ca4b-44694e872fbe.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2bddc729-51c7-46dd-b780-8762e8035eb7" Title="AcgReader Methods" Url="html/d0fdf9d4-ebcf-2c57-73aa-23185ae1903d.htm">
+        <HelpTOCNode Title="Read Method " Url="html/e966d6e3-4285-e1eb-a1aa-361862a72058.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d0f75c01-6a87-43e7-a015-1693fdb0fc85" Title="AcgShpReader Class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm">
       <HelpTOCNode Title="AcgShpReader Constructor " Url="html/330a3d9e-44f4-ca93-e15b-d644cf6b08e1.htm" />
-      <HelpTOCNode Id="0a13116b-ee22-4161-8511-99191e36941c" Title="AcgShpReader Methods" Url="html/4840b005-91a2-b8a8-a86b-130b3c219c97.htm">
+      <HelpTOCNode Title="AcgShpReader Properties" Url="html/1d57dfeb-413e-040b-a09a-65f46c79ee4e.htm" />
+      <HelpTOCNode Id="5527dbc0-d0b3-4c83-a736-16df96ab962a" Title="AcgShpReader Methods" Url="html/4840b005-91a2-b8a8-a86b-130b3c219c97.htm">
         <HelpTOCNode Title="Read Method " Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="04d9ac51-6b19-415e-bb9c-5e5fd7cef06c" Title="EndianBitConverter Class" Url="html/e885c5af-4918-9362-9f14-9fd13031c35b.htm">
-      <HelpTOCNode Id="bb9fd2b9-e5e8-4077-b9f1-ef451b972020" Title="EndianBitConverter Methods" Url="html/69cf1ee8-e706-0f07-f646-733e7e39cbed.htm">
+    <HelpTOCNode Id="945e27ce-450a-41a6-927e-f355579b61b5" Title="EndianBitConverter Class" Url="html/e885c5af-4918-9362-9f14-9fd13031c35b.htm">
+      <HelpTOCNode Id="162db9de-f5ac-41a7-af62-00dbd0a17c90" Title="EndianBitConverter Methods" Url="html/69cf1ee8-e706-0f07-f646-733e7e39cbed.htm">
         <HelpTOCNode Title="ToDouble Method " Url="html/d1a7a40a-4336-5673-daa4-0a5f4a28f983.htm" />
         <HelpTOCNode Title="ToInt32 Method " Url="html/be243b0c-fffa-3fef-b637-bf0f978fd0fe.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c79d6d2c-6e35-4d07-bb96-925250dacd1b" Title="IAcgReader Interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm">
-      <HelpTOCNode Id="02a69fad-e447-455a-88bf-d5b32ce7425a" Title="IAcgReader Methods" Url="html/9b63ee79-3a7f-e52b-aecd-ba9b1fde8ea5.htm">
+    <HelpTOCNode Id="d4fb73cb-f0c4-453e-858f-423c05084a5c" Title="IAcgReader Interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm">
+      <HelpTOCNode Id="33d7eee4-8dd3-48c1-aa6b-918fdbe4d8fa" Title="IAcgReader Properties" Url="html/798c0b96-a916-9e27-2b9d-d99c448edb1d.htm">
+        <HelpTOCNode Title="ObjectType Property " Url="html/fd825a55-ecea-675f-4b98-17d5dcc24465.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6a600b14-48d3-47f9-845b-af7b8ba717e1" Title="IAcgReader Methods" Url="html/9b63ee79-3a7f-e52b-aecd-ba9b1fde8ea5.htm">
         <HelpTOCNode Title="Read Method " Url="html/e669a7fe-48b2-c923-11b7-14c973e3775e.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="950a10be-94d4-4f47-880d-db3629133c5f" Title="PointD Structure" Url="html/272bf673-ae02-1287-a4d5-ae65fa56cb66.htm">
+    <HelpTOCNode Id="4b0f7c46-4c38-46e3-a35a-650a8555a73e" Title="PointD Structure" Url="html/272bf673-ae02-1287-a4d5-ae65fa56cb66.htm">
       <HelpTOCNode Title="PointD Constructor " Url="html/f25dd63f-17ef-90ee-5e59-85c8aa21f619.htm" />
       <HelpTOCNode Title="PointD Methods" Url="html/59cf2208-b4e4-890f-449f-6933faa7df85.htm" />
-      <HelpTOCNode Id="60eacad2-3161-4144-a3d5-965d26e87a9f" Title="PointD Fields" Url="html/f852c388-3727-2331-3b20-c53127e3dace.htm">
+      <HelpTOCNode Id="366f9b8b-c26a-4717-8378-8bea05a23f8f" Title="PointD Fields" Url="html/f852c388-3727-2331-3b20-c53127e3dace.htm">
         <HelpTOCNode Title="X Field" Url="html/22bdd726-bef7-5d10-3f24-47bf49271e83.htm" />
         <HelpTOCNode Title="Y Field" Url="html/46fda71b-7ec8-6f51-30be-413fcaaf8990.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="ProvidedOrder Enumeration" Url="html/48430069-6919-88c3-31f9-965e08050f15.htm" />
-    <HelpTOCNode Id="d8448eea-8c7f-4f8b-a121-d43ee7f5df6d" Title="RectangleD Structure" Url="html/7b185e57-0751-67e0-343b-be83c5a1a6f3.htm">
+    <HelpTOCNode Id="333bbe67-c81c-4ffb-b8a7-5a25a3f6d946" Title="RectangleD Structure" Url="html/7b185e57-0751-67e0-343b-be83c5a1a6f3.htm">
       <HelpTOCNode Title="RectangleD Constructor " Url="html/7abb9f79-2e56-dc98-1a6f-c9d4466e4481.htm" />
       <HelpTOCNode Title="RectangleD Methods" Url="html/37f9530e-67f9-1993-9d63-70e707d51c41.htm" />
-      <HelpTOCNode Id="fb24d6c3-9adf-4779-81c9-de70e51aa611" Title="RectangleD Fields" Url="html/efd179a0-13f9-e95d-b6e1-8324778d80d3.htm">
+      <HelpTOCNode Id="f60860c2-bcc5-43f5-9481-77f4bb213937" Title="RectangleD Fields" Url="html/efd179a0-13f9-e95d-b6e1-8324778d80d3.htm">
         <HelpTOCNode Title="Bottom Field" Url="html/3324c4af-6a1d-fc96-0adf-3116ec832397.htm" />
         <HelpTOCNode Title="Left Field" Url="html/93217bc3-af2c-f52e-4aa3-481756348b8c.htm" />
         <HelpTOCNode Title="Right Field" Url="html/3c8d963f-01d9-c005-eb01-464ed50ce41e.htm" />
         <HelpTOCNode Title="Top Field" Url="html/e62b83e1-beef-f985-4eb6-01115692e9c8.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ed97a614-8043-40be-9601-c5436b425971" Title="Shape Class" Url="html/e33855e1-9381-fca6-7f77-247c01bec30d.htm">
+    <HelpTOCNode Id="932d2aaf-d759-465e-97eb-b62625fe105e" Title="Shape Class" Url="html/e33855e1-9381-fca6-7f77-247c01bec30d.htm">
       <HelpTOCNode Title="Shape Constructor " Url="html/7fb42f7e-bc1c-6b47-3ed6-ab925fcf03f0.htm" />
-      <HelpTOCNode Id="75c72f61-eff5-413c-a4b9-a7c7b6a8d684" Title="Shape Properties" Url="html/04f8e046-f9a6-6bbe-c6ec-8fab5459b187.htm">
+      <HelpTOCNode Id="e64beb72-7692-4335-919a-3e4f4bad81be" Title="Shape Properties" Url="html/04f8e046-f9a6-6bbe-c6ec-8fab5459b187.htm">
         <HelpTOCNode Title="DataRecord Property " Url="html/d1ef1882-d231-12da-bf9e-56e0e7d549eb.htm" />
         <HelpTOCNode Title="RecordNumber Property " Url="html/295c955d-d2c4-d1e8-6baf-232f0e0f5bca.htm" />
         <HelpTOCNode Title="Type Property " Url="html/3120cebc-7f31-923f-fa65-ded69e2d4178.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="1093984c-00fb-4887-a4dd-7e2087bdc21a" Title="Shape Methods" Url="html/96d61092-c18e-6020-5947-dcd69bcbe338.htm">
+      <HelpTOCNode Id="aad3c1af-b5ee-41fd-885d-5db69c85dd63" Title="Shape Methods" Url="html/96d61092-c18e-6020-5947-dcd69bcbe338.htm">
         <HelpTOCNode Title="GetMetadata Method " Url="html/727a21a7-f8d9-2a4e-7698-228d872a4ce5.htm" />
         <HelpTOCNode Title="GetMetadataNames Method " Url="html/7a62055b-3520-5423-b583-77982b239799.htm" />
         <HelpTOCNode Title="ParseBoundingBox Method " Url="html/246dd175-9a56-533e-0891-11e0b3a14ef6.htm" />
         <HelpTOCNode Title="ParsePolyLineOrPolygon Method " Url="html/09d198e0-2805-c5bc-8075-294c0fdc4b6a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="2a103108-5498-4a9a-8978-d85af78ecf3f" Title="Shapefile Class" Url="html/3cf61f52-52ed-9176-dd69-181f13f7f274.htm">
-      <HelpTOCNode Id="2c37bc72-809d-4dfa-bd14-976b6d8d8f9e" Title="Shapefile Constructor " Url="html/5cae613f-523c-10bc-cbea-f4507686fcaa.htm">
+    <HelpTOCNode Id="e960cdf0-2c4d-46bd-84b3-62ecb9ce13dc" Title="Shapefile Class" Url="html/3cf61f52-52ed-9176-dd69-181f13f7f274.htm">
+      <HelpTOCNode Id="f886a309-9305-4294-933f-8c7867f040d9" Title="Shapefile Constructor " Url="html/5cae613f-523c-10bc-cbea-f4507686fcaa.htm">
         <HelpTOCNode Title="Shapefile Constructor " Url="html/c518be63-fc61-1d2c-4f71-2ab9da1e9c00.htm" />
         <HelpTOCNode Title="Shapefile Constructor (String)" Url="html/b6f7d894-c432-996b-9e45-d44fd4c95999.htm" />
         <HelpTOCNode Title="Shapefile Constructor (String, String)" Url="html/f2a529cf-d632-fb96-97d4-9522448c9f90.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="cfde78e8-b983-4dcf-95f9-ef5a7e26f385" Title="Shapefile Properties" Url="html/8d03fa15-0d53-2111-8111-d8f11a59ee63.htm">
+      <HelpTOCNode Id="7f76bd1b-5d63-4caa-98bb-9fa652453e15" Title="Shapefile Properties" Url="html/8d03fa15-0d53-2111-8111-d8f11a59ee63.htm">
+        <HelpTOCNode Title="IEnumerator.Current Property " Url="html/66871107-dad1-c536-b714-9afb548e7aa3.htm" />
         <HelpTOCNode Title="BoundingBox Property " Url="html/2f23ba6b-62be-2d03-2cfe-7f18a904f534.htm" />
         <HelpTOCNode Title="ConnectionStringTemplate Property " Url="html/5ff0f699-c5ed-349c-b6fe-037db0c010f9.htm" />
         <HelpTOCNode Title="Count Property " Url="html/0e4fe20d-e4ec-bc42-0f54-36e866ba5e2d.htm" />
@@ -86,7 +101,8 @@
         <HelpTOCNode Title="RawMetadataOnly Property " Url="html/a040b1b3-2305-0ab9-b0b7-f7dbfc92ffca.htm" />
         <HelpTOCNode Title="Type Property " Url="html/d5f71aca-8fe5-5d34-3189-24da684d7c09.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ae160488-8d10-412a-90be-ebd23a70e760" Title="Shapefile Methods" Url="html/20a14418-b00f-5e6a-cf03-571bef5ec669.htm">
+      <HelpTOCNode Id="fb6412fa-6a3f-4417-9492-76bea5367693" Title="Shapefile Methods" Url="html/20a14418-b00f-5e6a-cf03-571bef5ec669.htm">
+        <HelpTOCNode Title="IEnumerable.GetEnumerator Method " Url="html/c05e0d75-8e6b-4674-1d34-294a7cbcb336.htm" />
         <HelpTOCNode Title="Close Method " Url="html/c5d4ae45-5ed9-296b-7513-12ed957ff10d.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/38aac168-f3cc-5150-6594-7398ac81f744.htm" />
         <HelpTOCNode Title="Finalize Method " Url="html/9e527688-0880-dc15-30bb-3374c57e7748.htm" />
@@ -95,48 +111,48 @@
         <HelpTOCNode Title="Open Method " Url="html/263de892-bb0a-97b9-3db5-76dc5d02f738.htm" />
         <HelpTOCNode Title="Reset Method " Url="html/0da44cb4-38d7-bcc4-c701-7040291782cd.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0d433db1-5f89-4805-9f0c-a1557323f865" Title="Shapefile Fields" Url="html/199e2377-21c1-e0d5-21df-63bff7c76815.htm">
+      <HelpTOCNode Id="8c7f95cf-f1af-4e45-9890-16f74a95ce40" Title="Shapefile Fields" Url="html/199e2377-21c1-e0d5-21df-63bff7c76815.htm">
         <HelpTOCNode Title="ConnectionStringTemplateAce Field" Url="html/038c207b-bfbe-db6e-58a2-c84bc5fd6709.htm" />
         <HelpTOCNode Title="ConnectionStringTemplateJet Field" Url="html/29b165b5-184f-91ec-ae07-a7e23334e161.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a7809a7a-b7d0-4802-99d1-50f275c8c322" Title="ShapeMultiPoint Class" Url="html/2ce83baf-1a5a-dbc2-73d6-a1574687d5ee.htm">
+    <HelpTOCNode Id="95152072-57fb-4093-9bdd-053b454e70dd" Title="ShapeMultiPoint Class" Url="html/2ce83baf-1a5a-dbc2-73d6-a1574687d5ee.htm">
       <HelpTOCNode Title="ShapeMultiPoint Constructor " Url="html/ee093e62-1c93-80fb-d1a4-cb8f7788b069.htm" />
-      <HelpTOCNode Id="83a5e6b3-4b8f-471c-aaaf-7012e70b747f" Title="ShapeMultiPoint Properties" Url="html/8a4ec321-c4a1-bdfc-9411-56833e171d11.htm">
+      <HelpTOCNode Id="01049bc3-34b5-4af3-b26f-c70a16c1aae0" Title="ShapeMultiPoint Properties" Url="html/8a4ec321-c4a1-bdfc-9411-56833e171d11.htm">
         <HelpTOCNode Title="BoundingBox Property " Url="html/2f728669-4b2a-1223-1393-27a23f87273f.htm" />
         <HelpTOCNode Title="Points Property " Url="html/20d6b7a4-8d31-6460-3048-f5a0c233a315.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ShapeMultiPoint Methods" Url="html/c96a5759-66d2-1af2-e70d-1a4f15bea8f9.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="608adec0-1f33-4261-a91c-ff58855a515d" Title="ShapePoint Class" Url="html/d719c06d-309d-8162-4041-e075fb53cb6b.htm">
+    <HelpTOCNode Id="687ae39c-4651-49df-9be1-bbb90720177e" Title="ShapePoint Class" Url="html/d719c06d-309d-8162-4041-e075fb53cb6b.htm">
       <HelpTOCNode Title="ShapePoint Constructor " Url="html/7e00883b-14ca-cfe6-3a11-8504428f1263.htm" />
-      <HelpTOCNode Id="43873115-8977-411c-b934-9e4a21d69e62" Title="ShapePoint Properties" Url="html/02d5f2e1-d411-f0c4-e53f-f239ce3abe4f.htm">
+      <HelpTOCNode Id="457701b6-ac1c-481e-a480-76c66cbf57f9" Title="ShapePoint Properties" Url="html/02d5f2e1-d411-f0c4-e53f-f239ce3abe4f.htm">
         <HelpTOCNode Title="Point Property " Url="html/726a400f-2f10-926a-060f-7f9045bf4ed0.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ShapePoint Methods" Url="html/cbe5fbb0-56bb-7304-453b-4236606fbadd.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="7aa8ef58-0dce-4248-b71f-8ef4abfc7e32" Title="ShapePolygon Class" Url="html/ffca890f-aa94-2cd8-d0e8-874d4b4b2c3a.htm">
+    <HelpTOCNode Id="935c3004-7965-47e7-8def-58d7d87bfdd5" Title="ShapePolygon Class" Url="html/ffca890f-aa94-2cd8-d0e8-874d4b4b2c3a.htm">
       <HelpTOCNode Title="ShapePolygon Constructor " Url="html/45c829ab-c3ba-ede1-3f72-73591dd55001.htm" />
-      <HelpTOCNode Id="ea598082-e81b-48d3-beb6-4453640b7e78" Title="ShapePolygon Properties" Url="html/d207c20b-46bf-908c-7bae-1625d35e4ace.htm">
+      <HelpTOCNode Id="550b269e-e4d1-4f14-b6fe-2be666ba1eae" Title="ShapePolygon Properties" Url="html/d207c20b-46bf-908c-7bae-1625d35e4ace.htm">
         <HelpTOCNode Title="BoundingBox Property " Url="html/b4bf01e8-6ecf-c098-27ae-94a9df59542d.htm" />
         <HelpTOCNode Title="Parts Property " Url="html/a534719d-22a0-fac6-4561-df354ed25642.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ShapePolygon Methods" Url="html/b30d5a53-2f05-2be3-6df0-d56b76ea0cdc.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="8cb5230a-04e9-4472-a0f2-866270b51b2d" Title="ShapePolyLine Class" Url="html/849dbb11-0134-0eb6-1ba6-6977ec64a579.htm">
-      <HelpTOCNode Id="d47a0503-4ea4-456e-b676-5abc0fff2c55" Title="ShapePolyLine Constructor " Url="html/5cb19a80-326b-2973-4cc9-d174567f3332.htm">
+    <HelpTOCNode Id="db7ca65c-8c63-482e-ba41-8e20ea56f233" Title="ShapePolyLine Class" Url="html/849dbb11-0134-0eb6-1ba6-6977ec64a579.htm">
+      <HelpTOCNode Id="485596d0-ccd8-4b01-82d6-e5f6d7e0c390" Title="ShapePolyLine Constructor " Url="html/5cb19a80-326b-2973-4cc9-d174567f3332.htm">
         <HelpTOCNode Title="ShapePolyLine Constructor (Int32, StringDictionary, IDataRecord)" Url="html/ba55fd30-a820-d008-dda2-f3bb040cd43e.htm" />
         <HelpTOCNode Title="ShapePolyLine Constructor (Int32, StringDictionary, IDataRecord, Byte[])" Url="html/cee92179-960b-153b-d4d3-33d826d3e0e8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="885b2df9-52f1-4561-9b0a-02f7e30c4efb" Title="ShapePolyLine Properties" Url="html/59299f51-6328-2253-d1e4-bfe83220225c.htm">
+      <HelpTOCNode Id="e349f74e-2d54-4597-97db-ec13bca12a89" Title="ShapePolyLine Properties" Url="html/59299f51-6328-2253-d1e4-bfe83220225c.htm">
         <HelpTOCNode Title="BoundingBox Property " Url="html/368f8a5a-9f4f-8132-953f-fb3e0431e0c8.htm" />
         <HelpTOCNode Title="Parts Property " Url="html/e6612a9a-f396-b7a6-e7d1-db101d48e789.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ShapePolyLine Methods" Url="html/f6b91ad2-d087-96d5-c8b9-96f7f5ec9086.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="4eba1cad-3afc-431d-a111-807178425efd" Title="ShapePolyLineM Class" Url="html/6485cf7b-f3c3-319c-9296-7321fefc997b.htm">
+    <HelpTOCNode Id="b50ab81d-fb52-4a0a-a427-2e7a91cd37f8" Title="ShapePolyLineM Class" Url="html/6485cf7b-f3c3-319c-9296-7321fefc997b.htm">
       <HelpTOCNode Title="ShapePolyLineM Constructor " Url="html/aab0845d-3f03-6d77-050f-c096d357fa24.htm" />
-      <HelpTOCNode Id="6ad65225-16a6-43aa-ac11-e558cc1c1288" Title="ShapePolyLineM Properties" Url="html/dd1b21eb-2bae-20dd-4f74-8d38868f95fe.htm">
+      <HelpTOCNode Id="c34a5878-a0e5-4c3a-ac86-28d6c8f9f859" Title="ShapePolyLineM Properties" Url="html/dd1b21eb-2bae-20dd-4f74-8d38868f95fe.htm">
         <HelpTOCNode Title="M Property " Url="html/3e594e6f-f35e-0c0e-43e5-9bb8e6921113.htm" />
         <HelpTOCNode Title="Mmax Property " Url="html/9d56e65e-3385-fa58-a538-c67501aed35b.htm" />
         <HelpTOCNode Title="Mmin Property " Url="html/dc37fc63-0422-db2e-efe8-d1b354d60f97.htm" />
@@ -145,15 +161,15 @@
     </HelpTOCNode>
     <HelpTOCNode Title="ShapeType Enumeration" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="6c03f740-4c76-431a-8003-33c2f153cc9f" Title="ACG.Core.Writers" Url="html/b7a2ab44-65dc-bf56-49f0-81b487fc88a6.htm">
-    <HelpTOCNode Id="b51765ea-13e8-470e-a572-442977acd28b" Title="IAcgWriter Interface" Url="html/cff9cadb-fa46-e7bd-7176-978be572297f.htm">
-      <HelpTOCNode Id="88f16a63-408e-4f60-970e-8a985b95d5a8" Title="IAcgWriter Methods" Url="html/d221efad-51f6-332b-0695-409952966226.htm">
+  <HelpTOCNode Id="e3d02ab8-2a2d-4bf8-8cc4-7c928db75796" Title="ACG.Core.Writers" Url="html/b7a2ab44-65dc-bf56-49f0-81b487fc88a6.htm">
+    <HelpTOCNode Id="b654f233-7dae-4000-9dae-ab9a4d01b65e" Title="IAcgWriter Interface" Url="html/cff9cadb-fa46-e7bd-7176-978be572297f.htm">
+      <HelpTOCNode Id="9bcf303b-beab-413a-9aed-4c4ca4f6403b" Title="IAcgWriter Methods" Url="html/d221efad-51f6-332b-0695-409952966226.htm">
         <HelpTOCNode Title="Write Method " Url="html/a5c71b3b-ca1f-5599-b904-b2b2fc091aa7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="e8a6ae92-84f9-4726-ac82-41e76798748b" Title="ACG.Plugins.Unity" Url="html/60827cc5-de4e-ddef-80ed-43a9f7740040.htm">
-    <HelpTOCNode Id="e4d9481c-950e-4091-a49d-63eb9fbea963" Title="AcgUnityBehaviourScript Class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm">
+  <HelpTOCNode Id="1dd67971-f323-453b-a852-1149e0335b20" Title="ACG.Plugins.Unity" Url="html/60827cc5-de4e-ddef-80ed-43a9f7740040.htm">
+    <HelpTOCNode Id="6ab8914f-8309-44ed-871a-bdf948850e25" Title="AcgUnityBehaviourScript Class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm">
       <HelpTOCNode Title="AcgUnityBehaviourScript Constructor " Url="html/8eddd0c6-def1-327f-2cec-9c3b4af1af35.htm" />
       <HelpTOCNode Title="AcgUnityBehaviourScript Properties" Url="html/59a90d25-63f2-e851-20f6-31678be9c729.htm" />
       <HelpTOCNode Title="AcgUnityBehaviourScript Methods" Url="html/8e94670b-bab2-11c9-bbf4-89bc241c4dc9.htm" />
