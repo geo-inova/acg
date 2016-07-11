@@ -16,7 +16,6 @@ namespace ACG.Core.Readers
         /// </summary>
         /// <param name="filePath">Physical path of source file or folder.</param>
         /// <returns>List of <seealso cref="IAcgObject"/> objects.</returns>
-        List<IAcgObject> Read(string filePath);
-
+        List<IAcgObject> Read(string filePath, AcgObjectType objectType = AcgObjectType.Any);
     }
 }

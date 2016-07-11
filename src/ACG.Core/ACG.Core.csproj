@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\AcgObjectType.cs" />
     <Compile Include="Objects\IAcgObject.cs" />
     <Compile Include="Readers\IAcgReader.cs" />
     <Compile Include="Writers\IAcgWriter.cs" />

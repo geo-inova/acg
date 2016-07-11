@@ -15,7 +15,7 @@ namespace ACG.Core.Readers
     public class AcgShpReader : IAcgReader
     {
         /// <inheritdoc/>
-        public List<IAcgObject> Read(string filePath)
+        public List<IAcgObject> Read(string filePath, AcgObjectType objectType = AcgObjectType.Any)
         {
             List<IAcgObject> objectList = new List<IAcgObject>();
 
