@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using NetTopologySuite;
 
 using ACG.Core.Objects;
+using NetTopologySuite.Geometries;
+using GeoAPI.Geometries;
 
 namespace ACG.Core.Readers
 {
@@ -14,9 +17,50 @@ namespace ACG.Core.Readers
         /// <inheritdoc/>
         public List<IAcgObject> Read(string filePath)
         {
-            /// Ovde ide implementacija...
-            /// 
-            throw new NotImplementedException();
+            List<IAcgObject> objectList = new List<IAcgObject>();
+
+            using (Shapefile shapefile = new Readers.Shapefile(filePath))
+            {
+                foreach (Shape shape in shapefile)
+                {
+                    AcgBuilding building = new AcgBuilding();
+
+                    string[] metadataNames = shape.GetMetadataNames();
+                    if (metadataNames != null)
+                    {
+                        foreach (string metadataName in metadataNames)
+                        {
+                            building.Metadata += metadataName + " = " + shape.GetMetadata(metadataName) + "(" + shape.DataRecord.GetDataTypeName(shape.DataRecord.GetOrdinal(metadataName)) + ")";
+                            building.Metadata += Environment.NewLine;
+                        }
+                        building.Metadata += Environment.NewLine;
+                    }
+                    switch (shape.Type)
+                    {
+                        case ShapeType.Polygon:
+                            ShapePolygon shapePolygon = shape as ShapePolygon;
+                            Coordinate[] points = null;
+                            int i = 0;
+                            foreach (PointD[] part in shapePolygon.Parts)
+                            {
+                                foreach (PointD point in part)
+                                {
+                                    Coordinate coordinate = new Coordinate(point.X, point.Y);
+                                    points[i++] = coordinate;
+                                }
+                                LinearRing linearRing = new LinearRing(points);
+                                Polygon polygon = new Polygon(linearRing);
+                                building.Geometry = polygon;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+                    objectList.Add(building);
+                }
+            }
+            return objectList;
         }
     }
 }
