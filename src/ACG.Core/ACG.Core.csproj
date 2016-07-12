@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\AcgObjectStatus.cs" />
     <Compile Include="Objects\NamespaceDoc.cs">
       <SubType>Code</SubType>
     </Compile>
