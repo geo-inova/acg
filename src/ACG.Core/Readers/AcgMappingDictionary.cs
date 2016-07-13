@@ -13,7 +13,7 @@ namespace ACG.Core.Readers
     /// <remarks>
     /// Dictionary key represents the name of <see cref="IAcgObject"/> object.
     /// </remarks>
-    public class AcgMappingDictionary : Dictionary<string, AcgMapping>
+    public class AcgMappingDictionary : Dictionary<string, List<AcgMapping>>
     {
         /// <summary>
         /// Raads file mapping rules from specified file.

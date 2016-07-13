@@ -20,7 +20,10 @@ namespace ACG.Core.Tests
         {
             //Intialize new SHP reader instance
             AcgShpReader reader = new AcgShpReader();
-            
+
+            //Return only building objects
+            reader.ObjectType = AcgObjectType.Building;
+
             //Get path to specific SHP file
             string fileName = Path.Combine(GetDatPath(), @"shp\banjaluka_jug_6.shp");
 
