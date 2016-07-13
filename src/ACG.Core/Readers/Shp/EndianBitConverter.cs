@@ -9,6 +9,7 @@ using System.Text;
 
 namespace ACG.Core.Readers
 {
+    ///<exclude/>
     /// <summary>
     /// The order of bytes provided to EndianBitConverter
     /// </summary>
@@ -25,6 +26,7 @@ namespace ACG.Core.Readers
         Little
     }
 
+    ///<exclude/>
     /// <summary>
     /// BitConverter methods that allow a different source byte order (only a subset of BitConverter)
     /// </summary>

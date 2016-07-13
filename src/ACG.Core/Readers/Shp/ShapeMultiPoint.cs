@@ -11,6 +11,7 @@ using System.Data;
 
 namespace ACG.Core.Readers
 {
+    ///<exclude/>
     /// <summary>
     /// A Shapefile MultiPoint Shape
     /// </summary>

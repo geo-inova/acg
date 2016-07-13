@@ -9,6 +9,7 @@ using System.Text;
 
 namespace ACG.Core.Readers
 {
+    ///<exclude/>
     /// <summary>
     /// A simple double precision rectangle
     /// </summary>

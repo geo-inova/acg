@@ -13,6 +13,7 @@ using System.Data.OleDb;
 
 namespace ACG.Core.Readers
 {
+    ///<exclude/>
     /// <summary>
     /// Provides a readonly IEnumerable interface to an ERSI Shapefile.
     /// NOTE - has not been designed to be thread safe

@@ -26,10 +26,9 @@
     <CleanIntermediates>True</CleanIntermediates>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\bin\debug\ACG.Core.dll" />
-      <DocumentationSource sourceFile="..\bin\debug\ACG.Core.xml" />
-      <DocumentationSource sourceFile="..\bin\debug\ACG.Plugins.Unity.dll" />
-      <DocumentationSource sourceFile="..\bin\debug\ACG.Plugins.Unity.xml" />
-    </DocumentationSources>
+<DocumentationSource sourceFile="..\bin\debug\ACG.Core.xml" />
+<DocumentationSource sourceFile="..\bin\debug\ACG.Plugins.Unity.dll" />
+<DocumentationSource sourceFile="..\bin\debug\ACG.Plugins.Unity.xml" /></DocumentationSources>
     <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <HtmlHelp1xCompilerPath>
     </HtmlHelp1xCompilerPath>
@@ -83,6 +82,12 @@
   <ItemGroup>
     <Reference Include="GeoAPI">
       <HintPath>..\ext\geoapi\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>..\ext\unity\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\ext\unity\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

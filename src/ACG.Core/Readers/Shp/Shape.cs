@@ -11,6 +11,7 @@ using System.Data;
 
 namespace ACG.Core.Readers
 {
+    ///<exclude/>
     /// <summary>
     /// Base Shapefile shape - contains only the shape type and metadata plus helper methods.
     /// An instance of Shape is the Null ShapeType. If the Type field is not ShapeType.Null then

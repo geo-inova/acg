@@ -25,6 +25,12 @@ namespace ACG.Core.Objects
             this.Geometry = null;
         }
 
+        /// <inheritdoc/>
+        public IGeometry Geometry { get; set; }
+
+        /// <inheritdoc/>
+        public abstract AcgObjectType ObjectType { get; }
+
         /// <summary>
         /// Gets or sets unique object identifier.
         /// </summary>
@@ -64,10 +70,5 @@ namespace ACG.Core.Objects
         /// Gets or sets aritrary object metadata.
         /// </summary>
         public string Metadata { get; set; }
-
-        /// <summary>
-        /// Gets or sets object geometry.
-        /// </summary>
-        public IGeometry Geometry { get; set; }
     }
 }

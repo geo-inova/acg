@@ -11,19 +11,7 @@
   <HelpKINode Title="ACG.Core.Readers.AcgMappingDictionary class" Url="html/ee4d7cbc-7cb4-0328-76a4-d1944f4a287a.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgReader class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgShpReader class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm" />
-  <HelpKINode Title="ACG.Core.Readers.EndianBitConverter class" Url="html/e885c5af-4918-9362-9f14-9fd13031c35b.htm" />
   <HelpKINode Title="ACG.Core.Readers.IAcgReader interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm" />
-  <HelpKINode Title="ACG.Core.Readers.PointD structure" Url="html/272bf673-ae02-1287-a4d5-ae65fa56cb66.htm" />
-  <HelpKINode Title="ACG.Core.Readers.ProvidedOrder enumeration" Url="html/48430069-6919-88c3-31f9-965e08050f15.htm" />
-  <HelpKINode Title="ACG.Core.Readers.RectangleD structure" Url="html/7b185e57-0751-67e0-343b-be83c5a1a6f3.htm" />
-  <HelpKINode Title="ACG.Core.Readers.Shape class" Url="html/e33855e1-9381-fca6-7f77-247c01bec30d.htm" />
-  <HelpKINode Title="ACG.Core.Readers.Shapefile class" Url="html/3cf61f52-52ed-9176-dd69-181f13f7f274.htm" />
-  <HelpKINode Title="ACG.Core.Readers.ShapeMultiPoint class" Url="html/2ce83baf-1a5a-dbc2-73d6-a1574687d5ee.htm" />
-  <HelpKINode Title="ACG.Core.Readers.ShapePoint class" Url="html/d719c06d-309d-8162-4041-e075fb53cb6b.htm" />
-  <HelpKINode Title="ACG.Core.Readers.ShapePolygon class" Url="html/ffca890f-aa94-2cd8-d0e8-874d4b4b2c3a.htm" />
-  <HelpKINode Title="ACG.Core.Readers.ShapePolyLine class" Url="html/849dbb11-0134-0eb6-1ba6-6977ec64a579.htm" />
-  <HelpKINode Title="ACG.Core.Readers.ShapePolyLineM class" Url="html/6485cf7b-f3c3-319c-9296-7321fefc997b.htm" />
-  <HelpKINode Title="ACG.Core.Readers.ShapeType enumeration" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
   <HelpKINode Title="ACG.Core.Writers namespace" Url="html/b7a2ab44-65dc-bf56-49f0-81b487fc88a6.htm" />
   <HelpKINode Title="ACG.Core.Writers.IAcgWriter interface" Url="html/cff9cadb-fa46-e7bd-7176-978be572297f.htm" />
   <HelpKINode Title="ACG.Plugins.Unity namespace" Url="html/60827cc5-de4e-ddef-80ed-43a9f7740040.htm" />
@@ -38,6 +26,7 @@
   <HelpKINode Title="AcgBuilding.AcgBuilding constructor" Url="html/2af65494-ae57-807a-f3a7-4e69817b8f5b.htm" />
   <HelpKINode Title="AcgBuilding.Height property" Url="html/8a0bab4d-cf27-f9cd-e76f-dbf03ebb4173.htm" />
   <HelpKINode Title="AcgBuilding.HeightFixed property" Url="html/62f914b5-1ac2-388c-324e-0b029c705645.htm" />
+  <HelpKINode Title="AcgBuilding.ObjectType property" Url="html/56a5f779-44b7-72fc-a9aa-cae0b9dfc260.htm" />
   <HelpKINode Title="AcgBuilding.StreetName property" Url="html/2c5d620c-0c51-5dc9-ff6e-9b73648776cd.htm" />
   <HelpKINode Title="AcgBuilding.StreetNumber property" Url="html/4caf8188-2dca-ba77-ac28-92aaec2909e0.htm" />
   <HelpKINode Title="AcgBuilding.TotalGrossSurface property" Url="html/a14d2efa-acf8-10c9-01c3-57fcf7931db2.htm" />
@@ -77,6 +66,7 @@
   <HelpKINode Title="AcgObject.Geometry property" Url="html/248bd73d-b87f-1d36-549c-d49d66841882.htm" />
   <HelpKINode Title="AcgObject.GUID property" Url="html/353a5cdc-b65b-6e68-b9ad-c7dd5c618752.htm" />
   <HelpKINode Title="AcgObject.Metadata property" Url="html/a4dded11-923d-5dfe-6922-80c851be1fbe.htm" />
+  <HelpKINode Title="AcgObject.ObjectType property" Url="html/26016b22-ccb5-bfd5-5781-e18b37281ffc.htm" />
   <HelpKINode Title="AcgObject.Status property" Url="html/0e878ba2-133e-3bd2-2043-0145598c5b6c.htm" />
   <HelpKINode Title="AcgObjectStatus enumeration" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
   <HelpKINode Title="AcgObjectType enumeration" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
@@ -109,49 +99,28 @@
   </HelpKINode>
   <HelpKINode Title="AcgUnityBehaviourScript.AcgUnityBehaviourScript constructor" Url="html/8eddd0c6-def1-327f-2cec-9c3b4af1af35.htm" />
   <HelpKINode Title="Any enumeration member" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
-  <HelpKINode Title="Big enumeration member" Url="html/48430069-6919-88c3-31f9-965e08050f15.htm" />
-  <HelpKINode Title="Bottom field" Url="html/3324c4af-6a1d-fc96-0adf-3116ec832397.htm" />
-  <HelpKINode Title="BoundingBox property">
-    <HelpKINode Title="Shapefile.BoundingBox Property " Url="html/2f23ba6b-62be-2d03-2cfe-7f18a904f534.htm" />
-    <HelpKINode Title="ShapeMultiPoint.BoundingBox Property " Url="html/2f728669-4b2a-1223-1393-27a23f87273f.htm" />
-    <HelpKINode Title="ShapePolygon.BoundingBox Property " Url="html/b4bf01e8-6ecf-c098-27ae-94a9df59542d.htm" />
-    <HelpKINode Title="ShapePolyLine.BoundingBox Property " Url="html/368f8a5a-9f4f-8132-953f-fb3e0431e0c8.htm" />
-  </HelpKINode>
   <HelpKINode Title="Building enumeration member" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
-  <HelpKINode Title="Close method" Url="html/c5d4ae45-5ed9-296b-7513-12ed957ff10d.htm" />
-  <HelpKINode Title="ConnectionStringTemplate property" Url="html/5ff0f699-c5ed-349c-b6fe-037db0c010f9.htm" />
-  <HelpKINode Title="ConnectionStringTemplateAce field" Url="html/038c207b-bfbe-db6e-58a2-c84bc5fd6709.htm" />
-  <HelpKINode Title="ConnectionStringTemplateJet field" Url="html/29b165b5-184f-91ec-ae07-a7e23334e161.htm" />
   <HelpKINode Title="Construction enumeration member" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
-  <HelpKINode Title="Count property" Url="html/0e4fe20d-e4ec-bc42-0f54-36e866ba5e2d.htm" />
-  <HelpKINode Title="Current property" Url="html/5e9a430e-8441-3529-23e6-e212ff2810db.htm" />
-  <HelpKINode Title="DataRecord property" Url="html/d1ef1882-d231-12da-bf9e-56e0e7d549eb.htm" />
   <HelpKINode Title="DataSourceAuthor property" Url="html/8ada33d8-9e45-ffb6-cd60-13831d9a478a.htm" />
   <HelpKINode Title="DataSourceAuthority property" Url="html/d2edc06b-11e2-75e0-75eb-6e59a97d8d28.htm" />
   <HelpKINode Title="DataSourceUrl property" Url="html/15a742c7-d0d3-2ed2-b315-99bf6bab3813.htm" />
   <HelpKINode Title="DataSourceYear property" Url="html/7f1c7036-7259-cdf2-4761-d1e7c6980e67.htm" />
   <HelpKINode Title="Description property" Url="html/2881cf0f-42af-f539-53f6-8e7a0f62819c.htm" />
-  <HelpKINode Title="Dispose method" Url="html/38aac168-f3cc-5150-6594-7398ac81f744.htm" />
-  <HelpKINode Title="EndianBitConverter class">
-    <HelpKINode Title="EndianBitConverter Class" Url="html/e885c5af-4918-9362-9f14-9fd13031c35b.htm" />
-    <HelpKINode Title="about EndianBitConverter class" Url="html/e885c5af-4918-9362-9f14-9fd13031c35b.htm" />
-    <HelpKINode Title="methods" Url="html/69cf1ee8-e706-0f07-f646-733e7e39cbed.htm" />
-  </HelpKINode>
-  <HelpKINode Title="EndianBitConverter.ToDouble method" Url="html/d1a7a40a-4336-5673-daa4-0a5f4a28f983.htm" />
-  <HelpKINode Title="EndianBitConverter.ToInt32 method" Url="html/be243b0c-fffa-3fef-b637-bf0f978fd0fe.htm" />
   <HelpKINode Title="Existing enumeration member" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
-  <HelpKINode Title="Finalize method" Url="html/9e527688-0880-dc15-30bb-3374c57e7748.htm" />
-  <HelpKINode Title="Geometry property" Url="html/248bd73d-b87f-1d36-549c-d49d66841882.htm" />
-  <HelpKINode Title="GetEnumerator method" Url="html/f207f34e-abec-e0f7-83fb-c3d9b2b34ccf.htm" />
-  <HelpKINode Title="GetMetadata method" Url="html/727a21a7-f8d9-2a4e-7698-228d872a4ce5.htm" />
-  <HelpKINode Title="GetMetadataNames method" Url="html/7a62055b-3520-5423-b583-77982b239799.htm" />
+  <HelpKINode Title="Geometry property">
+    <HelpKINode Title="AcgObject.Geometry Property " Url="html/248bd73d-b87f-1d36-549c-d49d66841882.htm" />
+    <HelpKINode Title="IAcgObject.Geometry Property " Url="html/a0dceeab-6db3-d71c-523d-c372fe434757.htm" />
+  </HelpKINode>
   <HelpKINode Title="GUID property" Url="html/353a5cdc-b65b-6e68-b9ad-c7dd5c618752.htm" />
   <HelpKINode Title="Height property" Url="html/8a0bab4d-cf27-f9cd-e76f-dbf03ebb4173.htm" />
   <HelpKINode Title="HeightFixed property" Url="html/62f914b5-1ac2-388c-324e-0b029c705645.htm" />
   <HelpKINode Title="IAcgObject interface">
     <HelpKINode Title="IAcgObject Interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm" />
     <HelpKINode Title="about IAcgObject interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm" />
+    <HelpKINode Title="properties" Url="html/aa3f2f3f-e4f2-fc0b-1835-eb92dfdc5583.htm" />
   </HelpKINode>
+  <HelpKINode Title="IAcgObject.Geometry property" Url="html/a0dceeab-6db3-d71c-523d-c372fe434757.htm" />
+  <HelpKINode Title="IAcgObject.ObjectType property" Url="html/6dd18ed7-552d-294a-d3a7-69eb1d362cb4.htm" />
   <HelpKINode Title="IAcgReader interface">
     <HelpKINode Title="IAcgReader Interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm" />
     <HelpKINode Title="about IAcgReader interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm" />
@@ -167,188 +136,32 @@
     <HelpKINode Title="methods" Url="html/d221efad-51f6-332b-0695-409952966226.htm" />
   </HelpKINode>
   <HelpKINode Title="IAcgWriter.Write method" Url="html/a5c71b3b-ca1f-5599-b904-b2b2fc091aa7.htm" />
-  <HelpKINode Title="IEnumerable.GetEnumerator explicitly implemented method" Url="html/c05e0d75-8e6b-4674-1d34-294a7cbcb336.htm" />
-  <HelpKINode Title="IEnumerator.Current explicitly implemented property" Url="html/66871107-dad1-c536-b714-9afb548e7aa3.htm" />
-  <HelpKINode Title="Left field" Url="html/93217bc3-af2c-f52e-4aa3-481756348b8c.htm" />
-  <HelpKINode Title="Little enumeration member" Url="html/48430069-6919-88c3-31f9-965e08050f15.htm" />
-  <HelpKINode Title="M property" Url="html/3e594e6f-f35e-0c0e-43e5-9bb8e6921113.htm" />
   <HelpKINode Title="Mappings property">
     <HelpKINode Title="AcgReader.Mappings Property " Url="html/f39f2e32-6117-ee5b-5e3c-94e0feb6dd3a.htm" />
     <HelpKINode Title="IAcgReader.Mappings Property " Url="html/2c0f3c57-67b3-deed-32a4-f92365cccb00.htm" />
   </HelpKINode>
   <HelpKINode Title="Metadata property" Url="html/a4dded11-923d-5dfe-6922-80c851be1fbe.htm" />
-  <HelpKINode Title="Mmax property" Url="html/9d56e65e-3385-fa58-a538-c67501aed35b.htm" />
-  <HelpKINode Title="Mmin property" Url="html/dc37fc63-0422-db2e-efe8-d1b354d60f97.htm" />
-  <HelpKINode Title="MoveNext method" Url="html/9557577a-c012-bce2-2dac-8ac34b91d423.htm" />
-  <HelpKINode Title="MultiPatch enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="MultiPoint enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="MultiPointM enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="MultiPointZ enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="Null enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
   <HelpKINode Title="ObjectType property">
+    <HelpKINode Title="AcgBuilding.ObjectType Property " Url="html/56a5f779-44b7-72fc-a9aa-cae0b9dfc260.htm" />
+    <HelpKINode Title="AcgObject.ObjectType Property " Url="html/26016b22-ccb5-bfd5-5781-e18b37281ffc.htm" />
     <HelpKINode Title="AcgReader.ObjectType Property " Url="html/8ea2f96c-8fd9-6123-ca4b-44694e872fbe.htm" />
+    <HelpKINode Title="IAcgObject.ObjectType Property " Url="html/6dd18ed7-552d-294a-d3a7-69eb1d362cb4.htm" />
     <HelpKINode Title="IAcgReader.ObjectType Property " Url="html/fd825a55-ecea-675f-4b98-17d5dcc24465.htm" />
   </HelpKINode>
-  <HelpKINode Title="Open method" Url="html/263de892-bb0a-97b9-3db5-76dc5d02f738.htm" />
-  <HelpKINode Title="ParseBoundingBox method" Url="html/246dd175-9a56-533e-0891-11e0b3a14ef6.htm" />
-  <HelpKINode Title="ParsePolyLineOrPolygon method" Url="html/09d198e0-2805-c5bc-8075-294c0fdc4b6a.htm" />
-  <HelpKINode Title="Parts property">
-    <HelpKINode Title="ShapePolygon.Parts Property " Url="html/a534719d-22a0-fac6-4561-df354ed25642.htm" />
-    <HelpKINode Title="ShapePolyLine.Parts Property " Url="html/e6612a9a-f396-b7a6-e7d1-db101d48e789.htm" />
-  </HelpKINode>
   <HelpKINode Title="Planned enumeration member" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
-  <HelpKINode Title="Point enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="Point property" Url="html/726a400f-2f10-926a-060f-7f9045bf4ed0.htm" />
-  <HelpKINode Title="PointD structure">
-    <HelpKINode Title="PointD Structure" Url="html/272bf673-ae02-1287-a4d5-ae65fa56cb66.htm" />
-    <HelpKINode Title="about PointD structure" Url="html/272bf673-ae02-1287-a4d5-ae65fa56cb66.htm" />
-    <HelpKINode Title="constructor" Url="html/f25dd63f-17ef-90ee-5e59-85c8aa21f619.htm" />
-    <HelpKINode Title="fields" Url="html/f852c388-3727-2331-3b20-c53127e3dace.htm" />
-    <HelpKINode Title="methods" Url="html/59cf2208-b4e4-890f-449f-6933faa7df85.htm" />
-  </HelpKINode>
-  <HelpKINode Title="PointD.PointD constructor" Url="html/f25dd63f-17ef-90ee-5e59-85c8aa21f619.htm" />
-  <HelpKINode Title="PointD.X field" Url="html/22bdd726-bef7-5d10-3f24-47bf49271e83.htm" />
-  <HelpKINode Title="PointD.Y field" Url="html/46fda71b-7ec8-6f51-30be-413fcaaf8990.htm" />
-  <HelpKINode Title="PointM enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="Points property" Url="html/20d6b7a4-8d31-6460-3048-f5a0c233a315.htm" />
-  <HelpKINode Title="PointZ enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="Polygon enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="PolygonM enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="PolygonZ enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="PolyLine enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="PolyLineM enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="PolyLineZ enumeration member" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
-  <HelpKINode Title="ProvidedOrder enumeration" Url="html/48430069-6919-88c3-31f9-965e08050f15.htm" />
-  <HelpKINode Title="RawMetadataOnly property" Url="html/a040b1b3-2305-0ab9-b0b7-f7dbfc92ffca.htm" />
   <HelpKINode Title="Read method">
     <HelpKINode Title="AcgMappingDictionary.Read Method " Url="html/b3e5389e-7eec-bc5e-1512-324dfc671d04.htm" />
     <HelpKINode Title="AcgReader.Read Method " Url="html/e966d6e3-4285-e1eb-a1aa-361862a72058.htm" />
     <HelpKINode Title="AcgShpReader.Read Method " Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />
     <HelpKINode Title="IAcgReader.Read Method " Url="html/e669a7fe-48b2-c923-11b7-14c973e3775e.htm" />
   </HelpKINode>
-  <HelpKINode Title="RecordNumber property" Url="html/295c955d-d2c4-d1e8-6baf-232f0e0f5bca.htm" />
-  <HelpKINode Title="RectangleD structure">
-    <HelpKINode Title="RectangleD Structure" Url="html/7b185e57-0751-67e0-343b-be83c5a1a6f3.htm" />
-    <HelpKINode Title="about RectangleD structure" Url="html/7b185e57-0751-67e0-343b-be83c5a1a6f3.htm" />
-    <HelpKINode Title="constructor" Url="html/7abb9f79-2e56-dc98-1a6f-c9d4466e4481.htm" />
-    <HelpKINode Title="fields" Url="html/efd179a0-13f9-e95d-b6e1-8324778d80d3.htm" />
-    <HelpKINode Title="methods" Url="html/37f9530e-67f9-1993-9d63-70e707d51c41.htm" />
-  </HelpKINode>
-  <HelpKINode Title="RectangleD.Bottom field" Url="html/3324c4af-6a1d-fc96-0adf-3116ec832397.htm" />
-  <HelpKINode Title="RectangleD.Left field" Url="html/93217bc3-af2c-f52e-4aa3-481756348b8c.htm" />
-  <HelpKINode Title="RectangleD.RectangleD constructor" Url="html/7abb9f79-2e56-dc98-1a6f-c9d4466e4481.htm" />
-  <HelpKINode Title="RectangleD.Right field" Url="html/3c8d963f-01d9-c005-eb01-464ed50ce41e.htm" />
-  <HelpKINode Title="RectangleD.Top field" Url="html/e62b83e1-beef-f985-4eb6-01115692e9c8.htm" />
-  <HelpKINode Title="Reset method" Url="html/0da44cb4-38d7-bcc4-c701-7040291782cd.htm" />
-  <HelpKINode Title="Right field" Url="html/3c8d963f-01d9-c005-eb01-464ed50ce41e.htm" />
-  <HelpKINode Title="Shape class">
-    <HelpKINode Title="Shape Class" Url="html/e33855e1-9381-fca6-7f77-247c01bec30d.htm" />
-    <HelpKINode Title="about Shape class" Url="html/e33855e1-9381-fca6-7f77-247c01bec30d.htm" />
-    <HelpKINode Title="constructor" Url="html/7fb42f7e-bc1c-6b47-3ed6-ab925fcf03f0.htm" />
-    <HelpKINode Title="methods" Url="html/96d61092-c18e-6020-5947-dcd69bcbe338.htm" />
-    <HelpKINode Title="properties" Url="html/04f8e046-f9a6-6bbe-c6ec-8fab5459b187.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Shape.DataRecord property" Url="html/d1ef1882-d231-12da-bf9e-56e0e7d549eb.htm" />
-  <HelpKINode Title="Shape.GetMetadata method" Url="html/727a21a7-f8d9-2a4e-7698-228d872a4ce5.htm" />
-  <HelpKINode Title="Shape.GetMetadataNames method" Url="html/7a62055b-3520-5423-b583-77982b239799.htm" />
-  <HelpKINode Title="Shape.ParseBoundingBox method" Url="html/246dd175-9a56-533e-0891-11e0b3a14ef6.htm" />
-  <HelpKINode Title="Shape.ParsePolyLineOrPolygon method" Url="html/09d198e0-2805-c5bc-8075-294c0fdc4b6a.htm" />
-  <HelpKINode Title="Shape.RecordNumber property" Url="html/295c955d-d2c4-d1e8-6baf-232f0e0f5bca.htm" />
-  <HelpKINode Title="Shape.Shape constructor" Url="html/7fb42f7e-bc1c-6b47-3ed6-ab925fcf03f0.htm" />
-  <HelpKINode Title="Shape.Type property" Url="html/3120cebc-7f31-923f-fa65-ded69e2d4178.htm" />
-  <HelpKINode Title="Shapefile class">
-    <HelpKINode Title="Shapefile Class" Url="html/3cf61f52-52ed-9176-dd69-181f13f7f274.htm" />
-    <HelpKINode Title="about Shapefile class" Url="html/3cf61f52-52ed-9176-dd69-181f13f7f274.htm" />
-    <HelpKINode Title="constructor" Url="html/5cae613f-523c-10bc-cbea-f4507686fcaa.htm" />
-    <HelpKINode Title="fields" Url="html/199e2377-21c1-e0d5-21df-63bff7c76815.htm" />
-    <HelpKINode Title="methods" Url="html/20a14418-b00f-5e6a-cf03-571bef5ec669.htm" />
-    <HelpKINode Title="properties" Url="html/8d03fa15-0d53-2111-8111-d8f11a59ee63.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Shapefile.BoundingBox property" Url="html/2f23ba6b-62be-2d03-2cfe-7f18a904f534.htm" />
-  <HelpKINode Title="Shapefile.Close method" Url="html/c5d4ae45-5ed9-296b-7513-12ed957ff10d.htm" />
-  <HelpKINode Title="Shapefile.ConnectionStringTemplate property" Url="html/5ff0f699-c5ed-349c-b6fe-037db0c010f9.htm" />
-  <HelpKINode Title="Shapefile.ConnectionStringTemplateAce field" Url="html/038c207b-bfbe-db6e-58a2-c84bc5fd6709.htm" />
-  <HelpKINode Title="Shapefile.ConnectionStringTemplateJet field" Url="html/29b165b5-184f-91ec-ae07-a7e23334e161.htm" />
-  <HelpKINode Title="Shapefile.Count property" Url="html/0e4fe20d-e4ec-bc42-0f54-36e866ba5e2d.htm" />
-  <HelpKINode Title="Shapefile.Current property" Url="html/5e9a430e-8441-3529-23e6-e212ff2810db.htm" />
-  <HelpKINode Title="Shapefile.Dispose method" Url="html/38aac168-f3cc-5150-6594-7398ac81f744.htm" />
-  <HelpKINode Title="Shapefile.Finalize method" Url="html/9e527688-0880-dc15-30bb-3374c57e7748.htm" />
-  <HelpKINode Title="Shapefile.GetEnumerator method" Url="html/f207f34e-abec-e0f7-83fb-c3d9b2b34ccf.htm" />
-  <HelpKINode Title="Shapefile.IEnumerable.GetEnumerator explicitly implemented method" Url="html/c05e0d75-8e6b-4674-1d34-294a7cbcb336.htm" />
-  <HelpKINode Title="Shapefile.IEnumerator.Current explicitly implemented property" Url="html/66871107-dad1-c536-b714-9afb548e7aa3.htm" />
-  <HelpKINode Title="Shapefile.MoveNext method" Url="html/9557577a-c012-bce2-2dac-8ac34b91d423.htm" />
-  <HelpKINode Title="Shapefile.Open method" Url="html/263de892-bb0a-97b9-3db5-76dc5d02f738.htm" />
-  <HelpKINode Title="Shapefile.RawMetadataOnly property" Url="html/a040b1b3-2305-0ab9-b0b7-f7dbfc92ffca.htm" />
-  <HelpKINode Title="Shapefile.Reset method" Url="html/0da44cb4-38d7-bcc4-c701-7040291782cd.htm" />
-  <HelpKINode Title="Shapefile.Shapefile constructor" Url="html/5cae613f-523c-10bc-cbea-f4507686fcaa.htm" />
-  <HelpKINode Title="Shapefile.Type property" Url="html/d5f71aca-8fe5-5d34-3189-24da684d7c09.htm" />
-  <HelpKINode Title="ShapeMultiPoint class">
-    <HelpKINode Title="ShapeMultiPoint Class" Url="html/2ce83baf-1a5a-dbc2-73d6-a1574687d5ee.htm" />
-    <HelpKINode Title="about ShapeMultiPoint class" Url="html/2ce83baf-1a5a-dbc2-73d6-a1574687d5ee.htm" />
-    <HelpKINode Title="constructor" Url="html/ee093e62-1c93-80fb-d1a4-cb8f7788b069.htm" />
-    <HelpKINode Title="methods" Url="html/c96a5759-66d2-1af2-e70d-1a4f15bea8f9.htm" />
-    <HelpKINode Title="properties" Url="html/8a4ec321-c4a1-bdfc-9411-56833e171d11.htm" />
-  </HelpKINode>
-  <HelpKINode Title="ShapeMultiPoint.BoundingBox property" Url="html/2f728669-4b2a-1223-1393-27a23f87273f.htm" />
-  <HelpKINode Title="ShapeMultiPoint.Points property" Url="html/20d6b7a4-8d31-6460-3048-f5a0c233a315.htm" />
-  <HelpKINode Title="ShapeMultiPoint.ShapeMultiPoint constructor" Url="html/ee093e62-1c93-80fb-d1a4-cb8f7788b069.htm" />
-  <HelpKINode Title="ShapePoint class">
-    <HelpKINode Title="ShapePoint Class" Url="html/d719c06d-309d-8162-4041-e075fb53cb6b.htm" />
-    <HelpKINode Title="about ShapePoint class" Url="html/d719c06d-309d-8162-4041-e075fb53cb6b.htm" />
-    <HelpKINode Title="constructor" Url="html/7e00883b-14ca-cfe6-3a11-8504428f1263.htm" />
-    <HelpKINode Title="methods" Url="html/cbe5fbb0-56bb-7304-453b-4236606fbadd.htm" />
-    <HelpKINode Title="properties" Url="html/02d5f2e1-d411-f0c4-e53f-f239ce3abe4f.htm" />
-  </HelpKINode>
-  <HelpKINode Title="ShapePoint.Point property" Url="html/726a400f-2f10-926a-060f-7f9045bf4ed0.htm" />
-  <HelpKINode Title="ShapePoint.ShapePoint constructor" Url="html/7e00883b-14ca-cfe6-3a11-8504428f1263.htm" />
-  <HelpKINode Title="ShapePolygon class">
-    <HelpKINode Title="ShapePolygon Class" Url="html/ffca890f-aa94-2cd8-d0e8-874d4b4b2c3a.htm" />
-    <HelpKINode Title="about ShapePolygon class" Url="html/ffca890f-aa94-2cd8-d0e8-874d4b4b2c3a.htm" />
-    <HelpKINode Title="constructor" Url="html/45c829ab-c3ba-ede1-3f72-73591dd55001.htm" />
-    <HelpKINode Title="methods" Url="html/b30d5a53-2f05-2be3-6df0-d56b76ea0cdc.htm" />
-    <HelpKINode Title="properties" Url="html/d207c20b-46bf-908c-7bae-1625d35e4ace.htm" />
-  </HelpKINode>
-  <HelpKINode Title="ShapePolygon.BoundingBox property" Url="html/b4bf01e8-6ecf-c098-27ae-94a9df59542d.htm" />
-  <HelpKINode Title="ShapePolygon.Parts property" Url="html/a534719d-22a0-fac6-4561-df354ed25642.htm" />
-  <HelpKINode Title="ShapePolygon.ShapePolygon constructor" Url="html/45c829ab-c3ba-ede1-3f72-73591dd55001.htm" />
-  <HelpKINode Title="ShapePolyLine class">
-    <HelpKINode Title="ShapePolyLine Class" Url="html/849dbb11-0134-0eb6-1ba6-6977ec64a579.htm" />
-    <HelpKINode Title="about ShapePolyLine class" Url="html/849dbb11-0134-0eb6-1ba6-6977ec64a579.htm" />
-    <HelpKINode Title="constructor" Url="html/5cb19a80-326b-2973-4cc9-d174567f3332.htm" />
-    <HelpKINode Title="methods" Url="html/f6b91ad2-d087-96d5-c8b9-96f7f5ec9086.htm" />
-    <HelpKINode Title="properties" Url="html/59299f51-6328-2253-d1e4-bfe83220225c.htm" />
-  </HelpKINode>
-  <HelpKINode Title="ShapePolyLine.BoundingBox property" Url="html/368f8a5a-9f4f-8132-953f-fb3e0431e0c8.htm" />
-  <HelpKINode Title="ShapePolyLine.Parts property" Url="html/e6612a9a-f396-b7a6-e7d1-db101d48e789.htm" />
-  <HelpKINode Title="ShapePolyLine.ShapePolyLine constructor" Url="html/5cb19a80-326b-2973-4cc9-d174567f3332.htm" />
-  <HelpKINode Title="ShapePolyLineM class">
-    <HelpKINode Title="ShapePolyLineM Class" Url="html/6485cf7b-f3c3-319c-9296-7321fefc997b.htm" />
-    <HelpKINode Title="about ShapePolyLineM class" Url="html/6485cf7b-f3c3-319c-9296-7321fefc997b.htm" />
-    <HelpKINode Title="constructor" Url="html/aab0845d-3f03-6d77-050f-c096d357fa24.htm" />
-    <HelpKINode Title="methods" Url="html/98cea20d-245b-bc06-3e58-d4486a1d4f68.htm" />
-    <HelpKINode Title="properties" Url="html/dd1b21eb-2bae-20dd-4f74-8d38868f95fe.htm" />
-  </HelpKINode>
-  <HelpKINode Title="ShapePolyLineM.M property" Url="html/3e594e6f-f35e-0c0e-43e5-9bb8e6921113.htm" />
-  <HelpKINode Title="ShapePolyLineM.Mmax property" Url="html/9d56e65e-3385-fa58-a538-c67501aed35b.htm" />
-  <HelpKINode Title="ShapePolyLineM.Mmin property" Url="html/dc37fc63-0422-db2e-efe8-d1b354d60f97.htm" />
-  <HelpKINode Title="ShapePolyLineM.ShapePolyLineM constructor" Url="html/aab0845d-3f03-6d77-050f-c096d357fa24.htm" />
-  <HelpKINode Title="ShapeType enumeration" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
   <HelpKINode Title="Source property" Url="html/6140135f-753c-7f6c-e63e-4813dc3c19da.htm" />
   <HelpKINode Title="Status property" Url="html/0e878ba2-133e-3bd2-2043-0145598c5b6c.htm" />
   <HelpKINode Title="StreetName property" Url="html/2c5d620c-0c51-5dc9-ff6e-9b73648776cd.htm" />
   <HelpKINode Title="StreetNumber property" Url="html/4caf8188-2dca-ba77-ac28-92aaec2909e0.htm" />
   <HelpKINode Title="Target property" Url="html/28510fbf-b34a-64af-6156-9dfa2ac64787.htm" />
-  <HelpKINode Title="ToDouble method" Url="html/d1a7a40a-4336-5673-daa4-0a5f4a28f983.htm" />
-  <HelpKINode Title="ToInt32 method" Url="html/be243b0c-fffa-3fef-b637-bf0f978fd0fe.htm" />
-  <HelpKINode Title="Top field" Url="html/e62b83e1-beef-f985-4eb6-01115692e9c8.htm" />
   <HelpKINode Title="TotalGrossSurface property" Url="html/a14d2efa-acf8-10c9-01c3-57fcf7931db2.htm" />
   <HelpKINode Title="TotalGrossSurfaceFixed property" Url="html/c5bd3555-0b5f-34c3-468f-f53213b4db34.htm" />
-  <HelpKINode Title="Type property">
-    <HelpKINode Title="Shape.Type Property " Url="html/3120cebc-7f31-923f-fa65-ded69e2d4178.htm" />
-    <HelpKINode Title="Shapefile.Type Property " Url="html/d5f71aca-8fe5-5d34-3189-24da684d7c09.htm" />
-  </HelpKINode>
   <HelpKINode Title="Unknown enumeration member" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
   <HelpKINode Title="Write method" Url="html/a5c71b3b-ca1f-5599-b904-b2b2fc091aa7.htm" />
-  <HelpKINode Title="X field" Url="html/22bdd726-bef7-5d10-3f24-47bf49271e83.htm" />
-  <HelpKINode Title="Y field" Url="html/46fda71b-7ec8-6f51-30be-413fcaaf8990.htm" />
 </HelpKI>

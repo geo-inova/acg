@@ -11,6 +11,7 @@ using System.Data;
 
 namespace ACG.Core.Readers
 {
+    ///<exclude/>
     /// <summary>
     /// Static factory class to create shape objects from a shape record
     /// </summary>

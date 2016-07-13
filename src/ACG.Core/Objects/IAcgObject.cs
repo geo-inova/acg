@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
+using GeoAPI.Geometries;
+
 namespace ACG.Core.Objects
 {
     /// <summary>
@@ -9,5 +11,14 @@ namespace ACG.Core.Objects
     /// </summary>
     public interface IAcgObject
     {
+        /// <summary>
+        /// Gets or sets object geometry.
+        /// </summary>
+        IGeometry Geometry { get; set; }
+
+        /// <summary>
+        /// Returns AreaCAD-GIS object type.
+        /// </summary>
+        AcgObjectType ObjectType { get; }
     }
 }

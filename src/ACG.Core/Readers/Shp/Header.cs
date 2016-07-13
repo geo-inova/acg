@@ -9,6 +9,7 @@ using System.Text;
 
 namespace ACG.Core.Readers
 {
+    ///<exclude/>
     /// <summary>
     /// The ShapeType of a shape in a Shapefile
     /// </summary>
@@ -85,6 +86,7 @@ namespace ACG.Core.Readers
         MultiPatch = 31
     }
 
+    ///<exclude/>
     /// <summary>
     /// The header data for a Shapefile main file or Index file
     /// </summary>

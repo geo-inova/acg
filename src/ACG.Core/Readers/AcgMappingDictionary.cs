@@ -18,7 +18,7 @@ namespace ACG.Core.Readers
         /// <summary>
         /// Raads file mapping rules from specified file.
         /// </summary>
-        /// <param name="filePath"></param>
+        /// <param name="filePath">File path to field mappings definition file.</param>
         public void Read(string filePath)
         {
             /// TODO

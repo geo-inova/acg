@@ -23,6 +23,15 @@ namespace ACG.Core.Objects
             this.TotalGrossSurfaceFixed = 0;
         }
 
+        /// <inheritdoc/>
+        public override AcgObjectType ObjectType
+        {
+            get 
+            { 
+                return AcgObjectType.Building; 
+            }
+        }
+
         /// <summary>
         /// Returns building height (m).
         /// </summary>
