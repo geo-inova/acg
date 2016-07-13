@@ -22,5 +22,10 @@ namespace ACG.Core.Readers
         /// Gets or sets <see cref="AcgObjectType"/> to read.
         /// </summary>
         AcgObjectType ObjectType { get; set; }
+
+        /// <summary>
+        /// Gets or sets field mapping rules.
+        /// </summary>
+        AcgMappingDictionary Mappings { get; set; }
     }
 }

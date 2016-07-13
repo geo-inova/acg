@@ -1,0 +1,6 @@
+[Building]
+TotalGrossSurface = POV_BGP
+StreetName = ADR_ULICA
+StreetNumber = ADR_BROJ
+Description = PRIMJEDBA
+DataSourceYear = GOD_IZG

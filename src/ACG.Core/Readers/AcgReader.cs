@@ -24,5 +24,8 @@ namespace ACG.Core.Readers
 
         /// <inheritdoc/>
         public AcgObjectType ObjectType { get; set; }
+
+        /// <inheritdoc/>
+        public AcgMappingDictionary Mappings { get; set; }
     }
 }

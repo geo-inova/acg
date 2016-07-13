@@ -7,6 +7,8 @@
   <HelpKINode Title="ACG.Core.Objects.AcgObjectType enumeration" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
   <HelpKINode Title="ACG.Core.Objects.IAcgObject interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm" />
   <HelpKINode Title="ACG.Core.Readers namespace" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm" />
+  <HelpKINode Title="ACG.Core.Readers.AcgMapping class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
+  <HelpKINode Title="ACG.Core.Readers.AcgMappingDictionary class" Url="html/ee4d7cbc-7cb4-0328-76a4-d1944f4a287a.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgReader class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgShpReader class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm" />
   <HelpKINode Title="ACG.Core.Readers.EndianBitConverter class" Url="html/e885c5af-4918-9362-9f14-9fd13031c35b.htm" />
@@ -40,6 +42,25 @@
   <HelpKINode Title="AcgBuilding.StreetNumber property" Url="html/4caf8188-2dca-ba77-ac28-92aaec2909e0.htm" />
   <HelpKINode Title="AcgBuilding.TotalGrossSurface property" Url="html/a14d2efa-acf8-10c9-01c3-57fcf7931db2.htm" />
   <HelpKINode Title="AcgBuilding.TotalGrossSurfaceFixed property" Url="html/c5bd3555-0b5f-34c3-468f-f53213b4db34.htm" />
+  <HelpKINode Title="AcgMapping class">
+    <HelpKINode Title="AcgMapping Class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
+    <HelpKINode Title="about AcgMapping class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
+    <HelpKINode Title="constructor" Url="html/720eee01-5ead-923e-914a-aa0baec079e5.htm" />
+    <HelpKINode Title="methods" Url="html/213beb79-3c53-c90f-e20e-4a0dab6406d7.htm" />
+    <HelpKINode Title="properties" Url="html/6c357b10-9a4a-a091-7b5a-1614fc4f3708.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgMapping.AcgMapping constructor" Url="html/720eee01-5ead-923e-914a-aa0baec079e5.htm" />
+  <HelpKINode Title="AcgMapping.Source property" Url="html/6140135f-753c-7f6c-e63e-4813dc3c19da.htm" />
+  <HelpKINode Title="AcgMapping.Target property" Url="html/28510fbf-b34a-64af-6156-9dfa2ac64787.htm" />
+  <HelpKINode Title="AcgMappingDictionary class">
+    <HelpKINode Title="AcgMappingDictionary Class" Url="html/ee4d7cbc-7cb4-0328-76a4-d1944f4a287a.htm" />
+    <HelpKINode Title="about AcgMappingDictionary class" Url="html/ee4d7cbc-7cb4-0328-76a4-d1944f4a287a.htm" />
+    <HelpKINode Title="constructor" Url="html/0af8a0c3-76a8-8e56-3528-26e4cd16f72d.htm" />
+    <HelpKINode Title="methods" Url="html/48e0c16c-cb5f-021b-865c-4384a9536878.htm" />
+    <HelpKINode Title="properties" Url="html/da67aea6-79e0-379c-6435-8d5535d50c4c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgMappingDictionary.AcgMappingDictionary constructor" Url="html/0af8a0c3-76a8-8e56-3528-26e4cd16f72d.htm" />
+  <HelpKINode Title="AcgMappingDictionary.Read method" Url="html/b3e5389e-7eec-bc5e-1512-324dfc671d04.htm" />
   <HelpKINode Title="AcgObject class">
     <HelpKINode Title="AcgObject Class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm" />
     <HelpKINode Title="about AcgObject class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm" />
@@ -67,6 +88,7 @@
     <HelpKINode Title="properties" Url="html/e37cdb4e-ebcd-19e5-7705-6235428b4973.htm" />
   </HelpKINode>
   <HelpKINode Title="AcgReader.AcgReader constructor" Url="html/f10202c6-57d8-9484-1dd4-116d2b22866a.htm" />
+  <HelpKINode Title="AcgReader.Mappings property" Url="html/f39f2e32-6117-ee5b-5e3c-94e0feb6dd3a.htm" />
   <HelpKINode Title="AcgReader.ObjectType property" Url="html/8ea2f96c-8fd9-6123-ca4b-44694e872fbe.htm" />
   <HelpKINode Title="AcgReader.Read method" Url="html/e966d6e3-4285-e1eb-a1aa-361862a72058.htm" />
   <HelpKINode Title="AcgShpReader class">
@@ -136,6 +158,7 @@
     <HelpKINode Title="methods" Url="html/9b63ee79-3a7f-e52b-aecd-ba9b1fde8ea5.htm" />
     <HelpKINode Title="properties" Url="html/798c0b96-a916-9e27-2b9d-d99c448edb1d.htm" />
   </HelpKINode>
+  <HelpKINode Title="IAcgReader.Mappings property" Url="html/2c0f3c57-67b3-deed-32a4-f92365cccb00.htm" />
   <HelpKINode Title="IAcgReader.ObjectType property" Url="html/fd825a55-ecea-675f-4b98-17d5dcc24465.htm" />
   <HelpKINode Title="IAcgReader.Read method" Url="html/e669a7fe-48b2-c923-11b7-14c973e3775e.htm" />
   <HelpKINode Title="IAcgWriter interface">
@@ -149,6 +172,10 @@
   <HelpKINode Title="Left field" Url="html/93217bc3-af2c-f52e-4aa3-481756348b8c.htm" />
   <HelpKINode Title="Little enumeration member" Url="html/48430069-6919-88c3-31f9-965e08050f15.htm" />
   <HelpKINode Title="M property" Url="html/3e594e6f-f35e-0c0e-43e5-9bb8e6921113.htm" />
+  <HelpKINode Title="Mappings property">
+    <HelpKINode Title="AcgReader.Mappings Property " Url="html/f39f2e32-6117-ee5b-5e3c-94e0feb6dd3a.htm" />
+    <HelpKINode Title="IAcgReader.Mappings Property " Url="html/2c0f3c57-67b3-deed-32a4-f92365cccb00.htm" />
+  </HelpKINode>
   <HelpKINode Title="Metadata property" Url="html/a4dded11-923d-5dfe-6922-80c851be1fbe.htm" />
   <HelpKINode Title="Mmax property" Url="html/9d56e65e-3385-fa58-a538-c67501aed35b.htm" />
   <HelpKINode Title="Mmin property" Url="html/dc37fc63-0422-db2e-efe8-d1b354d60f97.htm" />
@@ -194,6 +221,7 @@
   <HelpKINode Title="ProvidedOrder enumeration" Url="html/48430069-6919-88c3-31f9-965e08050f15.htm" />
   <HelpKINode Title="RawMetadataOnly property" Url="html/a040b1b3-2305-0ab9-b0b7-f7dbfc92ffca.htm" />
   <HelpKINode Title="Read method">
+    <HelpKINode Title="AcgMappingDictionary.Read Method " Url="html/b3e5389e-7eec-bc5e-1512-324dfc671d04.htm" />
     <HelpKINode Title="AcgReader.Read Method " Url="html/e966d6e3-4285-e1eb-a1aa-361862a72058.htm" />
     <HelpKINode Title="AcgShpReader.Read Method " Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />
     <HelpKINode Title="IAcgReader.Read Method " Url="html/e669a7fe-48b2-c923-11b7-14c973e3775e.htm" />
@@ -305,9 +333,11 @@
   <HelpKINode Title="ShapePolyLineM.Mmin property" Url="html/dc37fc63-0422-db2e-efe8-d1b354d60f97.htm" />
   <HelpKINode Title="ShapePolyLineM.ShapePolyLineM constructor" Url="html/aab0845d-3f03-6d77-050f-c096d357fa24.htm" />
   <HelpKINode Title="ShapeType enumeration" Url="html/732322bb-7787-5f96-d60b-e95fc69b5c0f.htm" />
+  <HelpKINode Title="Source property" Url="html/6140135f-753c-7f6c-e63e-4813dc3c19da.htm" />
   <HelpKINode Title="Status property" Url="html/0e878ba2-133e-3bd2-2043-0145598c5b6c.htm" />
   <HelpKINode Title="StreetName property" Url="html/2c5d620c-0c51-5dc9-ff6e-9b73648776cd.htm" />
   <HelpKINode Title="StreetNumber property" Url="html/4caf8188-2dca-ba77-ac28-92aaec2909e0.htm" />
+  <HelpKINode Title="Target property" Url="html/28510fbf-b34a-64af-6156-9dfa2ac64787.htm" />
   <HelpKINode Title="ToDouble method" Url="html/d1a7a40a-4336-5673-daa4-0a5f4a28f983.htm" />
   <HelpKINode Title="ToInt32 method" Url="html/be243b0c-fffa-3fef-b637-bf0f978fd0fe.htm" />
   <HelpKINode Title="Top field" Url="html/e62b83e1-beef-f985-4eb6-01115692e9c8.htm" />
