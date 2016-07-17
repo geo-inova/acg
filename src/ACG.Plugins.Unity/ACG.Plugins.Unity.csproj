@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcgEnvironmentBehaviourScript.cs" />
+    <Compile Include="AcgSpectatorBehaviourScript.cs" />
     <Compile Include="AcgUnityBehaviourScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

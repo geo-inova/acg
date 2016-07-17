@@ -32,6 +32,23 @@ namespace ACG.Core.Tests
              
         }
 
+        [TestMethod]
+        public void AcgDxfReaderTest()
+        {
+            //Intialize new DXF reader instance
+            AcgDxfReader reader = new AcgDxfReader();
+
+            //Return only building objects
+            reader.ObjectType = AcgObjectType.Building;
+
+            //Get path to specific SHP file
+            string fileName = Path.Combine(GetDatPath(), @"dxf\banjaluka_buildings_2000.dxf");
+
+            //Read ACG objects from SHP file
+            List<IAcgObject> objs = reader.Read(fileName);
+
+        }
+
         /// <summary>
         /// Returns absolute path to local ..\dat folder.
         /// </summary>

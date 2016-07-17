@@ -36,6 +36,9 @@
     <Reference Include="GeoAPI">
       <HintPath>..\..\ext\geoapi\GeoAPI.dll</HintPath>
     </Reference>
+    <Reference Include="netDxf">
+      <HintPath>..\..\ext\netdxf\netDxf.dll</HintPath>
+    </Reference>
     <Reference Include="NetTopologySuite">
       <HintPath>..\..\ext\nts\NetTopologySuite.dll</HintPath>
     </Reference>
@@ -54,6 +57,7 @@
     <Compile Include="Readers\AcgMapping.cs" />
     <Compile Include="Readers\AcgMappingDictionary.cs" />
     <Compile Include="Readers\AcgReader.cs" />
+    <Compile Include="Readers\Dxf\AcgDxfReader.cs" />
     <Compile Include="Readers\IAcgReader.cs" />
     <Compile Include="Writers\IAcgWriter.cs" />
     <Compile Include="Objects\AcgBuilding.cs" />
