@@ -7,10 +7,10 @@ using GeoAPI.Geometries;
 namespace ACG.Core.Objects
 {
     /// <summary>
-    /// Represents a building.
+    /// Represents a permanent residental, commercial or utility structure.
     /// </summary>
     /// <remarks>
-    /// Building base geometry is always polygonal.
+    /// Geometry is always polygonal.
     /// </remarks>
     public class AcgBuilding : AcgObject
     {

@@ -21,7 +21,7 @@ namespace ACG.Core.Readers
         /// <param name="filePath">File path to field mappings definition file.</param>
         public void Read(string filePath)
         {
-            /// TODO
+            // TODO
         }
     }
 }

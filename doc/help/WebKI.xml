@@ -7,6 +7,7 @@
   <HelpKINode Title="ACG.Core.Objects.AcgObjectType enumeration" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
   <HelpKINode Title="ACG.Core.Objects.IAcgObject interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm" />
   <HelpKINode Title="ACG.Core.Readers namespace" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm" />
+  <HelpKINode Title="ACG.Core.Readers.AcgDxfReader class" Url="html/70f604de-c158-c2e9-31c1-355529c67ffc.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgMapping class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgMappingDictionary class" Url="html/ee4d7cbc-7cb4-0328-76a4-d1944f4a287a.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgReader class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm" />
@@ -15,6 +16,8 @@
   <HelpKINode Title="ACG.Core.Writers namespace" Url="html/b7a2ab44-65dc-bf56-49f0-81b487fc88a6.htm" />
   <HelpKINode Title="ACG.Core.Writers.IAcgWriter interface" Url="html/cff9cadb-fa46-e7bd-7176-978be572297f.htm" />
   <HelpKINode Title="ACG.Plugins.Unity namespace" Url="html/60827cc5-de4e-ddef-80ed-43a9f7740040.htm" />
+  <HelpKINode Title="ACG.Plugins.Unity.AcgEnvironmentBehaviourScript class" Url="html/c93a032b-2f6f-64cf-de05-5878ee1fddea.htm" />
+  <HelpKINode Title="ACG.Plugins.Unity.AcgSpectatorBehaviourScript class" Url="html/7ccd18e5-ea24-8997-7877-def5be1477cd.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.AcgUnityBehaviourScript class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm" />
   <HelpKINode Title="AcgBuilding class">
     <HelpKINode Title="AcgBuilding Class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm" />
@@ -31,6 +34,23 @@
   <HelpKINode Title="AcgBuilding.StreetNumber property" Url="html/4caf8188-2dca-ba77-ac28-92aaec2909e0.htm" />
   <HelpKINode Title="AcgBuilding.TotalGrossSurface property" Url="html/a14d2efa-acf8-10c9-01c3-57fcf7931db2.htm" />
   <HelpKINode Title="AcgBuilding.TotalGrossSurfaceFixed property" Url="html/c5bd3555-0b5f-34c3-468f-f53213b4db34.htm" />
+  <HelpKINode Title="AcgDxfReader class">
+    <HelpKINode Title="AcgDxfReader Class" Url="html/70f604de-c158-c2e9-31c1-355529c67ffc.htm" />
+    <HelpKINode Title="about AcgDxfReader class" Url="html/70f604de-c158-c2e9-31c1-355529c67ffc.htm" />
+    <HelpKINode Title="constructor" Url="html/bc27f3e1-4440-d939-e904-eb8822d2d5f0.htm" />
+    <HelpKINode Title="methods" Url="html/a8dc7cba-095b-b513-601d-05a92283bced.htm" />
+    <HelpKINode Title="properties" Url="html/0d75c43e-ad87-b9c5-4437-41485523c759.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgDxfReader.AcgDxfReader constructor" Url="html/bc27f3e1-4440-d939-e904-eb8822d2d5f0.htm" />
+  <HelpKINode Title="AcgDxfReader.Read method" Url="html/f2a95efd-198f-1ab8-d7eb-f0aee5b66a28.htm" />
+  <HelpKINode Title="AcgEnvironmentBehaviourScript class">
+    <HelpKINode Title="AcgEnvironmentBehaviourScript Class" Url="html/c93a032b-2f6f-64cf-de05-5878ee1fddea.htm" />
+    <HelpKINode Title="about AcgEnvironmentBehaviourScript class" Url="html/c93a032b-2f6f-64cf-de05-5878ee1fddea.htm" />
+    <HelpKINode Title="constructor" Url="html/b9b9774c-3cc4-bf36-969f-7e1b7a0918d2.htm" />
+    <HelpKINode Title="methods" Url="html/4045cf36-cec1-fcaa-704f-71c722a3aed7.htm" />
+    <HelpKINode Title="properties" Url="html/b32e1dd8-055e-c352-b4db-181db8b68bc5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgEnvironmentBehaviourScript.AcgEnvironmentBehaviourScript constructor" Url="html/b9b9774c-3cc4-bf36-969f-7e1b7a0918d2.htm" />
   <HelpKINode Title="AcgMapping class">
     <HelpKINode Title="AcgMapping Class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
     <HelpKINode Title="about AcgMapping class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
@@ -90,6 +110,14 @@
   </HelpKINode>
   <HelpKINode Title="AcgShpReader.AcgShpReader constructor" Url="html/330a3d9e-44f4-ca93-e15b-d644cf6b08e1.htm" />
   <HelpKINode Title="AcgShpReader.Read method" Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />
+  <HelpKINode Title="AcgSpectatorBehaviourScript class">
+    <HelpKINode Title="AcgSpectatorBehaviourScript Class" Url="html/7ccd18e5-ea24-8997-7877-def5be1477cd.htm" />
+    <HelpKINode Title="about AcgSpectatorBehaviourScript class" Url="html/7ccd18e5-ea24-8997-7877-def5be1477cd.htm" />
+    <HelpKINode Title="constructor" Url="html/6fd9d0fe-8b60-cacc-a021-99f3ada77688.htm" />
+    <HelpKINode Title="methods" Url="html/7fdfcde4-4194-2a7c-8252-789a2213eba6.htm" />
+    <HelpKINode Title="properties" Url="html/3291f427-31b0-231a-188c-d4cf4423d552.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgSpectatorBehaviourScript.AcgSpectatorBehaviourScript constructor" Url="html/6fd9d0fe-8b60-cacc-a021-99f3ada77688.htm" />
   <HelpKINode Title="AcgUnityBehaviourScript class">
     <HelpKINode Title="AcgUnityBehaviourScript Class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm" />
     <HelpKINode Title="about AcgUnityBehaviourScript class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm" />
@@ -150,6 +178,7 @@
   </HelpKINode>
   <HelpKINode Title="Planned enumeration member" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
   <HelpKINode Title="Read method">
+    <HelpKINode Title="AcgDxfReader.Read Method " Url="html/f2a95efd-198f-1ab8-d7eb-f0aee5b66a28.htm" />
     <HelpKINode Title="AcgMappingDictionary.Read Method " Url="html/b3e5389e-7eec-bc5e-1512-324dfc671d04.htm" />
     <HelpKINode Title="AcgReader.Read Method " Url="html/e966d6e3-4285-e1eb-a1aa-361862a72058.htm" />
     <HelpKINode Title="AcgShpReader.Read Method " Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />

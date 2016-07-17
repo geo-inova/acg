@@ -42,19 +42,24 @@ namespace ACG.Core.Readers
                             building.Metadata += rekord.Value;
                         }
                     }
+
                     List<Coordinate> points = new List<Coordinate>();
+                    Coordinate coordinate = new Coordinate();
+
                     foreach (LwPolylineVertex vertex in polyline.Vertexes)
                     {
-                        Coordinate coordinate = new Coordinate();
                         Vector2 location = vertex.Location;
                         coordinate.X = location.X;
                         coordinate.Y = location.Y;
                         points.Add(coordinate);
                     }
-                    LinearRing linearing = new LinearRing(points.ToArray());
-                    Polygon polygon = new Polygon(linearing);
-                    building.Geometry = polygon;
-                    objectList.Add(building);
+                    if (points.Count > 3)
+                    {
+                        LinearRing linearing = new LinearRing(points.ToArray());
+                        Polygon polygon = new Polygon(linearing);
+                        building.Geometry = polygon;
+                        objectList.Add(building);
+                    }
                 }
             }
             return objectList;

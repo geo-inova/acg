@@ -18,6 +18,11 @@ namespace ACG.Core.Objects
         /// <summary>
         /// Permanent residental, commercial or utility structure.
         /// </summary>
-        Building = 1
+        Building = 1,
+
+        /// <summary>
+        /// Cadastral parcel, a basic building block of national land registry.
+        /// </summary>
+        Parcel = 2
     }
 }
