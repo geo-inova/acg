@@ -1,7 +1,6 @@
 (defun C:acgexportodt()
 
-
-
+(vl-load-com)
 
 (defun C:acgparcel()
 
