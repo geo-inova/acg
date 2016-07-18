@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcgBuildingComponent.cs" />
+    <Compile Include="AcgBuildingComponentEditor.cs" />
     <Compile Include="AcgEnvironmentBehaviourScript.cs" />
     <Compile Include="AcgSpectatorBehaviourScript.cs" />
     <Compile Include="AcgUnityBehaviourScript.cs" />
