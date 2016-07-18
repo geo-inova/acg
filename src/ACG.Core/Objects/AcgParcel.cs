@@ -11,7 +11,7 @@ namespace ACG.Core.Objects
     /// <remarks>
     /// Geometry is always polygonal.
     /// </remarks>
-    class AcgParcel : AcgObject
+    public class AcgParcel : AcgObject
     {
         /// <inheritdoc/>
         public AcgParcel()

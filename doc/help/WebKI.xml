@@ -5,6 +5,7 @@
   <HelpKINode Title="ACG.Core.Objects.AcgObject class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm" />
   <HelpKINode Title="ACG.Core.Objects.AcgObjectStatus enumeration" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
   <HelpKINode Title="ACG.Core.Objects.AcgObjectType enumeration" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
+  <HelpKINode Title="ACG.Core.Objects.AcgParcel class" Url="html/a1978f29-9e65-b971-a1c4-543a6b1a37dc.htm" />
   <HelpKINode Title="ACG.Core.Objects.IAcgObject interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm" />
   <HelpKINode Title="ACG.Core.Readers namespace" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm" />
   <HelpKINode Title="ACG.Core.Readers.AcgDxfReader class" Url="html/70f604de-c158-c2e9-31c1-355529c67ffc.htm" />
@@ -90,6 +91,15 @@
   <HelpKINode Title="AcgObject.Status property" Url="html/0e878ba2-133e-3bd2-2043-0145598c5b6c.htm" />
   <HelpKINode Title="AcgObjectStatus enumeration" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
   <HelpKINode Title="AcgObjectType enumeration" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
+  <HelpKINode Title="AcgParcel class">
+    <HelpKINode Title="AcgParcel Class" Url="html/a1978f29-9e65-b971-a1c4-543a6b1a37dc.htm" />
+    <HelpKINode Title="about AcgParcel class" Url="html/a1978f29-9e65-b971-a1c4-543a6b1a37dc.htm" />
+    <HelpKINode Title="constructor" Url="html/d04fd197-3ac2-9d41-f580-c351a8014d15.htm" />
+    <HelpKINode Title="methods" Url="html/f5c026dd-fce8-32cc-7fb7-6737fc36af41.htm" />
+    <HelpKINode Title="properties" Url="html/fd76f251-a1e0-66c3-e831-5d0f877a4bb7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgParcel.AcgParcel constructor" Url="html/d04fd197-3ac2-9d41-f580-c351a8014d15.htm" />
+  <HelpKINode Title="AcgParcel.ObjectType property" Url="html/e095d538-829c-442a-598e-46e17f6db39e.htm" />
   <HelpKINode Title="AcgReader class">
     <HelpKINode Title="AcgReader Class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm" />
     <HelpKINode Title="about AcgReader class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm" />
@@ -172,6 +182,7 @@
   <HelpKINode Title="ObjectType property">
     <HelpKINode Title="AcgBuilding.ObjectType Property " Url="html/56a5f779-44b7-72fc-a9aa-cae0b9dfc260.htm" />
     <HelpKINode Title="AcgObject.ObjectType Property " Url="html/26016b22-ccb5-bfd5-5781-e18b37281ffc.htm" />
+    <HelpKINode Title="AcgParcel.ObjectType Property " Url="html/e095d538-829c-442a-598e-46e17f6db39e.htm" />
     <HelpKINode Title="AcgReader.ObjectType Property " Url="html/8ea2f96c-8fd9-6123-ca4b-44694e872fbe.htm" />
     <HelpKINode Title="IAcgObject.ObjectType Property " Url="html/6dd18ed7-552d-294a-d3a7-69eb1d362cb4.htm" />
     <HelpKINode Title="IAcgReader.ObjectType Property " Url="html/fd825a55-ecea-675f-4b98-17d5dcc24465.htm" />
