@@ -1,4 +1,4 @@
-(defun C:acgexport()
+(defun C:acgexportodt()
 
 
 
@@ -13,181 +13,211 @@
             (("colname" . "DataSourceAuthority") 
              ("coldesc" . "Oficijelni autor izvornih prostornih podataka.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "BlockNumber") 
              ("coldesc" . "Oznaka (broj) bloka kome parcela pripada.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define a field 
             (("colname" . "Number") 
              ("coldesc" . "Broj katastarske parcele.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "CountryName") 
              ("coldesc" . "Naziv države u kojoj se parcela nalazi.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define a field 
             (("colname" . "StateName") 
              ("coldesc" . "Naziv entiteta (republike, pokrajine) u kome se parcela nalazi.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "DataSourceYearCreated") 
              ("coldesc" . "Godina izrade prostornih podataka.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define a field 
             (("colname" . "GUID") 
              ("coldesc" . "Jedinstveni identifikator")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "DataSourceURL") 
              ("coldesc" . "URL adresa (hiperlink) prostornog podatka.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define a field 
             (("colname" . "SubmissionNames") 
              ("coldesc" . "Imena i prezimena podnosilaca zahtjeva.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "DataSourceAuthor") 
              ("coldesc" . "Izradivac digitalnih prostornih podataka.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define a field 
             (("colname" . "CadastralUnitName") 
              ("coldesc" . "Naziv katastarske opštine u u kojoj se parcela nalazi.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "DataSourceMethod") 
              ("coldesc" . "Metoda akvizicije izvornih prostornih podataka.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define a field 
             (("colname" . "DataSourceMonthCreated") 
              ("coldesc" . "Mjesec izrade prostornih podataka.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "Type") 
              ("coldesc" . "Primarna namjena površine pod parcelom.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define a field 
             (("colname" . "TypeL0") 
              ("coldesc" . "Primarna namjena površine pod parcelom.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "TypeL1") 
              ("coldesc" . "Sekundarna namjena površine pod parcelom u okviru primarne namjene.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define more fields as needed 
 	    (("colname" . "TypeL2") 
              ("coldesc" . "Tercijalna namjena površine pod parcelom u okviru sekundarne namjene.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define a field 
             (("colname" . "LocationDescription") 
              ("coldesc" . "Dodatni tekstualni opis lokacije na kojoj se parcela nalazi.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "MunicipalityName") 
              ("coldesc" . "Naziv opštine u kojoj se parcela nalazi.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define more fields as needed 
 	    (("colname" . "SubNumber") 
              ("coldesc" . "Podbroj katastarske parcele.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define more fields as needed 
 	    (("colname" . "FootprintSurface") 
              ("coldesc" . "Ukupna izracunata površina parcele (kvm).")  
              ("coltype" . "real") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define a field 
             (("colname" . "FootprintSurfaceFixed") 
              ("coldesc" . "Ukupna zadata površina parcele (kvm).")  
              ("coltype" . "real") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "DataSourceScale") 
              ("coldesc" . "Razmjera izvornih prostornih podataka.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define more fields as needed 
 	    (("colname" . "RegionName") 
              ("coldesc" . "Naziv regiona (dijela države, kantona) u kome se parcela nalazi.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define more fields as needed 
 	    (("colname" . "Status") 
              ("coldesc" . "Tekuce stanje katastarske parcele.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define more fields as needed 
 	    (("colname" . "PreviousNumber") 
              ("coldesc" . "Broj katastarske parcele u starom premjeru.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    ; Define a field 
             (("colname" . "ForeignKey") 
              ("coldesc" . "Kljuc iz eksterne tabele")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "SoilType") 
              ("coldesc" . "Vrsta zemljišta pod parcelom.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
 	    ; Define a field 
             (("colname" . "SubmissionFlag") 
              ("coldesc" . "Indikator podnesenih zahtjeva nad katastarskom parcelom.")  
              ("coltype" . "integer") 
-             ("defaultval" . "0"))
+             ("defaultval" . "0")
+		)
 
             ; Define more fields as needed 
 	    (("colname" . "ZoneNumber") 
              ("coldesc" . "Oznaka (broj) zone kojoj parcela pripada.")  
              ("coltype" . "character") 
-             ("defaultval" . "null"))
+             ("defaultval" . "nil")
+		)
 
 	    
 	    )))
@@ -239,6 +269,8 @@ sscnt))
 
 (setq b (cdr sslist))
 
+(setq dada0 (vla-get-area (vlax-ename->vla-object a)))
+
 (setq dada(assoc -3 (entget a '("ACG_PARCEL"))))
 
 (setq dada1 (car(cdr dada)))
@@ -267,7 +299,12 @@ sscnt))
 
 (ade_odsetfield a "Parcel" "Number" 0 data3)
 
-(ade_odsetfield a "Parcel" "FootprintSurface" 0 data4)
+  	(cond ((/= data4 nil)
+	(ade_odsetfield a "Parcel" "FootprintSurfaceFixed" 0 data4)
+	(ade_odsetfield a "Parcel" "FootprintSurface" 0 data4)
+	)							
+	(T (ade_odsetfield a "Parcel" "FootprintSurface" 0 dada0))
+	)
 
 (ade_odsetfield a "Parcel" "CountryName" 0 data5)
 
@@ -279,12 +316,13 @@ sscnt))
 
 (ade_odsetfield a "Parcel" "CadastralUnitName" 0 data9)
 
+(ade_odsetfield a "Parcel" "GUID" 0 data1)
+
 (setq sslist b)
 
 )
 
 ;(setq elist (entget a  '("ACG_PARCEL")))
 
-;(command "mapexport" )
 
 )

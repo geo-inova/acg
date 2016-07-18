@@ -1,4 +1,4 @@
-(defun C:ACGEXPORT()											;define the function
+(defun C:ACGEXPORTDXF()											;define the function
 
 (setq pth
 	(getfiled "Path: " "c:/program files/<AutoCAD installation directory>/support/" "dxf" 1)	; specify the name and path of a 
