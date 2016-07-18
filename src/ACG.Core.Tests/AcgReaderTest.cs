@@ -29,7 +29,6 @@ namespace ACG.Core.Tests
 
             //Read ACG objects from SHP file
             List<IAcgObject> objs = reader.Read(fileName);
-             
         }
 
         [TestMethod]
@@ -47,6 +46,8 @@ namespace ACG.Core.Tests
             //Read ACG objects from SHP file
             List<IAcgObject> objs = reader.Read(fileName);
 
+            //Assert number of buildings in file
+            Assert.AreEqual(objs.Count, 28);
         }
 
         /// <summary>

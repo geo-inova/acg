@@ -30,17 +30,12 @@ namespace ACG.Core.Readers
             {
                 foreach (LwPolyline polyline in dxf.LwPolylines)
                 {
-                    AcgBuilding building = new AcgBuilding();
-
                     XDataDictionary xdatadic = polyline.XData;
+                    string appID = "";
 
                     foreach (XData xdata in xdatadic.Values)
                     {
-                        List<XDataRecord> rekordlist = xdata.XDataRecord;
-                        foreach (XDataRecord rekord in rekordlist)
-                        {
-                            building.Metadata += rekord.Value;
-                        }
+                        appID = xdata.ApplicationRegistry.Name;
                     }
 
                     List<Coordinate> points = new List<Coordinate>();
@@ -53,12 +48,42 @@ namespace ACG.Core.Readers
                         coordinate.Y = location.Y;
                         points.Add(coordinate);
                     }
-                    if (points.Count > 3)
+
+                    LinearRing linearing = new LinearRing(points.ToArray());
+                    Polygon polygon = new Polygon(linearing);
+
+                    switch (appID)
                     {
-                        LinearRing linearing = new LinearRing(points.ToArray());
-                        Polygon polygon = new Polygon(linearing);
-                        building.Geometry = polygon;
-                        objectList.Add(building);
+                        case "ACG_BUILDING":
+                            AcgBuilding building = new AcgBuilding();
+                            foreach (XData xdata in xdatadic.Values)
+                            {
+                                List<XDataRecord> rekordlist = xdata.XDataRecord;
+                                foreach (XDataRecord rekord in rekordlist)
+                                {
+                                    building.Metadata += rekord.Value;
+                                }
+                            }
+                            building.Geometry = polygon;
+                            objectList.Add(building);
+                            break;
+
+                        case "ACG_PARCEL":
+                            AcgParcel parcel = new AcgParcel();
+                            foreach (XData xdata in xdatadic.Values)
+                            {
+                                List<XDataRecord> rekordlist = xdata.XDataRecord;
+                                foreach (XDataRecord rekord in rekordlist)
+                                {
+                                    parcel.Metadata += rekord.Value;
+                                }
+                            }
+                            parcel.Geometry = polygon;
+                            objectList.Add(parcel);
+                            break;
+
+                        default:
+                            break;
                     }
                 }
             }
