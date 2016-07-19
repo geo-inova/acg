@@ -61,7 +61,9 @@
   <ItemGroup>
     <Compile Include="AcgBuildingComponent.cs" />
     <Compile Include="AcgBuildingComponentEditor.cs" />
+    <Compile Include="AcgEditorMenu.cs" />
     <Compile Include="AcgEnvironmentBehaviourScript.cs" />
+    <Compile Include="AcgManager.cs" />
     <Compile Include="AcgSpectatorBehaviourScript.cs" />
     <Compile Include="AcgUnityBehaviourScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

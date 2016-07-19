@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="6d4384f6-fc31-4dfe-8d8b-32fd66f0a6b7" Title="ACG.Core.Objects" Url="html/a7bd2811-1f5d-e273-3aeb-dedcdd48dcaf.htm">
-    <HelpTOCNode Id="1dbccefb-d7d0-4b14-905b-f3b312f85fbf" Title="AcgBuilding Class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm">
+  <HelpTOCNode Id="a74eea04-98d4-46fd-99c1-7f51d37c941b" Title="ACG.Core.Objects" Url="html/a7bd2811-1f5d-e273-3aeb-dedcdd48dcaf.htm">
+    <HelpTOCNode Id="6b623c28-c295-475f-8f89-04a683fea98f" Title="AcgBuilding Class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm">
       <HelpTOCNode Title="AcgBuilding Constructor " Url="html/2af65494-ae57-807a-f3a7-4e69817b8f5b.htm" />
-      <HelpTOCNode Id="01697b82-9f24-4056-b274-ba30082d54bd" Title="AcgBuilding Properties" Url="html/773d55d5-4726-7070-dd9f-2bada0f8a218.htm">
+      <HelpTOCNode Id="aa33f12b-868f-4d99-9158-9594e41e1a3f" Title="AcgBuilding Properties" Url="html/773d55d5-4726-7070-dd9f-2bada0f8a218.htm">
         <HelpTOCNode Title="Height Property " Url="html/8a0bab4d-cf27-f9cd-e76f-dbf03ebb4173.htm" />
         <HelpTOCNode Title="HeightFixed Property " Url="html/62f914b5-1ac2-388c-324e-0b029c705645.htm" />
         <HelpTOCNode Title="ObjectType Property " Url="html/56a5f779-44b7-72fc-a9aa-cae0b9dfc260.htm" />
@@ -15,9 +15,9 @@
       </HelpTOCNode>
       <HelpTOCNode Title="AcgBuilding Methods" Url="html/012139a7-69ca-67d7-854e-062905f44a02.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="9e4d7725-2472-4f12-8caf-9ce406fb5dd6" Title="AcgObject Class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm">
+    <HelpTOCNode Id="7db7c9f5-5176-47b9-9bdd-b9b5a973a1aa" Title="AcgObject Class" Url="html/e066f9e7-020d-f0bd-867a-cbaec3b5ba08.htm">
       <HelpTOCNode Title="AcgObject Constructor " Url="html/db2e5741-011a-990b-2b37-3e3a40f65c14.htm" />
-      <HelpTOCNode Id="53c0e402-aba2-49dd-a61d-f6611b30e22e" Title="AcgObject Properties" Url="html/d86fc563-b0bd-7a50-f0b3-c97ea6fabc3d.htm">
+      <HelpTOCNode Id="8414904d-90b8-4b46-84e2-d3e155b94327" Title="AcgObject Properties" Url="html/d86fc563-b0bd-7a50-f0b3-c97ea6fabc3d.htm">
         <HelpTOCNode Title="DataSourceAuthor Property " Url="html/8ada33d8-9e45-ffb6-cd60-13831d9a478a.htm" />
         <HelpTOCNode Title="DataSourceAuthority Property " Url="html/d2edc06b-11e2-75e0-75eb-6e59a97d8d28.htm" />
         <HelpTOCNode Title="DataSourceUrl Property " Url="html/15a742c7-d0d3-2ed2-b315-99bf6bab3813.htm" />
@@ -33,89 +33,108 @@
     </HelpTOCNode>
     <HelpTOCNode Title="AcgObjectStatus Enumeration" Url="html/f0ef3e4a-09c2-ed2b-17d5-07795f2d6d96.htm" />
     <HelpTOCNode Title="AcgObjectType Enumeration" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
-    <HelpTOCNode Id="8955de6e-f3f9-4e01-afe9-cc3c752902e1" Title="AcgParcel Class" Url="html/a1978f29-9e65-b971-a1c4-543a6b1a37dc.htm">
+    <HelpTOCNode Id="1350cab6-6415-41ff-bf03-769608778bfd" Title="AcgParcel Class" Url="html/a1978f29-9e65-b971-a1c4-543a6b1a37dc.htm">
       <HelpTOCNode Title="AcgParcel Constructor " Url="html/d04fd197-3ac2-9d41-f580-c351a8014d15.htm" />
-      <HelpTOCNode Id="ffdaf9c8-659a-4317-a136-f02443c0f578" Title="AcgParcel Properties" Url="html/fd76f251-a1e0-66c3-e831-5d0f877a4bb7.htm">
+      <HelpTOCNode Id="7d6cd180-4627-4015-9378-74d93c214306" Title="AcgParcel Properties" Url="html/fd76f251-a1e0-66c3-e831-5d0f877a4bb7.htm">
         <HelpTOCNode Title="ObjectType Property " Url="html/e095d538-829c-442a-598e-46e17f6db39e.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AcgParcel Methods" Url="html/f5c026dd-fce8-32cc-7fb7-6737fc36af41.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="3b18673b-c0d5-4a8b-a832-9f598018a28f" Title="IAcgObject Interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm">
-      <HelpTOCNode Id="94ddf31e-ac97-496e-8118-2ee98fa40ba3" Title="IAcgObject Properties" Url="html/aa3f2f3f-e4f2-fc0b-1835-eb92dfdc5583.htm">
+    <HelpTOCNode Id="cb9847b7-6594-4e68-99c8-e30d1a07f679" Title="IAcgObject Interface" Url="html/e472b201-470c-ebcc-e46c-c37cbca5948a.htm">
+      <HelpTOCNode Id="4670aa1b-02d4-43d7-8071-2947d24bb118" Title="IAcgObject Properties" Url="html/aa3f2f3f-e4f2-fc0b-1835-eb92dfdc5583.htm">
         <HelpTOCNode Title="Geometry Property " Url="html/a0dceeab-6db3-d71c-523d-c372fe434757.htm" />
         <HelpTOCNode Title="ObjectType Property " Url="html/6dd18ed7-552d-294a-d3a7-69eb1d362cb4.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="085d0c92-f422-4747-bbaf-439e2f1afa53" Title="ACG.Core.Readers" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm">
-    <HelpTOCNode Id="c317edfc-0dad-4399-9670-1f6f826a0d82" Title="AcgDxfReader Class" Url="html/70f604de-c158-c2e9-31c1-355529c67ffc.htm">
+  <HelpTOCNode Id="090562e8-e8be-4c39-ac59-93a51fdc43a3" Title="ACG.Core.Readers" Url="html/84de7875-42e0-d1c8-019f-38789d4d32da.htm">
+    <HelpTOCNode Id="c16bb916-f15f-464d-a659-431c99be7306" Title="AcgDxfReader Class" Url="html/70f604de-c158-c2e9-31c1-355529c67ffc.htm">
       <HelpTOCNode Title="AcgDxfReader Constructor " Url="html/bc27f3e1-4440-d939-e904-eb8822d2d5f0.htm" />
       <HelpTOCNode Title="AcgDxfReader Properties" Url="html/0d75c43e-ad87-b9c5-4437-41485523c759.htm" />
-      <HelpTOCNode Id="9371541e-e589-475b-9ff0-c0dc06ff8bcf" Title="AcgDxfReader Methods" Url="html/a8dc7cba-095b-b513-601d-05a92283bced.htm">
+      <HelpTOCNode Id="ae4c4e84-014b-4c24-b95f-38641f60acc4" Title="AcgDxfReader Methods" Url="html/a8dc7cba-095b-b513-601d-05a92283bced.htm">
         <HelpTOCNode Title="Read Method " Url="html/f2a95efd-198f-1ab8-d7eb-f0aee5b66a28.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="1ae1a347-284e-43cf-9d6d-5bc323341fd3" Title="AcgMapping Class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm">
+    <HelpTOCNode Id="7dea4a68-af09-42bc-a838-864c693767ac" Title="AcgMapping Class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm">
       <HelpTOCNode Title="AcgMapping Constructor " Url="html/720eee01-5ead-923e-914a-aa0baec079e5.htm" />
-      <HelpTOCNode Id="f42277b9-1246-47df-80ac-83d2db0efc56" Title="AcgMapping Properties" Url="html/6c357b10-9a4a-a091-7b5a-1614fc4f3708.htm">
+      <HelpTOCNode Id="624a3eff-2a76-41cc-b3f4-10694fc2e098" Title="AcgMapping Properties" Url="html/6c357b10-9a4a-a091-7b5a-1614fc4f3708.htm">
         <HelpTOCNode Title="Source Property " Url="html/6140135f-753c-7f6c-e63e-4813dc3c19da.htm" />
         <HelpTOCNode Title="Target Property " Url="html/28510fbf-b34a-64af-6156-9dfa2ac64787.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AcgMapping Methods" Url="html/213beb79-3c53-c90f-e20e-4a0dab6406d7.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="898008cd-a390-4fff-9a05-9e3050d74794" Title="AcgMappingDictionary Class" Url="html/ee4d7cbc-7cb4-0328-76a4-d1944f4a287a.htm">
+    <HelpTOCNode Id="076a5578-40e4-4c36-a472-fddd9a6ba134" Title="AcgMappingDictionary Class" Url="html/ee4d7cbc-7cb4-0328-76a4-d1944f4a287a.htm">
       <HelpTOCNode Title="AcgMappingDictionary Constructor " Url="html/0af8a0c3-76a8-8e56-3528-26e4cd16f72d.htm" />
       <HelpTOCNode Title="AcgMappingDictionary Properties" Url="html/da67aea6-79e0-379c-6435-8d5535d50c4c.htm" />
-      <HelpTOCNode Id="e97f198a-107a-4dda-8b82-1946b9359edc" Title="AcgMappingDictionary Methods" Url="html/48e0c16c-cb5f-021b-865c-4384a9536878.htm">
+      <HelpTOCNode Id="416d8919-990c-458e-8ec3-bf16659d790d" Title="AcgMappingDictionary Methods" Url="html/48e0c16c-cb5f-021b-865c-4384a9536878.htm">
         <HelpTOCNode Title="Read Method " Url="html/b3e5389e-7eec-bc5e-1512-324dfc671d04.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="488af06c-36eb-47ac-a1ec-585164d1f15f" Title="AcgReader Class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm">
+    <HelpTOCNode Id="be3ad0ee-f464-45d1-b52a-50cb373f51d0" Title="AcgReader Class" Url="html/2c700765-ec32-eb57-c37c-f774a42f8be1.htm">
       <HelpTOCNode Title="AcgReader Constructor " Url="html/f10202c6-57d8-9484-1dd4-116d2b22866a.htm" />
-      <HelpTOCNode Id="abcac6cf-7cf5-469b-a1f4-d2f2ab258a22" Title="AcgReader Properties" Url="html/e37cdb4e-ebcd-19e5-7705-6235428b4973.htm">
+      <HelpTOCNode Id="c10f9072-4c05-4c42-9b4d-ec274ace8839" Title="AcgReader Properties" Url="html/e37cdb4e-ebcd-19e5-7705-6235428b4973.htm">
         <HelpTOCNode Title="Mappings Property " Url="html/f39f2e32-6117-ee5b-5e3c-94e0feb6dd3a.htm" />
         <HelpTOCNode Title="ObjectType Property " Url="html/8ea2f96c-8fd9-6123-ca4b-44694e872fbe.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6b3df4fe-7269-4bd0-9075-9fd80991983d" Title="AcgReader Methods" Url="html/d0fdf9d4-ebcf-2c57-73aa-23185ae1903d.htm">
+      <HelpTOCNode Id="3f36671f-8bd8-45a9-aaaf-479b11e435de" Title="AcgReader Methods" Url="html/d0fdf9d4-ebcf-2c57-73aa-23185ae1903d.htm">
         <HelpTOCNode Title="Read Method " Url="html/e966d6e3-4285-e1eb-a1aa-361862a72058.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="47f84ad0-1183-4bd1-912d-48f65733376b" Title="AcgShpReader Class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm">
+    <HelpTOCNode Id="4ab625ea-721d-4be6-ad19-9ee8fd6e9a6c" Title="AcgShpReader Class" Url="html/c6ff72e4-b401-4258-79aa-e6c74ef7d7ed.htm">
       <HelpTOCNode Title="AcgShpReader Constructor " Url="html/330a3d9e-44f4-ca93-e15b-d644cf6b08e1.htm" />
       <HelpTOCNode Title="AcgShpReader Properties" Url="html/1d57dfeb-413e-040b-a09a-65f46c79ee4e.htm" />
-      <HelpTOCNode Id="399d2c50-31e7-4504-836d-4d5fe02db029" Title="AcgShpReader Methods" Url="html/4840b005-91a2-b8a8-a86b-130b3c219c97.htm">
+      <HelpTOCNode Id="7fccec59-fde6-4aae-a679-4aedc513be59" Title="AcgShpReader Methods" Url="html/4840b005-91a2-b8a8-a86b-130b3c219c97.htm">
         <HelpTOCNode Title="Read Method " Url="html/705bae2b-b779-3c94-482b-55355d14b1ea.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5bdff28f-6fe3-4009-b91d-9809449b33f7" Title="IAcgReader Interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm">
-      <HelpTOCNode Id="284afdf1-a66e-4074-b83f-bbf62eb3fca3" Title="IAcgReader Properties" Url="html/798c0b96-a916-9e27-2b9d-d99c448edb1d.htm">
+    <HelpTOCNode Id="f7551771-71e6-47b4-8150-685c9a079ddf" Title="IAcgReader Interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm">
+      <HelpTOCNode Id="23ce9da9-6d7b-4111-8e59-75079484cd24" Title="IAcgReader Properties" Url="html/798c0b96-a916-9e27-2b9d-d99c448edb1d.htm">
         <HelpTOCNode Title="Mappings Property " Url="html/2c0f3c57-67b3-deed-32a4-f92365cccb00.htm" />
         <HelpTOCNode Title="ObjectType Property " Url="html/fd825a55-ecea-675f-4b98-17d5dcc24465.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f57a1a9a-a6a6-4a8f-8df8-55af38ff6abc" Title="IAcgReader Methods" Url="html/9b63ee79-3a7f-e52b-aecd-ba9b1fde8ea5.htm">
+      <HelpTOCNode Id="1a7bee44-2349-42eb-8878-91840f7fdc65" Title="IAcgReader Methods" Url="html/9b63ee79-3a7f-e52b-aecd-ba9b1fde8ea5.htm">
         <HelpTOCNode Title="Read Method " Url="html/e669a7fe-48b2-c923-11b7-14c973e3775e.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="e99b7e1f-35f8-4ca1-9df2-1721673a128f" Title="ACG.Core.Writers" Url="html/b7a2ab44-65dc-bf56-49f0-81b487fc88a6.htm">
-    <HelpTOCNode Id="c7da2938-236d-4be6-a2c9-d8507dff5a11" Title="IAcgWriter Interface" Url="html/cff9cadb-fa46-e7bd-7176-978be572297f.htm">
-      <HelpTOCNode Id="3fffd305-2937-4cff-b7df-45c2f809ebdf" Title="IAcgWriter Methods" Url="html/d221efad-51f6-332b-0695-409952966226.htm">
+  <HelpTOCNode Id="973de4e1-3445-4d0c-8ef6-256e5259cba7" Title="ACG.Core.Writers" Url="html/b7a2ab44-65dc-bf56-49f0-81b487fc88a6.htm">
+    <HelpTOCNode Id="5bffa32e-4e88-4266-994d-6b354c932827" Title="IAcgWriter Interface" Url="html/cff9cadb-fa46-e7bd-7176-978be572297f.htm">
+      <HelpTOCNode Id="558224ae-08e8-4249-a806-e9de54cac596" Title="IAcgWriter Methods" Url="html/d221efad-51f6-332b-0695-409952966226.htm">
         <HelpTOCNode Title="Write Method " Url="html/a5c71b3b-ca1f-5599-b904-b2b2fc091aa7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="297da448-939d-4e40-8d93-9c59350052a3" Title="ACG.Plugins.Unity" Url="html/60827cc5-de4e-ddef-80ed-43a9f7740040.htm">
-    <HelpTOCNode Id="1bf53dc3-88b3-411d-a77b-299d06bc4f72" Title="AcgEnvironmentBehaviourScript Class" Url="html/c93a032b-2f6f-64cf-de05-5878ee1fddea.htm">
+  <HelpTOCNode Id="4282da4b-f997-423d-b0ee-92eb03374ea0" Title="ACG.Plugins.Unity" Url="html/60827cc5-de4e-ddef-80ed-43a9f7740040.htm">
+    <HelpTOCNode Id="8c820d35-68ca-4541-b3f7-6717a76c1a5f" Title="AcgBuildingComponent Class" Url="html/02ad380b-1341-a008-4e46-33b24afc3d85.htm">
+      <HelpTOCNode Title="AcgBuildingComponent Constructor " Url="html/8ad2253c-76ac-901f-b713-eaa7477c2ca5.htm" />
+      <HelpTOCNode Title="AcgBuildingComponent Properties" Url="html/ec07b574-9e04-5cb1-27c4-a9fe98b57f02.htm" />
+      <HelpTOCNode Title="AcgBuildingComponent Methods" Url="html/56483786-411d-ef3b-6ac1-8cf264646079.htm" />
+      <HelpTOCNode Id="a0e2b3f0-fa9a-4da3-bf0c-8fe9618e5037" Title="AcgBuildingComponent Fields" Url="html/9468c693-5293-ed7f-99b4-7e08f63c3c98.htm">
+        <HelpTOCNode Title="ObjectData Field" Url="html/b2eedae2-ad36-6372-624a-b5654ee810df.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="974c7497-b4a3-4cdb-a8f3-54e98792163a" Title="AcgBuildingComponentEditor Class" Url="html/d3ed0be8-747e-9fea-8ba6-1121fb2e9e04.htm">
+      <HelpTOCNode Title="AcgBuildingComponentEditor Constructor " Url="html/2d671be7-7ade-3c04-21da-89f5cb94f066.htm" />
+      <HelpTOCNode Title="AcgBuildingComponentEditor Properties" Url="html/a055741c-a601-b4a2-20a8-748acc7e2296.htm" />
+      <HelpTOCNode Id="f1882630-1167-4d93-8f2c-461cc1ce3806" Title="AcgBuildingComponentEditor Methods" Url="html/f0a80dc4-71bb-86b5-f10b-c57a004446f2.htm">
+        <HelpTOCNode Title="OnInspectorGUI Method " Url="html/134a6b64-f29a-47d8-8113-b758e4eaccb8.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="094bafde-a0e9-4fdd-8c3c-c777fca069f0" Title="AcgEditorMenu Class" Url="html/5f5a1e72-0206-c26f-7b09-166e8dc49542.htm">
+      <HelpTOCNode Title="AcgEditorMenu Constructor " Url="html/61ad5f4e-d9fe-13fc-3d4e-03f539cd9d0c.htm" />
+      <HelpTOCNode Title="AcgEditorMenu Methods" Url="html/9ba7deba-6c8c-1869-809f-2499498133da.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="cfef8a91-80b4-4676-afc8-de29ba789277" Title="AcgEnvironmentBehaviourScript Class" Url="html/c93a032b-2f6f-64cf-de05-5878ee1fddea.htm">
       <HelpTOCNode Title="AcgEnvironmentBehaviourScript Constructor " Url="html/b9b9774c-3cc4-bf36-969f-7e1b7a0918d2.htm" />
       <HelpTOCNode Title="AcgEnvironmentBehaviourScript Properties" Url="html/b32e1dd8-055e-c352-b4db-181db8b68bc5.htm" />
       <HelpTOCNode Title="AcgEnvironmentBehaviourScript Methods" Url="html/4045cf36-cec1-fcaa-704f-71c722a3aed7.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="046cfe74-5c73-4635-996a-051d1de52c82" Title="AcgSpectatorBehaviourScript Class" Url="html/7ccd18e5-ea24-8997-7877-def5be1477cd.htm">
+    <HelpTOCNode Id="e5cba862-3a4e-46a7-8002-30ee0414500f" Title="AcgSpectatorBehaviourScript Class" Url="html/7ccd18e5-ea24-8997-7877-def5be1477cd.htm">
       <HelpTOCNode Title="AcgSpectatorBehaviourScript Constructor " Url="html/6fd9d0fe-8b60-cacc-a021-99f3ada77688.htm" />
       <HelpTOCNode Title="AcgSpectatorBehaviourScript Properties" Url="html/3291f427-31b0-231a-188c-d4cf4423d552.htm" />
       <HelpTOCNode Title="AcgSpectatorBehaviourScript Methods" Url="html/7fdfcde4-4194-2a7c-8252-789a2213eba6.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="1e823895-171a-4ced-b18b-d18cd3c9cebd" Title="AcgUnityBehaviourScript Class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm">
+    <HelpTOCNode Id="1f21d5f9-ae4e-4e91-bbb2-247e6a08e5ae" Title="AcgUnityBehaviourScript Class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm">
       <HelpTOCNode Title="AcgUnityBehaviourScript Constructor " Url="html/8eddd0c6-def1-327f-2cec-9c3b4af1af35.htm" />
       <HelpTOCNode Title="AcgUnityBehaviourScript Properties" Url="html/59a90d25-63f2-e851-20f6-31678be9c729.htm" />
       <HelpTOCNode Title="AcgUnityBehaviourScript Methods" Url="html/8e94670b-bab2-11c9-bbf4-89bc241c4dc9.htm" />

@@ -24,6 +24,11 @@ namespace ACG.Core.Tests
             //Return only building objects
             reader.ObjectType = AcgObjectType.Building;
 
+            //Load field mappings from file
+            AcgMappingDictionary mappings = new AcgMappingDictionary();
+            mappings.Read(Path.Combine(GetDatPath(), @"shp\banjaluka_jug_6.mapping"));
+            reader.Mappings = mappings;
+
             //Get path to specific SHP file
             string fileName = Path.Combine(GetDatPath(), @"shp\banjaluka_jug_6.shp");
 

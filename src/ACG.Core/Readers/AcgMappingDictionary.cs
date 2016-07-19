@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 using ACG.Core.Objects;
 
@@ -21,7 +22,45 @@ namespace ACG.Core.Readers
         /// <param name="filePath">File path to field mappings definition file.</param>
         public void Read(string filePath)
         {
-            // TODO
+            StreamReader file = new StreamReader(filePath);
+
+            string line = "", source = "", target = "";
+            int position = 0;
+            List<AcgMapping> acgmappingList = new List<AcgMapping>();
+            AcgMapping acgmapping = new AcgMapping();
+
+            line = file.ReadLine();
+            while (line != null)
+            {
+                switch (line)
+                {
+                    case "[Building]":
+                        while ((line = file.ReadLine()) != null && line.Contains("="))
+                        {
+                            position = line.IndexOf("=");
+                            source = line.Substring(0, position - 1);
+                            target = line.Substring(position + 2, line.Length - position - 2);
+                            acgmapping.Source = source;
+                            acgmapping.Target = target;
+                            acgmappingList.Add(acgmapping);
+                        }
+                        this.Add("AcgBuilding", acgmappingList);
+                        break;
+
+                    case "[Parcel]":
+                        while ((line = file.ReadLine()) != null && line.Contains("="))
+                        {
+                            position = line.IndexOf("=");
+                            source = line.Substring(0, position - 1);
+                            target = line.Substring(position + 2, line.Length - position - 2);
+                            acgmapping.Source = source;
+                            acgmapping.Target = target;
+                            acgmappingList.Add(acgmapping);
+                        }
+                        this.Add("AcgParcel", acgmappingList);
+                        break;
+                }
+            }
         }
     }
 }
