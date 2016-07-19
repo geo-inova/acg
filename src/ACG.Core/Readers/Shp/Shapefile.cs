@@ -9,7 +9,7 @@ using System.Collections.Specialized;
 using System.Text;
 using System.IO;
 using System.Drawing;
-using System.Data.OleDb;
+using System.Data.Odbc;
 
 namespace ACG.Core.Readers
 {
@@ -26,13 +26,13 @@ namespace ACG.Core.Readers
         /// <summary>
         /// Jet connection string template
         /// </summary>
-        public const string ConnectionStringTemplateJet = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0};Extended Properties=dBase IV";
+        public const string ConnectionStringTemplateJet = @"Driver={{Microsoft dBase Driver (*.dbf)}};Dbq={0}";
 
         /// <summary>
         /// ACE connection string template
         /// </summary>
-        public const string ConnectionStringTemplateAce = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=dBase IV";
-        
+        public const string ConnectionStringTemplateAce = @"Driver={{Microsoft dBase Driver (*.dbf)}};Dbq={0}";
+
         private const string DbSelectStringTemplate = "SELECT * FROM [{0}]";
         private const string MainPathExtension = "shp";
         private const string IndexPathExtension = "shx";
@@ -53,16 +53,17 @@ namespace ACG.Core.Readers
         private FileStream _indexStream;
         private Header _mainHeader;
         private Header _indexHeader;
-        private OleDbConnection _dbConnection;
-        private OleDbCommand _dbCommand;
-        private OleDbDataReader _dbReader;
+        private OdbcConnection _dbConnection;
+        private OdbcCommand _dbCommand;
+        private OdbcDataReader _dbReader;
         private string _connectionStringTemplate;
+
 
         /// <summary>
         /// Create a new Shapefile object.
         /// </summary>
         public Shapefile()
-            : this(null, ConnectionStringTemplateJet) {}
+            : this(null, ConnectionStringTemplateJet) { }
 
         /// <summary>
         /// Create a new Shapefile object and open a Shapefile. Note that three files are required - 
@@ -75,7 +76,7 @@ namespace ACG.Core.Readers
         /// <exception cref="ArgumentException">Thrown if the path parameter is empty</exception>
         /// <exception cref="FileNotFoundException">Thrown if one of the three required files is not found</exception>
         public Shapefile(string path)
-            : this(path, ConnectionStringTemplateJet) {}
+            : this(path, ConnectionStringTemplateJet) { }
 
         /// <summary>
         /// Create a new Shapefile object and open a Shapefile. Note that three files are required - 
@@ -218,12 +219,12 @@ namespace ACG.Core.Readers
         /// </summary>
         public int Count
         {
-            get 
+            get
             {
                 if (_disposed) throw new ObjectDisposedException("Shapefile");
                 if (!_opened) throw new InvalidOperationException("Shapefile not open.");
 
-                return _count; 
+                return _count;
             }
         }
 
@@ -232,14 +233,14 @@ namespace ACG.Core.Readers
         /// </summary>
         public RectangleD BoundingBox
         {
-            get 
+            get
             {
                 if (_disposed) throw new ObjectDisposedException("Shapefile");
                 if (!_opened) throw new InvalidOperationException("Shapefile not open.");
 
-                return _boundingBox; 
+                return _boundingBox;
             }
-           
+
         }
 
         /// <summary>
@@ -247,12 +248,12 @@ namespace ACG.Core.Readers
         /// </summary>
         public ShapeType Type
         {
-            get 
+            get
             {
                 if (_disposed) throw new ObjectDisposedException("Shapefile");
                 if (!_opened) throw new InvalidOperationException("Shapefile not open.");
-                
-                return _type; 
+
+                return _type;
             }
         }
 
@@ -285,9 +286,9 @@ namespace ACG.Core.Readers
             string selectString = string.Format(DbSelectStringTemplate,
                 Path.GetFileNameWithoutExtension(safeDbasePath));
 
-            _dbConnection = new OleDbConnection(connectionString);
+            _dbConnection = new OdbcConnection(connectionString);
             _dbConnection.Open();
-            _dbCommand = new OleDbCommand(selectString, _dbConnection);
+            _dbCommand = new OdbcCommand(selectString, _dbConnection);
             _dbReader = _dbCommand.ExecuteReader();
         }
 
@@ -378,11 +379,11 @@ namespace ACG.Core.Readers
         /// </summary>
         public Shape Current
         {
-            get 
+            get
             {
                 if (_disposed) throw new ObjectDisposedException("Shapefile");
                 if (!_opened) throw new InvalidOperationException("Shapefile not open.");
-               
+
                 // get the metadata
                 StringDictionary metadata = null;
                 if (!RawMetadataOnly)
@@ -421,12 +422,12 @@ namespace ACG.Core.Readers
         /// </summary>
         object System.Collections.IEnumerator.Current
         {
-            get 
+            get
             {
                 if (_disposed) throw new ObjectDisposedException("Shapefile");
                 if (!_opened) throw new InvalidOperationException("Shapefile not open.");
 
-                return this.Current; 
+                return this.Current;
             }
         }
 

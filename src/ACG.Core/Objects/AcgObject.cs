@@ -15,11 +15,14 @@ namespace ACG.Core.Objects
         public AcgObject()
         {
             this.GUID = Guid.NewGuid();
+            this.ForeignKey = 0;
             this.Status = AcgObjectStatus.Unknown;
             this.DataSourceAuthority = "";
             this.DataSourceAuthor = "";
             this.DataSourceUrl = null;
-            this.DataSourceYear = 0;
+            this.DataSourceDateCreated = DateTime.MinValue;
+            this.DataSourceScale = 0;
+            this.DataSourceMethod = 0;
             this.Description = "";
             this.Metadata = "";
             this.Geometry = null;
@@ -37,17 +40,22 @@ namespace ACG.Core.Objects
         public Guid GUID { get; set; }
 
         /// <summary>
+        /// Gets or sets foreign key from external data source.
+        /// </summary>
+        public Int32 ForeignKey { get; set; }
+
+        /// <summary>
         /// Gets or sets object status.
         /// </summary>
         public AcgObjectStatus Status { get; set; }
 
         /// <summary>
-        /// Gets or sets name of the data source authority.
+        /// Gets or sets name of the data source authority (organization).
         /// </summary>
         public string DataSourceAuthority { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of data source author.
+        /// Gets or sets name of data source author.
         /// </summary>
         public string DataSourceAuthor { get; set; }
 
@@ -57,9 +65,19 @@ namespace ACG.Core.Objects
         public Uri DataSourceUrl { get; set; }
 
         /// <summary>
-        /// Gets or sets the year when data source was created.
+        /// Gets or sets date when data source was created.
         /// </summary>
-        public int DataSourceYear { get; set; }
+        public DateTime DataSourceDateCreated { get; set; }
+
+        /// <summary>
+        /// Gets or sets scale of the original data source.
+        /// </summary>
+        public Int32 DataSourceScale { get; set; }
+
+        /// <summary>
+        /// Gets or sets method of acquisition from the original data source.
+        /// </summary>
+        public Int32 DataSourceMethod { get; set; }
 
         /// <summary>
         /// Gets or sets arbitrary object description (note).
