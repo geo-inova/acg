@@ -10,7 +10,7 @@ namespace ACG.Plugins.Unity
     /// <summary>
     /// Interface pertaining to <see cref="IAcgObject"/> based components.
     /// </summary>
-    interface IAcgObjectComponent
+    public interface IAcgObjectComponent
     {
         /// <summary>
         /// Instantiates this <see cref="IAcgObject"/> within Unity scene.

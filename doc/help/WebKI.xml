@@ -23,6 +23,7 @@
   <HelpKINode Title="ACG.Plugins.Unity.AcgEnvironmentBehaviourScript class" Url="html/c93a032b-2f6f-64cf-de05-5878ee1fddea.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.AcgSpectatorBehaviourScript class" Url="html/7ccd18e5-ea24-8997-7877-def5be1477cd.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.AcgUnityBehaviourScript class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm" />
+  <HelpKINode Title="ACG.Plugins.Unity.IAcgObjectComponent interface" Url="html/e8153788-a113-bb82-d8e0-c60664b8c400.htm" />
   <HelpKINode Title="AcgBuilding class">
     <HelpKINode Title="AcgBuilding Class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm" />
     <HelpKINode Title="about AcgBuilding class" Url="html/da3621ff-fb09-64ee-d62f-1bce0ea41ac6.htm" />
@@ -235,7 +236,10 @@
   <HelpKINode Title="DataSourceScale property" Url="html/b70fd527-6bfc-6eb2-03fa-371d76d29feb.htm" />
   <HelpKINode Title="DataSourceUrl property" Url="html/15a742c7-d0d3-2ed2-b315-99bf6bab3813.htm" />
   <HelpKINode Title="Description property" Url="html/2881cf0f-42af-f539-53f6-8e7a0f62819c.htm" />
-  <HelpKINode Title="Draw method" Url="html/264edcff-28c1-1501-9416-7469bb8d1dda.htm" />
+  <HelpKINode Title="Draw method">
+    <HelpKINode Title="AcgBuildingComponent.Draw Method " Url="html/264edcff-28c1-1501-9416-7469bb8d1dda.htm" />
+    <HelpKINode Title="IAcgObjectComponent.Draw Method " Url="html/794481af-d8ea-0c20-d997-e3b00703e1d3.htm" />
+  </HelpKINode>
   <HelpKINode Title="EquipmentAirCondition property" Url="html/3688d334-45c5-3a90-bbe5-ca4d805ed0e1.htm" />
   <HelpKINode Title="EquipmentCATV property" Url="html/de26c906-67bd-08c9-7aba-5a8e8634cb12.htm" />
   <HelpKINode Title="EquipmentCooling property" Url="html/9c29e837-5208-0e39-95f7-2614520d391f.htm" />
@@ -276,6 +280,14 @@
   </HelpKINode>
   <HelpKINode Title="IAcgObject.Geometry property" Url="html/a0dceeab-6db3-d71c-523d-c372fe434757.htm" />
   <HelpKINode Title="IAcgObject.ObjectType property" Url="html/6dd18ed7-552d-294a-d3a7-69eb1d362cb4.htm" />
+  <HelpKINode Title="IAcgObjectComponent interface">
+    <HelpKINode Title="IAcgObjectComponent Interface" Url="html/e8153788-a113-bb82-d8e0-c60664b8c400.htm" />
+    <HelpKINode Title="about IAcgObjectComponent interface" Url="html/e8153788-a113-bb82-d8e0-c60664b8c400.htm" />
+    <HelpKINode Title="methods" Url="html/7f4b5d15-117e-4856-53c6-2526ad4fc64c.htm" />
+    <HelpKINode Title="properties" Url="html/eb91659e-9c31-4fae-c103-7ab810c99e1c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAcgObjectComponent.Draw method" Url="html/794481af-d8ea-0c20-d997-e3b00703e1d3.htm" />
+  <HelpKINode Title="IAcgObjectComponent.ObjectData property" Url="html/ffc2e6f9-4ec0-19d1-a961-15e4b5baa703.htm" />
   <HelpKINode Title="IAcgReader interface">
     <HelpKINode Title="IAcgReader Interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm" />
     <HelpKINode Title="about IAcgReader interface" Url="html/73cd00d7-3e13-1c8b-85ad-8f2aaccb1e8d.htm" />
@@ -300,7 +312,10 @@
   <HelpKINode Title="Metadata property" Url="html/a4dded11-923d-5dfe-6922-80c851be1fbe.htm" />
   <HelpKINode Title="MunicipalityName property" Url="html/90f4e9ff-eaf0-95fb-1001-7434f57b3c59.htm" />
   <HelpKINode Title="Number property" Url="html/adcb83cd-0d62-9643-31ea-c7faff041a6c.htm" />
-  <HelpKINode Title="ObjectData property" Url="html/34f859f9-85fe-8cb3-3df4-774cca5b186b.htm" />
+  <HelpKINode Title="ObjectData property">
+    <HelpKINode Title="AcgBuildingComponent.ObjectData Property " Url="html/34f859f9-85fe-8cb3-3df4-774cca5b186b.htm" />
+    <HelpKINode Title="IAcgObjectComponent.ObjectData Property " Url="html/ffc2e6f9-4ec0-19d1-a961-15e4b5baa703.htm" />
+  </HelpKINode>
   <HelpKINode Title="ObjectType property">
     <HelpKINode Title="AcgBuilding.ObjectType Property " Url="html/56a5f779-44b7-72fc-a9aa-cae0b9dfc260.htm" />
     <HelpKINode Title="AcgObject.ObjectType Property " Url="html/26016b22-ccb5-bfd5-5781-e18b37281ffc.htm" />
