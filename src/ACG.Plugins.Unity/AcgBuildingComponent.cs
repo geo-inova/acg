@@ -54,10 +54,14 @@ namespace ACG.Plugins.Unity
             msh.RecalculateBounds();
             msh.Optimize();
 
-            // Set up game object with mesh;
+            // Set up game object with mesh
             this.gameObject.AddComponent(typeof(MeshRenderer));
             MeshFilter filter = this.gameObject.AddComponent(typeof(MeshFilter)) as MeshFilter;
             filter.mesh = msh;
+
+            // Apply tag to the game object
+            AcgManager.AddTag("Building");
+            this.gameObject.tag = "Building";
         }
 
         //// Use this for initialization

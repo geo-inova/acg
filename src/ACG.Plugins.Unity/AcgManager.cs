@@ -37,6 +37,38 @@ namespace ACG.Plugins.Unity
         /// </summary>
         public static int ScaleFactorSignificantDigits = 2;
 
+        /// <summary>
+        /// Adds specified Unity tag if it does not already exist.
+        /// </summary>
+        /// <param name="name">Tag name.</param>
+        public static void AddTag(string name)
+        {
+            // Open tag manager
+            SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
+            SerializedProperty tagsProp = tagManager.FindProperty("tags");
+
+            // First check if it is not already present
+            bool found = false;
+            for (int i = 0; i < tagsProp.arraySize; i++)
+            {
+                SerializedProperty t = tagsProp.GetArrayElementAtIndex(i);
+                if (t.stringValue.Equals(name)) { found = true; break; }
+            }
+
+            // if not found, add it
+            if (!found)
+            {
+                tagsProp.InsertArrayElementAtIndex(0);
+                SerializedProperty n = tagsProp.GetArrayElementAtIndex(0);
+                n.stringValue = name;
+            }
+
+            SerializedProperty sp = tagManager.FindProperty(name);
+            if (sp != null) sp.stringValue = name;
+
+            // and to save the changes
+            tagManager.ApplyModifiedProperties();
+        }
 
         /// <summary>
         /// Imports buildings from DXF file.
@@ -84,8 +116,9 @@ namespace ACG.Plugins.Unity
             foreach (IAcgObject obj in objs)
             {
                 GameObject go = new GameObject("Building");
+                //go.tag = "Building";
                 AcgBuildingComponent goc = go.AddComponent<AcgBuildingComponent>();
-                goc.ObjectData = (AcgBuilding)obj;
+                goc.ObjectData = obj;
                 goc.Draw();
             }
         }
