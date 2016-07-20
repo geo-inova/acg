@@ -28,17 +28,25 @@ namespace ACG.Plugins.Unity
         /// </summary>
         public override void OnInspectorGUI()
         {
-            GUILayout.BeginVertical();
-
-            GUILayout.Label("Building", EditorStyles.boldLabel);
-            _target.ObjectData.HeightFixed = EditorGUILayout.DoubleField("Height", _target.ObjectData.HeightFixed);
-
-            GUILayout.EndVertical();
-
-            //If we changed the GUI aply the new values to the script
-            if (GUI.changed)
+            if (_target.ObjectData != null)
             {
-                EditorUtility.SetDirty(_target);
+                AcgBuilding obj = (AcgBuilding)_target.ObjectData;
+
+                GUILayout.BeginVertical();
+
+                GUILayout.Label("Building", EditorStyles.boldLabel);
+                obj.HeightFixed = EditorGUILayout.DoubleField("Height", obj.HeightFixed);
+
+                if (obj.Height == 0)
+                { EditorGUILayout.HelpBox("Building height not set.", MessageType.Warning); }
+
+                GUILayout.EndVertical();
+
+                //If we changed the GUI aply the new values to the script
+                if (GUI.changed)
+                {
+                    EditorUtility.SetDirty(_target);
+                }
             }
         }
     }

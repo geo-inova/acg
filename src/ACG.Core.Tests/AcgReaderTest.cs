@@ -6,6 +6,9 @@ using System.IO;
 using System.Windows.Forms;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+using GeoAPI.Geometries;
+using NetTopologySuite.Geometries;
+
 using ACG.Core;
 using ACG.Core.Readers;
 using ACG.Core.Objects;
@@ -53,6 +56,16 @@ namespace ACG.Core.Tests
 
             //Assert number of buildings in file
             Assert.AreEqual(objs.Count, 28);
+
+            foreach (IAcgObject obj in objs)
+            {
+               //MessageBox.Show("POLYGON");
+                Polygon pol = (Polygon)obj.Geometry;
+                foreach (Coordinate c in pol.ExteriorRing.Coordinates)
+                {
+                    //MessageBox.Show(string.Format("x={0}, y={1}", c.X, c.Y));
+                }
+            }
         }
 
         /// <summary>

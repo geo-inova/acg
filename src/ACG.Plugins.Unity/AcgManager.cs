@@ -20,7 +20,23 @@ namespace ACG.Plugins.Unity
         /// <summary>
         /// Returns global length conversion scaling factor.
         /// </summary>
-        public static double ScaleFactor = 1000000;
+        public static double ScaleFactor = 1;
+
+        /// <summary>
+        /// Returns global X-axis scaling minuend.
+        /// </summary>
+        public static double ScaleFactorMinuendX = 6430000;
+
+        /// <summary>
+        /// Returns global Y-axis scaling minuend.
+        /// </summary>
+        public static double ScaleFactorMinuendY = 4950000;
+
+        /// <summary>
+        /// Returns global number of significant digits for length conversion scaling factor.
+        /// </summary>
+        public static int ScaleFactorSignificantDigits = 2;
+
 
         /// <summary>
         /// Imports buildings from DXF file.
@@ -33,21 +49,12 @@ namespace ACG.Plugins.Unity
             //Return only building objects
             reader.ObjectType = AcgObjectType.Building;
 
-            string path = EditorUtility.OpenFilePanel("Select Autodesk DXF file with buildings", "", "dxf");
+            string path = EditorUtility.OpenFilePanel("Select Autodesk DXF file containing buildings", "", "dxf");
 
             if (path.Length != 0)
             {
-                //Read ACG objects from SHP file
-                List<IAcgObject> objs = reader.Read(path);
-
-                foreach (IAcgObject obj in objs)
-                {
-                    //TODO
-
-                    GameObject go = new GameObject("Building");
-                    AcgBuildingComponent goc = go.AddComponent<AcgBuildingComponent>();
-                    goc.ObjectData = (AcgBuilding)obj;
-                }
+                //Read ACG objects from specified file
+                ImportBuildings(reader.Read(path));
             }
         }
 
@@ -62,21 +69,24 @@ namespace ACG.Plugins.Unity
             //Return only building objects
             reader.ObjectType = AcgObjectType.Building;
 
-            string path = EditorUtility.OpenFilePanel("Select ESRI Shape file with buildings", "", "shp");
+            string path = EditorUtility.OpenFilePanel("Select ESRI Shape file containing buildings", "", "shp");
 
             if (path.Length != 0)
             {
-                //Read ACG objects from SHP file
-                List<IAcgObject> objs = reader.Read(path);
+                //Read ACG objects from specified file
+                ImportBuildings(reader.Read(path));
+            }
+        }
 
-                foreach (IAcgObject obj in objs)
-                {
-                    //TODO
 
-                    GameObject go = new GameObject("Building");
-                    AcgBuildingComponent goc = go.AddComponent<AcgBuildingComponent>();
-                    goc.ObjectData = (AcgBuilding)obj;
-                }
+        static void ImportBuildings(List<IAcgObject> objs)
+        {
+            foreach (IAcgObject obj in objs)
+            {
+                GameObject go = new GameObject("Building");
+                AcgBuildingComponent goc = go.AddComponent<AcgBuildingComponent>();
+                goc.ObjectData = (AcgBuilding)obj;
+                goc.Draw();
             }
         }
     }

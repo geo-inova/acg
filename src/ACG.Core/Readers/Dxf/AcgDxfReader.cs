@@ -40,15 +40,12 @@ namespace ACG.Core.Readers
                     }
 
                     List<Coordinate> points = new List<Coordinate>();
-                    Coordinate coordinate = new Coordinate();
-
                     foreach (LwPolylineVertex vertex in polyline.Vertexes)
                     {
                         Vector2 location = vertex.Location;
-                        coordinate.X = location.X;
-                        coordinate.Y = location.Y;
-                        points.Add(coordinate);
+                        points.Add(new Coordinate(location.X,location.Y));
                     }
+                    points.Add(points[0]);
 
                     LinearRing linearing = new LinearRing(points.ToArray());
                     Polygon polygon = new Polygon(linearing);

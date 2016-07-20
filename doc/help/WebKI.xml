@@ -94,12 +94,12 @@
     <HelpKINode Title="AcgBuildingComponent Class" Url="html/02ad380b-1341-a008-4e46-33b24afc3d85.htm" />
     <HelpKINode Title="about AcgBuildingComponent class" Url="html/02ad380b-1341-a008-4e46-33b24afc3d85.htm" />
     <HelpKINode Title="constructor" Url="html/8ad2253c-76ac-901f-b713-eaa7477c2ca5.htm" />
-    <HelpKINode Title="fields" Url="html/9468c693-5293-ed7f-99b4-7e08f63c3c98.htm" />
     <HelpKINode Title="methods" Url="html/56483786-411d-ef3b-6ac1-8cf264646079.htm" />
     <HelpKINode Title="properties" Url="html/ec07b574-9e04-5cb1-27c4-a9fe98b57f02.htm" />
   </HelpKINode>
   <HelpKINode Title="AcgBuildingComponent.AcgBuildingComponent constructor" Url="html/8ad2253c-76ac-901f-b713-eaa7477c2ca5.htm" />
-  <HelpKINode Title="AcgBuildingComponent.ObjectData field" Url="html/b2eedae2-ad36-6372-624a-b5654ee810df.htm" />
+  <HelpKINode Title="AcgBuildingComponent.Draw method" Url="html/264edcff-28c1-1501-9416-7469bb8d1dda.htm" />
+  <HelpKINode Title="AcgBuildingComponent.ObjectData property" Url="html/34f859f9-85fe-8cb3-3df4-774cca5b186b.htm" />
   <HelpKINode Title="AcgBuildingComponentEditor class">
     <HelpKINode Title="AcgBuildingComponentEditor Class" Url="html/d3ed0be8-747e-9fea-8ba6-1121fb2e9e04.htm" />
     <HelpKINode Title="about AcgBuildingComponentEditor class" Url="html/d3ed0be8-747e-9fea-8ba6-1121fb2e9e04.htm" />
@@ -235,6 +235,7 @@
   <HelpKINode Title="DataSourceScale property" Url="html/b70fd527-6bfc-6eb2-03fa-371d76d29feb.htm" />
   <HelpKINode Title="DataSourceUrl property" Url="html/15a742c7-d0d3-2ed2-b315-99bf6bab3813.htm" />
   <HelpKINode Title="Description property" Url="html/2881cf0f-42af-f539-53f6-8e7a0f62819c.htm" />
+  <HelpKINode Title="Draw method" Url="html/264edcff-28c1-1501-9416-7469bb8d1dda.htm" />
   <HelpKINode Title="EquipmentAirCondition property" Url="html/3688d334-45c5-3a90-bbe5-ca4d805ed0e1.htm" />
   <HelpKINode Title="EquipmentCATV property" Url="html/de26c906-67bd-08c9-7aba-5a8e8634cb12.htm" />
   <HelpKINode Title="EquipmentCooling property" Url="html/9c29e837-5208-0e39-95f7-2614520d391f.htm" />
@@ -299,7 +300,7 @@
   <HelpKINode Title="Metadata property" Url="html/a4dded11-923d-5dfe-6922-80c851be1fbe.htm" />
   <HelpKINode Title="MunicipalityName property" Url="html/90f4e9ff-eaf0-95fb-1001-7434f57b3c59.htm" />
   <HelpKINode Title="Number property" Url="html/adcb83cd-0d62-9643-31ea-c7faff041a6c.htm" />
-  <HelpKINode Title="ObjectData field" Url="html/b2eedae2-ad36-6372-624a-b5654ee810df.htm" />
+  <HelpKINode Title="ObjectData property" Url="html/34f859f9-85fe-8cb3-3df4-774cca5b186b.htm" />
   <HelpKINode Title="ObjectType property">
     <HelpKINode Title="AcgBuilding.ObjectType Property " Url="html/56a5f779-44b7-72fc-a9aa-cae0b9dfc260.htm" />
     <HelpKINode Title="AcgObject.ObjectType Property " Url="html/26016b22-ccb5-bfd5-5781-e18b37281ffc.htm" />
