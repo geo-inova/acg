@@ -27,5 +27,17 @@ namespace ACG.Plugins.Unity
         {
             AcgManager.ImportBuildingsShp();
         }
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Show", false, 12)]
+        private static void ShowBuilding()
+        {
+            AcgManager.EnableRendererByTag("Building", true);
+        }
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 12)]
+        private static void HideBuilding()
+        {
+            AcgManager.EnableRendererByTag("Building", false);
+        }
     }
 }

@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\AcgBooleanType.cs" />
+    <Compile Include="Objects\AcgTristateBooleanType.cs" />
     <Compile Include="Objects\AcgObjectStatus.cs" />
     <Compile Include="Objects\AcgParcel.cs" />
     <Compile Include="Objects\NamespaceDoc.cs">

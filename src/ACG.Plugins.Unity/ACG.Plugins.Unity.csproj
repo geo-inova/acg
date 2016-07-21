@@ -78,6 +78,7 @@
     <Compile Include="AcgUnityBehaviourScript.cs" />
     <Compile Include="IAcgObjectComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\MeshExtrusion.cs" />
     <Compile Include="Tools\Triangulator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

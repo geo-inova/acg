@@ -38,6 +38,21 @@ namespace ACG.Plugins.Unity
         public static int ScaleFactorSignificantDigits = 2;
 
         /// <summary>
+        /// Enable or disable renderer for specified tag.
+        /// </summary>
+        /// <param name="name">Tag name.</param>
+        /// <param name="enabled">Renderer state.</param>
+        public static void EnableRendererByTag(string name, bool enabled)
+        {
+            GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag(name);
+
+            foreach (GameObject go in gameObjectArray)
+            {
+                go.GetComponent<Renderer>().enabled = enabled;
+            }
+        }
+
+        /// <summary>
         /// Adds specified Unity tag if it does not already exist.
         /// </summary>
         /// <param name="name">Tag name.</param>

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ACG.Core.Objects
 {
+    ///<exclude/>
     /// <summary>
     /// Represents AreaCAD-GIS object status.
     /// </summary>

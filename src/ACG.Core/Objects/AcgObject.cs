@@ -16,11 +16,11 @@ namespace ACG.Core.Objects
         {
             this.GUID = Guid.NewGuid();
             this.ForeignKey = 0;
-            this.Status = AcgObjectStatus.Unknown;
+            this.Status = 0;
             this.DataSourceAuthority = "";
             this.DataSourceAuthor = "";
             this.DataSourceUrl = null;
-            this.DataSourceDateCreated = DateTime.MinValue;
+            this.DataSourceCreated = DateTime.MinValue;
             this.DataSourceScale = 0;
             this.DataSourceMethod = 0;
             this.Description = "";
@@ -47,7 +47,7 @@ namespace ACG.Core.Objects
         /// <summary>
         /// Gets or sets object status.
         /// </summary>
-        public AcgObjectStatus Status { get; set; }
+        public Int16 Status { get; set; }
 
         /// <summary>
         /// Gets or sets name of the data source authority (organization).
@@ -67,7 +67,7 @@ namespace ACG.Core.Objects
         /// <summary>
         /// Gets or sets date when data source was created.
         /// </summary>
-        public DateTime DataSourceDateCreated { get; set; }
+        public DateTime DataSourceCreated { get; set; }
 
         /// <summary>
         /// Gets or sets scale of the original data source.
@@ -85,8 +85,18 @@ namespace ACG.Core.Objects
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or sets aritrary object metadata.
+        /// Gets or sets arbitrary object metadata.
         /// </summary>
         public string Metadata { get; set; }
+
+        ///// <summary>
+        ///// Godina izrade prostornih podataka.
+        ///// </summary>
+        //public Int16 DataSourceYearCreated { get; set; }
+
+        ///// <summary>
+        ///// Mjesec izrade prostornih podataka.
+        ///// </summary>
+        //public Int16 DataSourceMonthCreated { get; set; }
     }
 }
