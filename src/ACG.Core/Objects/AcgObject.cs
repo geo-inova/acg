@@ -34,6 +34,9 @@ namespace ACG.Core.Objects
         /// <inheritdoc/>
         public abstract AcgObjectType ObjectType { get; }
 
+        /// <inheritdoc/>
+        public string Metadata { get; set; }
+
         /// <summary>
         /// Gets or sets unique object identifier.
         /// </summary>
@@ -84,10 +87,6 @@ namespace ACG.Core.Objects
         /// </summary>
         public string Description { get; set; }
 
-        /// <summary>
-        /// Gets or sets arbitrary object metadata.
-        /// </summary>
-        public string Metadata { get; set; }
 
         ///// <summary>
         ///// Godina izrade prostornih podataka.

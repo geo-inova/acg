@@ -56,10 +56,10 @@ namespace ACG.Plugins.Unity
             }
 
             // Apply tag to the game object
-            if (string.IsNullOrEmpty(this.gameObject.tag))
+            if (this.gameObject.tag == "Untagged")
             {
-                AcgManager.AddTag("Building");
-                this.gameObject.tag = "Building";
+                AcgManager.AddTag("AcgBuilding");
+                this.gameObject.tag = "AcgBuilding";
             }
         }
 
@@ -103,7 +103,8 @@ namespace ACG.Plugins.Unity
                 mesh.uv = new Vector2[mesh.vertices.Length];
                 for (int i = 0; i < mesh.vertices.Length; i++)
                 {
-                    mesh.uv[i] = new Vector2(1f, 0);
+                    //mesh.uv[i] = new Vector2(vertices[i].x, vertices[i].z);
+                    mesh.uv[i] = new Vector2(0, 0);
                 }
 
                 mesh.RecalculateNormals();

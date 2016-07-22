@@ -306,6 +306,7 @@
     <HelpKINode Title="properties" Url="html/aa3f2f3f-e4f2-fc0b-1835-eb92dfdc5583.htm" />
   </HelpKINode>
   <HelpKINode Title="IAcgObject.Geometry property" Url="html/a0dceeab-6db3-d71c-523d-c372fe434757.htm" />
+  <HelpKINode Title="IAcgObject.Metadata property" Url="html/a7dc5b36-c852-a5db-77b8-2d7727c30b68.htm" />
   <HelpKINode Title="IAcgObject.ObjectType property" Url="html/6dd18ed7-552d-294a-d3a7-69eb1d362cb4.htm" />
   <HelpKINode Title="IAcgObjectComponent interface">
     <HelpKINode Title="IAcgObjectComponent Interface" Url="html/e8153788-a113-bb82-d8e0-c60664b8c400.htm" />
@@ -339,7 +340,10 @@
     <HelpKINode Title="AcgReader.Mappings Property " Url="html/f39f2e32-6117-ee5b-5e3c-94e0feb6dd3a.htm" />
     <HelpKINode Title="IAcgReader.Mappings Property " Url="html/2c0f3c57-67b3-deed-32a4-f92365cccb00.htm" />
   </HelpKINode>
-  <HelpKINode Title="Metadata property" Url="html/a4dded11-923d-5dfe-6922-80c851be1fbe.htm" />
+  <HelpKINode Title="Metadata property">
+    <HelpKINode Title="AcgObject.Metadata Property " Url="html/a4dded11-923d-5dfe-6922-80c851be1fbe.htm" />
+    <HelpKINode Title="IAcgObject.Metadata Property " Url="html/a7dc5b36-c852-a5db-77b8-2d7727c30b68.htm" />
+  </HelpKINode>
   <HelpKINode Title="MunicipalityName property">
     <HelpKINode Title="AcgBuilding.MunicipalityName Property " Url="html/90f4e9ff-eaf0-95fb-1001-7434f57b3c59.htm" />
     <HelpKINode Title="AcgParcel.MunicipalityName Property " Url="html/2174446d-5f4d-1073-1f77-5ee77ebc9786.htm" />

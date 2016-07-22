@@ -9,7 +9,7 @@ using System.Collections.Specialized;
 using System.Text;
 using System.IO;
 using System.Drawing;
-using System.Data.Odbc;
+using System.Data;
 
 namespace ACG.Core.Readers
 {
@@ -48,14 +48,14 @@ namespace ACG.Core.Readers
         private string _shapefileMainPath;
         private string _shapefileIndexPath;
         private string _shapefileDbasePath;
-        private string _shapefileTempDbasePath;
+        //private string _shapefileTempDbasePath;
         private FileStream _mainStream;
         private FileStream _indexStream;
         private Header _mainHeader;
         private Header _indexHeader;
-        private OdbcConnection _dbConnection;
-        private OdbcCommand _dbCommand;
-        private OdbcDataReader _dbReader;
+        //private OdbcConnection _dbConnection;
+        //private OdbcCommand _dbCommand;
+        //private OdbcDataReader _dbReader;
         private string _connectionStringTemplate;
 
 
@@ -180,7 +180,7 @@ namespace ACG.Core.Readers
             _count = (_indexHeader.FileLength - (Header.HeaderLength / 2)) / 4;
 
             // open the metadata database
-            OpenDb();
+            //OpenDb();
 
             _opened = true;
         }
@@ -257,7 +257,7 @@ namespace ACG.Core.Readers
             }
         }
 
-        private void OpenDb()
+        /*private void OpenDb()
         {
             // The drivers for DBF files throw an exception if the filename 
             // is longer than 8 characters - in this case create a temp file
@@ -326,7 +326,7 @@ namespace ACG.Core.Readers
                 _shapefileTempDbasePath = null;
             }
         }
-
+        */
         #region IDisposable Members
 
         /// <summary />
@@ -362,7 +362,7 @@ namespace ACG.Core.Readers
                         _indexStream = null;
                     }
 
-                    CloseDb();
+                    //CloseDb();
                 }
 
                 _disposed = true;
@@ -386,7 +386,7 @@ namespace ACG.Core.Readers
 
                 // get the metadata
                 StringDictionary metadata = null;
-                if (!RawMetadataOnly)
+                /*if (!RawMetadataOnly)
                 {
                     metadata = new StringDictionary();
                     for (int i = 0; i < _dbReader.FieldCount; i++)
@@ -394,7 +394,7 @@ namespace ACG.Core.Readers
                         metadata.Add(_dbReader.GetName(i),
                             _dbReader.GetValue(i).ToString());
                     }
-                }
+                }*/
 
                 // get the index record
                 byte[] indexHeaderBytes = new byte[8];
@@ -408,7 +408,7 @@ namespace ACG.Core.Readers
                 byte[] shapeData = new byte[bytesToRead];
                 _mainStream.Seek(contentOffsetInWords * 2, SeekOrigin.Begin);
                 _mainStream.Read(shapeData, 0, bytesToRead);
-
+                IDataRecord _dbReader = null;
                 return ShapeFactory.ParseShape(shapeData, metadata, _dbReader);
             }
         }
@@ -443,10 +443,10 @@ namespace ACG.Core.Readers
             if (_currentIndex++ < (_count - 1))
             {
                 // try to read the next database record
-                if (!_dbReader.Read())
+                /*if (!_dbReader.Read())
                 {
                     throw new InvalidOperationException("Metadata database does not contain a record for the next shape");
-                }
+                }*/
 
                 return true;
             }
@@ -465,8 +465,8 @@ namespace ACG.Core.Readers
             if (_disposed) throw new ObjectDisposedException("Shapefile");
             if (!_opened) throw new InvalidOperationException("Shapefile not open.");
 
-            CloseDb();
-            OpenDb();
+            /*CloseDb();
+            OpenDb();*/
             _currentIndex = -1;
         }
 

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNetDBF">
+      <HintPath>..\..\ext\dotnetdbf\DotNetDBF.dll</HintPath>
+    </Reference>
     <Reference Include="GeoAPI">
       <HintPath>..\..\ext\geoapi\GeoAPI.dll</HintPath>
     </Reference>

@@ -1,11 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using NetTopologySuite;
+using DotNetDBF;
 
 using ACG.Core.Objects;
 using NetTopologySuite.Geometries;
 using GeoAPI.Geometries;
+using System.Linq;
 
 namespace ACG.Core.Readers
 {
@@ -17,6 +19,8 @@ namespace ACG.Core.Readers
         /// <inheritdoc/>
         public override List<IAcgObject> Read(string filePath)
         {
+            string dbFilePath = filePath.Substring(0, filePath.Length - 4) + ".dbf";
+
             List<IAcgObject> objectList = new List<IAcgObject>();
 
             using (Shapefile shapefile = new Readers.Shapefile(filePath))
@@ -25,16 +29,6 @@ namespace ACG.Core.Readers
                 {
                     AcgBuilding building = new AcgBuilding();
 
-                    string[] metadataNames = shape.GetMetadataNames();
-                    if (metadataNames != null)
-                    {
-                        foreach (string metadataName in metadataNames)
-                        {
-                            building.Metadata += metadataName + " = " + shape.GetMetadata(metadataName) + "(" + shape.DataRecord.GetDataTypeName(shape.DataRecord.GetOrdinal(metadataName)) + ")";
-                            building.Metadata += Environment.NewLine;
-                        }
-                        building.Metadata += Environment.NewLine;
-                    }
                     switch (shape.Type)
                     {
                         case ShapeType.Polygon:
@@ -45,9 +39,7 @@ namespace ACG.Core.Readers
                                 Coordinate coordinate = new Coordinate();
                                 foreach (PointD point in part)
                                 {
-                                    coordinate.X = point.X;
-                                    coordinate.Y = point.Y;
-                                    points.Add(coordinate);
+                                    points.Add(new Coordinate(point.X, point.Y));
                                 }
                                 LinearRing linearRing = new LinearRing(points.ToArray());
                                 Polygon polygon = new Polygon(linearRing);
@@ -61,8 +53,18 @@ namespace ACG.Core.Readers
                     objectList.Add(building);
                 }
             }
+
+            var reader = new DBFReader(filePath);
+            foreach (int i in Enumerable.Range(0, reader.RecordCount))
+            {
+                object[] objects = reader.NextRecord();
+                DBFField[] dbf = reader.Fields;
+                foreach (int j in Enumerable.Range(0, dbf.Count()))
+                {
+                    objectList[i].Metadata += dbf[j].Name + "=" + objects[j];
+                }
+            }
             return objectList;
         }
     }
 }
-

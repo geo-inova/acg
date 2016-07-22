@@ -20,5 +20,10 @@ namespace ACG.Core.Objects
         /// Returns AreaCAD-GIS object type.
         /// </summary>
         AcgObjectType ObjectType { get; }
+
+        /// <summary>
+        /// Gets or sets arbitrary object metadata.
+        /// </summary>
+        string Metadata { get; set; }
     }
 }
