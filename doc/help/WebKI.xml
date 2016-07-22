@@ -99,6 +99,8 @@
   </HelpKINode>
   <HelpKINode Title="AcgBuildingComponent.AcgBuildingComponent constructor" Url="html/8ad2253c-76ac-901f-b713-eaa7477c2ca5.htm" />
   <HelpKINode Title="AcgBuildingComponent.Draw method" Url="html/264edcff-28c1-1501-9416-7469bb8d1dda.htm" />
+  <HelpKINode Title="AcgBuildingComponent.GetBaseMesh method" Url="html/d8f12e1d-fc89-cfac-9666-7599e0ef25f3.htm" />
+  <HelpKINode Title="AcgBuildingComponent.GetExtrudedMesh method" Url="html/c49d0167-72dc-c9ee-38a5-d763dde255a8.htm" />
   <HelpKINode Title="AcgBuildingComponent.ObjectData property" Url="html/34f859f9-85fe-8cb3-3df4-774cca5b186b.htm" />
   <HelpKINode Title="AcgBuildingComponentEditor class">
     <HelpKINode Title="AcgBuildingComponentEditor Class" Url="html/d3ed0be8-747e-9fea-8ba6-1121fb2e9e04.htm" />
@@ -292,6 +294,8 @@
     <HelpKINode Title="AcgObject.Geometry Property " Url="html/248bd73d-b87f-1d36-549c-d49d66841882.htm" />
     <HelpKINode Title="IAcgObject.Geometry Property " Url="html/a0dceeab-6db3-d71c-523d-c372fe434757.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetBaseMesh method" Url="html/d8f12e1d-fc89-cfac-9666-7599e0ef25f3.htm" />
+  <HelpKINode Title="GetExtrudedMesh method" Url="html/c49d0167-72dc-c9ee-38a5-d763dde255a8.htm" />
   <HelpKINode Title="GUID property" Url="html/353a5cdc-b65b-6e68-b9ad-c7dd5c618752.htm" />
   <HelpKINode Title="Height property" Url="html/8a0bab4d-cf27-f9cd-e76f-dbf03ebb4173.htm" />
   <HelpKINode Title="HeightFixed property" Url="html/62f914b5-1ac2-388c-324e-0b029c705645.htm" />

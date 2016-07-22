@@ -39,7 +39,8 @@
     <Reference Include="netDxf">
       <HintPath>..\..\ext\netdxf\netDxf.dll</HintPath>
     </Reference>
-    <Reference Include="NetTopologySuite">
+    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ext\nts\NetTopologySuite.dll</HintPath>
     </Reference>
     <Reference Include="System" />

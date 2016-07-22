@@ -46,6 +46,9 @@ namespace ACG.Plugins.Unity
                 if (GUI.changed)
                 {
                     EditorUtility.SetDirty(_target);
+
+                    //Redraw the GameObject
+                    _target.Draw();
                 }
             }
         }

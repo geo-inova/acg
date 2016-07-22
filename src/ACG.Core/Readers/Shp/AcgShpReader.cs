@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using NetTopologySuite;
@@ -65,3 +65,4 @@ namespace ACG.Core.Readers
         }
     }
 }
+
