@@ -9,6 +9,7 @@ namespace ACG.Core.Objects
     /// <summary>
     /// Represents base class for any AreaCAD-GIS object.
     /// </summary>
+    [Serializable]
     public abstract class AcgObject : IAcgObject
     {
         /// <inheritdoc/>
