@@ -15,7 +15,7 @@ namespace ACG.Plugins.Unity
     /// <summary>
     /// Represents AreaCAD-GIS manager for Unity.
     /// </summary>
-    class AcgManager
+    public class AcgManager
     {
         /// <summary>
         /// Returns global length conversion scaling factor.
@@ -38,17 +38,31 @@ namespace ACG.Plugins.Unity
         public static int ScaleFactorSignificantDigits = 2;
 
         /// <summary>
-        /// Enable or disable renderer for specified tag.
+        /// Enables or disables displaying Unity objects by specified tag.
         /// </summary>
         /// <param name="name">Tag name.</param>
-        /// <param name="enabled">Renderer state.</param>
-        public static void EnableRendererByTag(string name, bool enabled)
+        /// <param name="enabled">Object visibility.</param>
+        public static void EnableByTag(string name, bool enabled)
         {
             GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag(name);
 
             foreach (GameObject go in gameObjectArray)
             {
                 go.GetComponent<Renderer>().enabled = enabled;
+            }
+        }
+
+        /// <summary>
+        /// Removes Unity objects by specified tag.
+        /// </summary>
+        /// <param name="name">Tag name.</param>
+        public static void RemoveByTag(string name)
+        {
+            GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag(name);
+
+            foreach (GameObject go in gameObjectArray)
+            {
+                UnityEngine.Object.DestroyImmediate(go);
             }
         }
 

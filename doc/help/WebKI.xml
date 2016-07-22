@@ -20,6 +20,7 @@
   <HelpKINode Title="ACG.Plugins.Unity.AcgBuildingComponentEditor class" Url="html/d3ed0be8-747e-9fea-8ba6-1121fb2e9e04.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.AcgEditorMenu class" Url="html/5f5a1e72-0206-c26f-7b09-166e8dc49542.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.AcgEnvironmentBehaviourScript class" Url="html/c93a032b-2f6f-64cf-de05-5878ee1fddea.htm" />
+  <HelpKINode Title="ACG.Plugins.Unity.AcgManager class" Url="html/aca0f481-5638-5cf7-ba6d-852b1dfd2f3f.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.AcgSpectatorBehaviourScript class" Url="html/7ccd18e5-ea24-8997-7877-def5be1477cd.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.AcgUnityBehaviourScript class" Url="html/04bb3d03-b5c5-5366-2af2-ea80fdb96491.htm" />
   <HelpKINode Title="ACG.Plugins.Unity.IAcgObjectComponent interface" Url="html/e8153788-a113-bb82-d8e0-c60664b8c400.htm" />
@@ -135,6 +136,23 @@
     <HelpKINode Title="properties" Url="html/b32e1dd8-055e-c352-b4db-181db8b68bc5.htm" />
   </HelpKINode>
   <HelpKINode Title="AcgEnvironmentBehaviourScript.AcgEnvironmentBehaviourScript constructor" Url="html/b9b9774c-3cc4-bf36-969f-7e1b7a0918d2.htm" />
+  <HelpKINode Title="AcgManager class">
+    <HelpKINode Title="AcgManager Class" Url="html/aca0f481-5638-5cf7-ba6d-852b1dfd2f3f.htm" />
+    <HelpKINode Title="about AcgManager class" Url="html/aca0f481-5638-5cf7-ba6d-852b1dfd2f3f.htm" />
+    <HelpKINode Title="constructor" Url="html/16792f78-a7f1-1d93-60ff-6f68d9f9260b.htm" />
+    <HelpKINode Title="fields" Url="html/91d2c1df-65a9-ec5e-f3f8-e521ca104d6d.htm" />
+    <HelpKINode Title="methods" Url="html/a240d04b-06d8-032f-f03a-67fef8d30dfc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AcgManager.AcgManager constructor" Url="html/16792f78-a7f1-1d93-60ff-6f68d9f9260b.htm" />
+  <HelpKINode Title="AcgManager.AddTag method" Url="html/70927e64-bee5-8f90-6537-f7ff93db82ae.htm" />
+  <HelpKINode Title="AcgManager.EnableByTag method" Url="html/59ed245b-3e8a-d635-8ee4-a5b0e86bdf17.htm" />
+  <HelpKINode Title="AcgManager.ImportBuildingsDxf method" Url="html/73020365-6fd3-1bfd-92b4-64e9d82a8096.htm" />
+  <HelpKINode Title="AcgManager.ImportBuildingsShp method" Url="html/fe72239c-fd8b-0330-735d-61cf687eb30e.htm" />
+  <HelpKINode Title="AcgManager.RemoveByTag method" Url="html/16519248-1a07-3bce-0bad-3a33767fbe7d.htm" />
+  <HelpKINode Title="AcgManager.ScaleFactor field" Url="html/085e5a2f-c96f-089f-3573-cbc1dbc1c194.htm" />
+  <HelpKINode Title="AcgManager.ScaleFactorMinuendX field" Url="html/10309b06-8211-7ce2-99b0-06dc0798804d.htm" />
+  <HelpKINode Title="AcgManager.ScaleFactorMinuendY field" Url="html/df6a625d-e35c-a47b-3da9-11bde389d2ad.htm" />
+  <HelpKINode Title="AcgManager.ScaleFactorSignificantDigits field" Url="html/d72952f9-86ab-c707-2806-8cfafec27b47.htm" />
   <HelpKINode Title="AcgMapping class">
     <HelpKINode Title="AcgMapping Class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
     <HelpKINode Title="about AcgMapping class" Url="html/51898896-e452-2a4f-f7ec-8a9ccf1cdea6.htm" />
@@ -188,7 +206,6 @@
   <HelpKINode Title="AcgParcel.CadastralUnitName property" Url="html/87b79a50-bafc-1ce5-4391-ab4991186ca5.htm" />
   <HelpKINode Title="AcgParcel.CountryName property" Url="html/03d2603b-bfb7-b4da-b08a-b130d9d33866.htm" />
   <HelpKINode Title="AcgParcel.FootprintSurface property" Url="html/32ef37fa-9c62-32be-c6a1-ed2a6880df05.htm" />
-  <HelpKINode Title="AcgParcel.FootprintSurfaceFixed property" Url="html/16d931c8-e9c0-017e-78ee-7012f1bcbd48.htm" />
   <HelpKINode Title="AcgParcel.LocationDescription property" Url="html/32e09ee0-1e31-d77c-0f3f-5dbc94f69f35.htm" />
   <HelpKINode Title="AcgParcel.MunicipalityName property" Url="html/2174446d-5f4d-1073-1f77-5ee77ebc9786.htm" />
   <HelpKINode Title="AcgParcel.Number property" Url="html/18984c92-8a59-0cb1-6fce-10ae248ba9f3.htm" />
@@ -237,6 +254,7 @@
     <HelpKINode Title="properties" Url="html/59a90d25-63f2-e851-20f6-31678be9c729.htm" />
   </HelpKINode>
   <HelpKINode Title="AcgUnityBehaviourScript.AcgUnityBehaviourScript constructor" Url="html/8eddd0c6-def1-327f-2cec-9c3b4af1af35.htm" />
+  <HelpKINode Title="AddTag method" Url="html/70927e64-bee5-8f90-6537-f7ff93db82ae.htm" />
   <HelpKINode Title="Any enumeration member" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
   <HelpKINode Title="BlockNumber property" Url="html/f9ed2ae9-8427-d1d4-c79a-48ed60115ab7.htm" />
   <HelpKINode Title="Building enumeration member" Url="html/c0854cb4-a004-4ef2-ad93-b7e4afde809b.htm" />
@@ -260,6 +278,7 @@
     <HelpKINode Title="AcgBuildingComponent.Draw Method " Url="html/264edcff-28c1-1501-9416-7469bb8d1dda.htm" />
     <HelpKINode Title="IAcgObjectComponent.Draw Method " Url="html/794481af-d8ea-0c20-d997-e3b00703e1d3.htm" />
   </HelpKINode>
+  <HelpKINode Title="EnableByTag method" Url="html/59ed245b-3e8a-d635-8ee4-a5b0e86bdf17.htm" />
   <HelpKINode Title="EquipmentAirCondition property" Url="html/3688d334-45c5-3a90-bbe5-ca4d805ed0e1.htm" />
   <HelpKINode Title="EquipmentCATV property" Url="html/de26c906-67bd-08c9-7aba-5a8e8634cb12.htm" />
   <HelpKINode Title="EquipmentCooling property" Url="html/9c29e837-5208-0e39-95f7-2614520d391f.htm" />
@@ -285,10 +304,7 @@
     <HelpKINode Title="AcgBuilding.FootprintSurface Property " Url="html/1011d40f-61f4-9a7d-0ee4-ea8c8c41e74f.htm" />
     <HelpKINode Title="AcgParcel.FootprintSurface Property " Url="html/32ef37fa-9c62-32be-c6a1-ed2a6880df05.htm" />
   </HelpKINode>
-  <HelpKINode Title="FootprintSurfaceFixed property">
-    <HelpKINode Title="AcgBuilding.FootprintSurfaceFixed Property " Url="html/f7e8b1a0-e215-ab96-3bc9-410b2e14056e.htm" />
-    <HelpKINode Title="AcgParcel.FootprintSurfaceFixed Property " Url="html/16d931c8-e9c0-017e-78ee-7012f1bcbd48.htm" />
-  </HelpKINode>
+  <HelpKINode Title="FootprintSurfaceFixed property" Url="html/f7e8b1a0-e215-ab96-3bc9-410b2e14056e.htm" />
   <HelpKINode Title="ForeignKey property" Url="html/a4bf58df-fa7d-b5a4-bdff-68e2db692186.htm" />
   <HelpKINode Title="Geometry property">
     <HelpKINode Title="AcgObject.Geometry Property " Url="html/248bd73d-b87f-1d36-549c-d49d66841882.htm" />
@@ -331,6 +347,8 @@
     <HelpKINode Title="methods" Url="html/d221efad-51f6-332b-0695-409952966226.htm" />
   </HelpKINode>
   <HelpKINode Title="IAcgWriter.Write method" Url="html/a5c71b3b-ca1f-5599-b904-b2b2fc091aa7.htm" />
+  <HelpKINode Title="ImportBuildingsDxf method" Url="html/73020365-6fd3-1bfd-92b4-64e9d82a8096.htm" />
+  <HelpKINode Title="ImportBuildingsShp method" Url="html/fe72239c-fd8b-0330-735d-61cf687eb30e.htm" />
   <HelpKINode Title="Inhabitants property" Url="html/b6aae135-241f-c139-4738-658569713b7e.htm" />
   <HelpKINode Title="LocationDescription property">
     <HelpKINode Title="AcgBuilding.LocationDescription Property " Url="html/f1fdecb2-b47c-a936-6624-3637f8c1ed00.htm" />
@@ -382,9 +400,14 @@
     <HelpKINode Title="AcgBuilding.RegionName Property " Url="html/06960a32-6670-253a-e352-1c4375507bb1.htm" />
     <HelpKINode Title="AcgParcel.RegionName Property " Url="html/b3787f74-e705-38e7-df30-195942fe296b.htm" />
   </HelpKINode>
+  <HelpKINode Title="RemoveByTag method" Url="html/16519248-1a07-3bce-0bad-3a33767fbe7d.htm" />
   <HelpKINode Title="Retired property" Url="html/331f66ca-4d31-4332-647c-1a62ef9ad5d4.htm" />
   <HelpKINode Title="RoofMaterial property" Url="html/ab5486f7-e75c-d5ef-e49e-e7a27cfc8031.htm" />
   <HelpKINode Title="RoofType property" Url="html/394968c8-40ff-814f-2c2c-83b21379ed7f.htm" />
+  <HelpKINode Title="ScaleFactor field" Url="html/085e5a2f-c96f-089f-3573-cbc1dbc1c194.htm" />
+  <HelpKINode Title="ScaleFactorMinuendX field" Url="html/10309b06-8211-7ce2-99b0-06dc0798804d.htm" />
+  <HelpKINode Title="ScaleFactorMinuendY field" Url="html/df6a625d-e35c-a47b-3da9-11bde389d2ad.htm" />
+  <HelpKINode Title="ScaleFactorSignificantDigits field" Url="html/d72952f9-86ab-c707-2806-8cfafec27b47.htm" />
   <HelpKINode Title="School property" Url="html/28febe86-99a5-0f5a-1201-fe217c7c2b60.htm" />
   <HelpKINode Title="SecondarySchool property" Url="html/5d1f36a8-143c-798a-af24-a326fae8e8ac.htm" />
   <HelpKINode Title="SoilType property" Url="html/0289cadc-563b-1ae8-9325-3c499d7f0c11.htm" />

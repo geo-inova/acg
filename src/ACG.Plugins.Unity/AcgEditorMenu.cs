@@ -16,28 +16,34 @@ namespace ACG.Plugins.Unity
     /// </summary>
     public class AcgEditorMenu
     {
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import DXF...")]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import DXF...", false, 1)]
         private static void ImportBuildings()
         {
             AcgManager.ImportBuildingsDxf();
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import SHP...")]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import SHP...", false, 2)]
         private static void ImportBuildingsShp()
         {
             AcgManager.ImportBuildingsShp();
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Show", false, 12)]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Show", false, 13)]
         private static void ShowBuilding()
         {
-            AcgManager.EnableRendererByTag("Building", true);
+            AcgManager.EnableByTag("AcgBuilding", true);
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 12)]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 13)]
         private static void HideBuilding()
         {
-            AcgManager.EnableRendererByTag("Building", false);
+            AcgManager.EnableByTag("AcgBuilding", false);
+        }
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Remove all", false, 24)]
+        private static void RemoveBuilding()
+        {
+            AcgManager.RemoveByTag("AcgBuilding");
         }
     }
 }

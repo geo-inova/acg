@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using NetTopologySuite;
+using System.Linq;
+
 using DotNetDBF;
+using GeoAPI.Geometries;
+using NetTopologySuite;
+using NetTopologySuite.Geometries;
 
 using ACG.Core.Objects;
-using NetTopologySuite.Geometries;
-using GeoAPI.Geometries;
-using System.Linq;
 
 namespace ACG.Core.Readers
 {
