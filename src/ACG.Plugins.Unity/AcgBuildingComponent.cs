@@ -135,9 +135,26 @@ namespace ACG.Plugins.Unity
             extrusionPath[1] = this.gameObject.transform.worldToLocalMatrix * Matrix4x4.TRS(this.gameObject.transform.position + new Vector3(0, height, 0), Quaternion.identity, Vector3.one);
             MeshExtrusion.ExtrudeMesh(baseMesh, mesh, extrusionPath, invertFaces);
 
-            mesh.RecalculateNormals();
-            mesh.RecalculateBounds();
-            mesh.Optimize();
+            //Reverse mesh normals if extruded on Y-axis
+            if (height > 0)
+            {
+                Vector3[] normals = mesh.normals;
+                for (int i = 0; i < normals.Length; i++)
+                    normals[i] = -normals[i];
+                mesh.normals = normals;
+
+                for (int m = 0; m < mesh.subMeshCount; m++)
+                {
+                    int[] triangles = mesh.GetTriangles(m);
+                    for (int i = 0; i < triangles.Length; i += 3)
+                    {
+                        int temp = triangles[i + 0];
+                        triangles[i + 0] = triangles[i + 1];
+                        triangles[i + 1] = temp;
+                    }
+                    mesh.SetTriangles(triangles, m);
+                }
+            }
 
             return mesh;
         }
