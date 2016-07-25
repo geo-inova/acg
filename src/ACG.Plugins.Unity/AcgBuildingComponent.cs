@@ -50,6 +50,9 @@ namespace ACG.Plugins.Unity
                 else
                 {
                     this.gameObject.AddComponent(typeof(MeshRenderer));
+                    MeshRenderer renderer = this.gameObject.GetComponent<MeshRenderer>();
+                    renderer.material = Resources.Load<Material>("Materials/Building");
+
                     filter = this.gameObject.AddComponent(typeof(MeshFilter)) as MeshFilter;
                     filter.mesh = mesh;
                 }
