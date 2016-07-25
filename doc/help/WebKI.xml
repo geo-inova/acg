@@ -206,6 +206,7 @@
   <HelpKINode Title="AcgParcel.CadastralUnitName property" Url="html/87b79a50-bafc-1ce5-4391-ab4991186ca5.htm" />
   <HelpKINode Title="AcgParcel.CountryName property" Url="html/03d2603b-bfb7-b4da-b08a-b130d9d33866.htm" />
   <HelpKINode Title="AcgParcel.FootprintSurface property" Url="html/32ef37fa-9c62-32be-c6a1-ed2a6880df05.htm" />
+  <HelpKINode Title="AcgParcel.FootprintSurfaceFixed property" Url="html/16d931c8-e9c0-017e-78ee-7012f1bcbd48.htm" />
   <HelpKINode Title="AcgParcel.LocationDescription property" Url="html/32e09ee0-1e31-d77c-0f3f-5dbc94f69f35.htm" />
   <HelpKINode Title="AcgParcel.MunicipalityName property" Url="html/2174446d-5f4d-1073-1f77-5ee77ebc9786.htm" />
   <HelpKINode Title="AcgParcel.Number property" Url="html/18984c92-8a59-0cb1-6fce-10ae248ba9f3.htm" />
@@ -304,7 +305,10 @@
     <HelpKINode Title="AcgBuilding.FootprintSurface Property " Url="html/1011d40f-61f4-9a7d-0ee4-ea8c8c41e74f.htm" />
     <HelpKINode Title="AcgParcel.FootprintSurface Property " Url="html/32ef37fa-9c62-32be-c6a1-ed2a6880df05.htm" />
   </HelpKINode>
-  <HelpKINode Title="FootprintSurfaceFixed property" Url="html/f7e8b1a0-e215-ab96-3bc9-410b2e14056e.htm" />
+  <HelpKINode Title="FootprintSurfaceFixed property">
+    <HelpKINode Title="AcgBuilding.FootprintSurfaceFixed Property " Url="html/f7e8b1a0-e215-ab96-3bc9-410b2e14056e.htm" />
+    <HelpKINode Title="AcgParcel.FootprintSurfaceFixed Property " Url="html/16d931c8-e9c0-017e-78ee-7012f1bcbd48.htm" />
+  </HelpKINode>
   <HelpKINode Title="ForeignKey property" Url="html/a4bf58df-fa7d-b5a4-bdff-68e2db692186.htm" />
   <HelpKINode Title="Geometry property">
     <HelpKINode Title="AcgObject.Geometry Property " Url="html/248bd73d-b87f-1d36-549c-d49d66841882.htm" />
