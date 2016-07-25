@@ -27,7 +27,6 @@ namespace ACG.Core.Readers
             string line = "", source = "", target = "";
             int position = 0;
             List<AcgMapping> acgmappingList = new List<AcgMapping>();
-            AcgMapping acgmapping = new AcgMapping();
 
             line = file.ReadLine();
             while (line != null)
@@ -37,6 +36,7 @@ namespace ACG.Core.Readers
                     case "[Building]":
                         while ((line = file.ReadLine()) != null && line.Contains("="))
                         {
+                            AcgMapping acgmapping = new AcgMapping();
                             position = line.IndexOf("=");
                             source = line.Substring(0, position - 1);
                             target = line.Substring(position + 2, line.Length - position - 2);
@@ -50,6 +50,7 @@ namespace ACG.Core.Readers
                     case "[Parcel]":
                         while ((line = file.ReadLine()) != null && line.Contains("="))
                         {
+                            AcgMapping acgmapping = new AcgMapping();
                             position = line.IndexOf("=");
                             source = line.Substring(0, position - 1);
                             target = line.Substring(position + 2, line.Length - position - 2);
