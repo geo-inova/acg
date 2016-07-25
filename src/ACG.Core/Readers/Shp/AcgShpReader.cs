@@ -55,16 +55,52 @@ namespace ACG.Core.Readers
                 }
             }
 
-            var reader = new DBFReader(filePath);
+            var reader = new DBFReader(dbFilePath);
+            AcgMappingDictionary dictionary = new AcgMappingDictionary();
+
+            string mappingfilePath = ""; //path to .mapping file
+            dictionary.Read(mappingfilePath);
+            string key = "";
+
             foreach (int i in Enumerable.Range(0, reader.RecordCount))
             {
                 object[] objects = reader.NextRecord();
-                DBFField[] dbf = reader.Fields;
-                foreach (int j in Enumerable.Range(0, dbf.Count()))
+                DBFField[] dbffields = reader.Fields;
+
+                if (objectList[i].ObjectType == AcgObjectType.Building) key = "AcgBuilding";
+                else key = "AcgParcel";
+
+                List<AcgMapping> mappingList = dictionary[key];
+                foreach (AcgMapping mapping in mappingList)
                 {
-                    objectList[i].Metadata += dbf[j].Name + "=" + objects[j];
+                    string value = "";
+                    foreach (int j in Enumerable.Range(0, dbffields.Count()))
+                    {
+                        if (dbffields[j].Name == mapping.Target) value = objects[j].ToString();
+                    }
+                    AcgBuilding _building = objectList[i] as AcgBuilding;
+                    switch (mapping.Source)
+                    {
+                        case "TotalGrossSurface":
+                            _building.TotalGrossSurfaceFixed = Convert.ToDouble(value);
+                            objectList[i] = _building;
+                            break;
+                        case "StreetName":
+                            _building.StreetName = value;
+                            objectList[i] = _building;
+                            break;
+                        case "Description":
+                            _building.Description = value;
+                            objectList[i] = _building;
+                            break;
+                        case "StreetNumber":
+                            _building.StreetNumber = value;
+                            objectList[i] = _building;
+                            break;
+                    }
                 }
             }
+
             return objectList;
         }
     }
