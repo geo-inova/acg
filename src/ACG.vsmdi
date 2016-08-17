@@ -4,6 +4,7 @@
     <Description>AreaCAD-GIS Core Test List</Description>
     <TestLinks>
       <TestLink id="52b1cefc-ca9e-acfa-ed9f-5f531fc9c7e4" name="AcgShpReaderTest" storage="..\bin\debug\acg.core.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="0419b3e4-0f75-87e1-6cce-b6f8280ca995" name="AcgShpReaderTestMappings" storage="..\bin\debug\acg.core.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       <TestLink id="d724b97d-1ad1-8690-9212-f6a5d4381c3b" name="AcgDxfReaderTest" storage="..\bin\debug\acg.core.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     </TestLinks>
   </TestList>

@@ -19,7 +19,28 @@ namespace ACG.Core.Tests
     public class AcgReaderTest
     {
         [TestMethod]
+        [Description("SHP Reader")]
         public void AcgShpReaderTest()
+        {
+            //Intialize new SHP reader instance
+            AcgShpReader reader = new AcgShpReader();
+
+            //Return only building objects
+            reader.ObjectType = AcgObjectType.Building;
+
+            //Get path to specific SHP file
+            string fileName = Path.Combine(GetDatPath(), @"shp\banjaluka_jug_6.shp");
+
+            //Read ACG objects from SHP file
+            List<IAcgObject> objs = reader.Read(fileName);
+
+            //Assert number of buildings in file
+            Assert.AreEqual(objs.Count, 708);
+        }
+
+        [TestMethod]
+        [Description("SHP Reader + Mappings")]
+        public void AcgShpReaderTestMappings()
         {
             //Intialize new SHP reader instance
             AcgShpReader reader = new AcgShpReader();
@@ -38,15 +59,13 @@ namespace ACG.Core.Tests
             //Read ACG objects from SHP file
             List<IAcgObject> objs = reader.Read(fileName);
 
-            //Assert number of buildings in file
-            Assert.AreEqual(objs.Count, 708);
-
             //Assert field mapping rule
             AcgBuilding obj = (AcgBuilding)objs[0];
             Assert.AreEqual(obj.StreetName,"Kozarska");
         }
 
         [TestMethod]
+        [Description("DXF Reader")]
         public void AcgDxfReaderTest()
         {
             //Intialize new DXF reader instance

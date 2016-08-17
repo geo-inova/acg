@@ -70,7 +70,7 @@ namespace ACG.Plugins.Unity
         /// Returns base mesh from building's polygon geometry.
         /// </summary>
         /// <returns></returns>
-        public Mesh GetBaseMesh()
+        Mesh GetBaseMesh()
         {
             if (this.ObjectData != null)
             {
@@ -129,7 +129,7 @@ namespace ACG.Plugins.Unity
         /// <param name="height">Mesh extrusion height.</param>
         /// <param name="invertFaces">Invert mesh faces.</param>
         /// <returns></returns>
-        public Mesh GetExtrudedMesh(Mesh baseMesh, float height, bool invertFaces)
+        Mesh GetExtrudedMesh(Mesh baseMesh, float height, bool invertFaces)
         {
             Mesh mesh = new Mesh();
 

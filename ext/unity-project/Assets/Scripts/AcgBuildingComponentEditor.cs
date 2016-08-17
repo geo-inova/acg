@@ -14,14 +14,18 @@ namespace ACG.Plugins.Unity
     /// Represents <see cref="AcgBuilding"/> Unity component editor.
     /// </summary>
     [CustomEditor(typeof(AcgBuildingComponent))]
+    [CanEditMultipleObjects]
+    [Serializable]
     public class AcgBuildingComponentEditor : Editor
     {
+        [SerializeField]
+        UnityEngine.Object[] _targets;
 
-        AcgBuildingComponent _target;
+        private static bool categoryVerticalDimensions = true;
 
         void OnEnable()
         {
-            _target = (AcgBuildingComponent)target;
+            _targets = (UnityEngine.Object[])targets;
         }
 
         /// <summary>
@@ -29,27 +33,50 @@ namespace ACG.Plugins.Unity
         /// </summary>
         public override void OnInspectorGUI()
         {
-            if (_target.ObjectData != null)
+            Double heightFixed = 0;
+            Double heightFixedNew = 0;
+
+            AcgBuildingComponent cobj = (AcgBuildingComponent)_targets[0];
+            if (cobj.ObjectData != null)
             {
-                AcgBuilding obj = (AcgBuilding)_target.ObjectData;
+                AcgBuilding obj = (AcgBuilding)cobj.ObjectData;
+                heightFixed = obj.HeightFixed;
+            }
 
-                GUILayout.BeginVertical();
+            //Layout
+            GUILayout.BeginVertical();
+            GUILayout.Label("Building", EditorStyles.boldLabel);
 
-                GUILayout.Label("Building", EditorStyles.boldLabel);
-                obj.HeightFixed = EditorGUILayout.DoubleField("Height", obj.HeightFixed);
+            categoryVerticalDimensions = EditorGUILayout.Foldout(categoryVerticalDimensions, "Vertical Dimensions");
+            if (categoryVerticalDimensions)
+            {
+                heightFixedNew = EditorGUILayout.DoubleField("Measured Height (m)", heightFixed);
 
-                if (obj.Height == 0)
-                { EditorGUILayout.HelpBox("Building height not set.", MessageType.Warning); }
+                if (heightFixedNew == 0)
+                { EditorGUILayout.HelpBox("Building height not set.", MessageType.Warning); } 
+            }
+            GUILayout.EndVertical();
 
-                GUILayout.EndVertical();
+            //Assign new value(s) to properties
+            heightFixed = heightFixedNew;
 
-                //If we changed the GUI aply the new values to the script
-                if (GUI.changed)
+            //If we changed the GUI apply new values to the script
+            if (GUI.changed)
+            {
+                for (int i = 0; i < _targets.Length; i++)
                 {
-                    EditorUtility.SetDirty(_target);
+                    AcgBuildingComponent tobj = (AcgBuildingComponent)_targets[i];
+                    if (tobj.ObjectData != null)
+                    {
+                        AcgBuilding obj = (AcgBuilding)tobj.ObjectData;
+                        obj.HeightFixed = heightFixed;
 
-                    //Redraw the GameObject
-                    _target.Draw();
+                        EditorUtility.SetDirty(tobj);
+                        serializedObject.ApplyModifiedProperties();
+
+                        //Redraw the GameObject
+                        tobj.Draw();
+                    }
                 }
             }
         }
