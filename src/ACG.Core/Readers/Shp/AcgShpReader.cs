@@ -56,10 +56,10 @@ namespace ACG.Core.Readers
             }
 
             var reader = new DBFReader(dbFilePath);
-            AcgMappingDictionary dictionary = new AcgMappingDictionary();
+            //AcgMappingDictionary dictionary = new AcgMappingDictionary();
 
-            string mappingfilePath = ""; //path to .mapping file
-            dictionary.Read(mappingfilePath);
+            //string mappingfilePath = ""; //path to .mapping file
+            //dictionary.Read(mappingfilePath);
             string key = "";
 
             foreach (int i in Enumerable.Range(0, reader.RecordCount))
@@ -70,7 +70,7 @@ namespace ACG.Core.Readers
                 if (objectList[i].ObjectType == AcgObjectType.Building) key = "AcgBuilding";
                 else key = "AcgParcel";
 
-                List<AcgMapping> mappingList = dictionary[key];
+                List<AcgMapping> mappingList = this.Mappings[key];
                 foreach (AcgMapping mapping in mappingList)
                 {
                     string value = "";

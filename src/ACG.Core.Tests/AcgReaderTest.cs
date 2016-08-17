@@ -37,6 +37,13 @@ namespace ACG.Core.Tests
 
             //Read ACG objects from SHP file
             List<IAcgObject> objs = reader.Read(fileName);
+
+            //Assert number of buildings in file
+            Assert.AreEqual(objs.Count, 708);
+
+            //Assert field mapping rule
+            AcgBuilding obj = (AcgBuilding)objs[0];
+            Assert.AreEqual(obj.StreetName,"Kozarska");
         }
 
         [TestMethod]
