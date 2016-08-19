@@ -57,9 +57,10 @@ namespace ACG.Core.Readers
                             foreach (XData xdata in xdatadic.Values)
                             {
                                 List<XDataRecord> rekordlist = xdata.XDataRecord;
-                                foreach (XDataRecord rekord in rekordlist)
+                                if (rekordlist.Count == 3) continue;
+                                for (int i = 1; i < rekordlist.Count; i++)
                                 {
-                                    building.Metadata += rekord.Value;
+                                    if (i == 12) building.CountryName = (string)rekordlist.ElementAt(i).Value;
                                 }
                             }
                             building.Geometry = polygon;

@@ -83,15 +83,9 @@ namespace ACG.Core.Tests
             //Assert number of buildings in file
             Assert.AreEqual(objs.Count, 28);
 
-            foreach (IAcgObject obj in objs)
-            {
-               //MessageBox.Show("POLYGON");
-                Polygon pol = (Polygon)obj.Geometry;
-                foreach (Coordinate c in pol.ExteriorRing.Coordinates)
-                {
-                    //MessageBox.Show(string.Format("x={0}, y={1}", c.X, c.Y));
-                }
-            }
+            //Assert field value
+            AcgBuilding obj = (AcgBuilding)objs[0];
+            Assert.AreEqual(obj.CountryName, "Bosna i Hercegovina");
         }
 
         /// <summary>

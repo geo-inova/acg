@@ -8,6 +8,9 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
+using GeoAPI.Geometries;
+using NetTopologySuite.Geometries;
+
 using ACG.Core;
 using ACG.Core.Objects;
 using ACG.Core.Readers;
@@ -167,6 +170,119 @@ namespace ACG.Plugins.Unity
                 AcgBuildingComponent goc = go.AddComponent<AcgBuildingComponent>();
                 goc.ObjectData = obj;
                 goc.Draw();
+            }
+        }
+
+        /// <summary>
+        /// Creates or rebuilds planar terrain.
+        /// </summary>
+        public static void CreatePlannarTerrain()
+        {
+            float xSize = 5000f;
+            float zSize = 5000f;
+            float ySize = 1f;
+
+            Vector3 pos = GetCentroid();
+            pos.x = pos.x - xSize / 2;
+            pos.z = pos.z - zSize / 2;
+
+            GameObject go = GameObject.Find("Terrain");
+
+            if (go != null)
+            {
+                go.transform.position = pos;
+            }
+            else
+            {
+                go = new GameObject("Terrain");
+                TerrainData tData = new TerrainData();
+
+                tData.size = new Vector3(xSize, ySize, zSize);
+
+                //int mh = tData.heightmapHeight;
+                //int mw = tData.heightmapWidth;
+
+                TerrainCollider tCol = go.AddComponent<TerrainCollider>();
+                Terrain tObj = go.AddComponent<Terrain>();
+
+                tCol.terrainData = tData;
+                tObj.terrainData = tData;
+
+                go.transform.position = pos;
+            }
+        }
+
+
+        static IPoint GetCentroid(List<IAcgObject> objects)
+        {
+            if (objects.Count > 0)
+            {
+                IGeometry[] gArray = new Geometry[objects.Count];
+                for (int i = 0; i < objects.Count; i++)
+                {
+                    IAcgObject obj = objects[i];
+                    gArray[i] = obj.Geometry;
+                }
+
+                GeometryCollection gCol = new GeometryCollection(gArray);
+                return gCol.Centroid;
+            }
+            else
+            {
+                return new Point(0, 0, 0);
+            }
+        }
+
+        public static Vector3 GetCentroid()
+        {
+            UnityEngine.Object[] objectArray = GameObject.FindObjectsOfType(typeof(GameObject));
+
+            List<IAcgObject> col = new List<IAcgObject>();
+
+            foreach (UnityEngine.Object obj in objectArray)
+            {
+                GameObject go = (GameObject)obj;
+                IAcgObjectComponent comp = go.GetComponent<IAcgObjectComponent>();
+
+                if (comp != null)
+                    if (comp.ObjectData != null)
+                    {
+                        col.Add(comp.ObjectData);
+                    }
+            }
+
+            IPoint cent = GetCentroid(col);
+            float[] tfm = Transform(cent.X, cent.Y);
+            return new Vector3(tfm[0], 0, tfm[1]);
+        }
+
+
+        public static float[] Transform(Double x, Double y)
+        {
+            float x1 = (float)(AcgManager.ScaleFactorMinuendX - Math.Round(x, AcgManager.ScaleFactorSignificantDigits) * AcgManager.ScaleFactor);
+            float y1 = (float)(AcgManager.ScaleFactorMinuendY - Math.Round(y, AcgManager.ScaleFactorSignificantDigits) * AcgManager.ScaleFactor);
+            return new float[] { x1, y1 };
+        }
+
+        public static void CreateCamera()
+        {
+            GameObject go = GameObject.Find("Camera");
+
+            if (go != null)
+            {
+                go.transform.position = GetCentroid();
+            }
+            else
+            {
+                go = new GameObject("Camera");
+                Camera obj = go.AddComponent<Camera>();
+                obj.nearClipPlane = 2f;
+
+                Vector3 vec = GetCentroid();
+                vec.y = 50f;
+                go.transform.position = vec;
+
+                go.AddComponent<AcgSpectatorBehaviourScript>();
             }
         }
 

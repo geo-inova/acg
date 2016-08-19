@@ -25,21 +25,21 @@ namespace ACG.Plugins.Unity
             lightComp.range = 50;
 
 
-            GameObject Terrain1 = new GameObject("Terrain");
-            TerrainData tD = new TerrainData();
+            //GameObject Terrain1 = new GameObject("Terrain");
+            //TerrainData tD = new TerrainData();
 
-            tD.size = new Vector3(50f, 1f, 50f);
+            //tD.size = new Vector3(50f, 1f, 50f);
 
 
-            int mh = tD.heightmapHeight;
-            int mw = tD.heightmapWidth;
+            //int mh = tD.heightmapHeight;
+            //int mw = tD.heightmapWidth;
 
-            TerrainCollider tC = Terrain1.AddComponent<TerrainCollider>();
-            Terrain Terrain2 = Terrain1.AddComponent<Terrain>();
+            //TerrainCollider tC = Terrain1.AddComponent<TerrainCollider>();
+            //Terrain Terrain2 = Terrain1.AddComponent<Terrain>();
 
-            tC.terrainData = tD;
-            Terrain2.terrainData = tD;
-            Terrain1.transform.position = new Vector3(0, 0, 0);
+            //tC.terrainData = tD;
+            //Terrain2.terrainData = tD;
+            //Terrain1.transform.position = new Vector3(0, 0, 0);
 
             GameObject camera = new GameObject("Camera");
             camera.AddComponent<Camera>();

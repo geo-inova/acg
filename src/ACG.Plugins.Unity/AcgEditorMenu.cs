@@ -18,13 +18,31 @@ namespace ACG.Plugins.Unity
     /// </summary>
     public class AcgEditorMenu
     {
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import DXF...", false, 1)]
+        // Camera
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Camera/Reposition", false, 1)]
+        private static void CreateCamera()
+        {
+            AcgManager.CreateCamera();
+        }
+
+        // Terrain
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Terrain/Build Planar", false, 2)]
+        private static void CreatePlane()
+        {
+            AcgManager.CreatePlannarTerrain();
+        }
+
+        //Buildings
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import DXF...", false, 3)]
         private static void ImportBuildings()
         {
             AcgManager.ImportBuildingsDxf();
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import SHP...", false, 2)]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Import SHP...", false, 4)]
         private static void ImportBuildingsShp()
         {
             AcgManager.ImportBuildingsShp();
