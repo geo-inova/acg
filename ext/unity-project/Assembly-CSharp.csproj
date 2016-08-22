@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\AcgEditorMenu.cs" />
      <Compile Include="Assets\Scripts\AcgEnvironmentBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\AcgManager.cs" />
+     <Compile Include="Assets\Scripts\AcgParcelComponent.cs" />
      <Compile Include="Assets\Scripts\AcgSpectatorBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\AcgUnityBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\IAcgObjectComponent.cs" />

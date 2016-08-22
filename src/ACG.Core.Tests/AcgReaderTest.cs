@@ -36,6 +36,10 @@ namespace ACG.Core.Tests
 
             //Assert number of buildings in file
             Assert.AreEqual(objs.Count, 708);
+
+            //Assert building polygon area
+            AcgBuilding obj = (AcgBuilding)objs[0];
+            Assert.AreEqual(Math.Round(obj.Geometry.Area), 151);
         }
 
         [TestMethod]
@@ -62,6 +66,29 @@ namespace ACG.Core.Tests
             //Assert field mapping rule
             AcgBuilding obj = (AcgBuilding)objs[0];
             Assert.AreEqual(obj.StreetName,"Kozarska");
+        }
+
+        [TestMethod]
+        [Description("SHP Reader + Object Type")]
+        public void AcgShpReaderTestObjectType()
+        {
+            //Intialize new SHP reader instance
+            AcgShpReader reader = new AcgShpReader();
+
+            //Return only building objects
+            reader.ObjectType = AcgObjectType.Parcel;
+
+            //Get path to specific SHP file
+            string fileName = Path.Combine(GetDatPath(), @"shp\banjaluka_parcels.shp");
+
+            //Read ACG objects from SHP file
+            List<IAcgObject> objs = reader.Read(fileName);
+
+            //Assert number of parcels in file
+            Assert.AreEqual(objs.Count, 600);
+
+            //Assert object type
+            Assert.IsInstanceOfType(objs[0], typeof(AcgParcel));
         }
 
         [TestMethod]

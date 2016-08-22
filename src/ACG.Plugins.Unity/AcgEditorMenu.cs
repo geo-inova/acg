@@ -65,6 +65,14 @@ namespace ACG.Plugins.Unity
         {
             AcgManager.RemoveByTag("AcgBuilding");
         }
+
+        //Parcels
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Parcels/Import SHP...", false, 5)]
+        private static void ImportParcelsShp()
+        {
+            AcgManager.ImportParcelsShp();
+        }
     }
 
 #endif

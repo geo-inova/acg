@@ -109,6 +109,8 @@ namespace ACG.Plugins.Unity
 #endif
         }
 
+        #region Import Buildings
+
         /// <summary>
         /// Imports buildings from DXF file.
         /// </summary>
@@ -173,6 +175,50 @@ namespace ACG.Plugins.Unity
             }
         }
 
+        #endregion
+
+        #region Import Parcels
+
+        /// <summary>
+        /// Imports parcels from SHP file.
+        /// </summary>
+        public static void ImportParcelsShp()
+        {
+            //Intialize new SHP reader instance
+            AcgShpReader reader = new AcgShpReader();
+
+            //Return only parcel objects
+            reader.ObjectType = AcgObjectType.Parcel;
+
+            string path = "";
+
+#if UNITY_EDITOR
+            path = EditorUtility.OpenFilePanel("Select ESRI Shape file containing parcels", "", "shp");
+#else
+            //TODO: in-game open file panel
+#endif
+
+            if (path.Length != 0)
+            {
+                //Read ACG objects from specified file
+                ImportParcels(reader.Read(path));
+            }
+        }
+
+        static void ImportParcels(List<IAcgObject> objs)
+        {
+            foreach (IAcgObject obj in objs)
+            {
+                GameObject go = new GameObject("Parcel");
+                //go.tag = "Building";
+                AcgParcelComponent goc = go.AddComponent<AcgParcelComponent>();
+                goc.ObjectData = obj;
+                goc.Draw();
+            }
+        }
+
+        #endregion
+
         /// <summary>
         /// Creates or rebuilds planar terrain.
         /// </summary>
@@ -233,6 +279,10 @@ namespace ACG.Plugins.Unity
             }
         }
 
+        /// <summary>
+        /// Returns centroid point of all geometries.
+        /// </summary>
+        /// <returns></returns>
         public static Vector3 GetCentroid()
         {
             UnityEngine.Object[] objectArray = GameObject.FindObjectsOfType(typeof(GameObject));
@@ -309,5 +359,95 @@ namespace ACG.Plugins.Unity
         //        return string.Empty;
         //    }
         //}
+
+
+
+        /// <summary>
+        /// Returns mesh from polygon geometry.
+        /// </summary>
+        /// <param name="pol">Polygon geometry.</param>
+        /// <returns></returns>
+        public static Mesh GetMeshFromPolygon(Polygon pol)
+        {
+            int len = pol.ExteriorRing.Coordinates.Length - 1;
+            Vector2[] vertices2D = new Vector2[len];
+
+            for (int i = 0; i < len; i++)
+            {
+                Coordinate c = pol.ExteriorRing.Coordinates[i];
+                float x = (float)(AcgManager.ScaleFactorMinuendX - Math.Round(c.X, AcgManager.ScaleFactorSignificantDigits) * AcgManager.ScaleFactor);
+                float y = (float)(AcgManager.ScaleFactorMinuendY - Math.Round(c.Y, AcgManager.ScaleFactorSignificantDigits) * AcgManager.ScaleFactor);
+                vertices2D[i] = new Vector2(x, y);
+            }
+
+            // Use the triangulator to get indices for creating triangles
+            Triangulator tr = new Triangulator(vertices2D);
+            int[] indices = tr.Triangulate();
+
+            // Create the Vector3 vertices
+            Vector3[] vertices = new Vector3[vertices2D.Length];
+            for (int i = 0; i < vertices.Length; i++)
+            {
+                vertices[i] = new Vector3(vertices2D[i].x, 0, vertices2D[i].y);
+            }
+
+            // Create the mesh
+            Mesh mesh = new Mesh();
+            mesh.vertices = vertices;
+            mesh.triangles = indices;
+
+            mesh.uv = new Vector2[mesh.vertices.Length];
+            for (int i = 0; i < mesh.vertices.Length; i++)
+            {
+                mesh.uv[i] = new Vector2(0, 0);
+            }
+
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+            mesh.Optimize();
+
+            return mesh;
+        }
+
+        /// <summary>
+        /// Returns extruded mesh given the specified base mesh.
+        /// </summary>
+        /// <param name="gameObject">Game object.</param>
+        /// <param name="baseMesh">Base mesh.</param>
+        /// <param name="height">Mesh extrusion height.</param>
+        /// <param name="invertFaces">Invert mesh faces.</param>
+        /// <returns></returns>
+        public static Mesh GetExtrudedMesh(GameObject gameObject, Mesh baseMesh, float height, bool invertFaces)
+        {
+            Mesh mesh = new Mesh();
+
+            Matrix4x4[] extrusionPath = new Matrix4x4[2];
+            extrusionPath[0] = gameObject.transform.worldToLocalMatrix * Matrix4x4.TRS(gameObject.transform.position, Quaternion.identity, Vector3.one);
+            extrusionPath[1] = gameObject.transform.worldToLocalMatrix * Matrix4x4.TRS(gameObject.transform.position + new Vector3(0, height, 0), Quaternion.identity, Vector3.one);
+            MeshExtrusion.ExtrudeMesh(baseMesh, mesh, extrusionPath, invertFaces);
+
+            //Reverse mesh normals if extruded on Y-axis
+            if (height > 0)
+            {
+                Vector3[] normals = mesh.normals;
+                for (int i = 0; i < normals.Length; i++)
+                    normals[i] = -normals[i];
+                mesh.normals = normals;
+
+                for (int m = 0; m < mesh.subMeshCount; m++)
+                {
+                    int[] triangles = mesh.GetTriangles(m);
+                    for (int i = 0; i < triangles.Length; i += 3)
+                    {
+                        int temp = triangles[i + 0];
+                        triangles[i + 0] = triangles[i + 1];
+                        triangles[i + 1] = temp;
+                    }
+                    mesh.SetTriangles(triangles, m);
+                }
+            }
+
+            return mesh;
+        }
     }
 }

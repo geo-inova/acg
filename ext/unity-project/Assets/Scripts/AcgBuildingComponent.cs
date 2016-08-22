@@ -21,8 +21,6 @@ namespace ACG.Plugins.Unity
         [SerializeField]
         public IAcgObject ObjectData { get; set; }
 
-        //public Mesh BaseMesh { get; set; }
-
         /// <inheritdoc/>
         public void Draw()
         {
@@ -32,8 +30,6 @@ namespace ACG.Plugins.Unity
             Mesh baseMesh = GetBaseMesh();
             if (baseMesh != null)
             {
-                //this.BaseMesh = mesh;
-
                 if (obj.Height != 0)
                 {
                     mesh = GetExtrudedMesh(baseMesh, (float)obj.Height, false);
@@ -108,7 +104,6 @@ namespace ACG.Plugins.Unity
                 mesh.uv = new Vector2[mesh.vertices.Length];
                 for (int i = 0; i < mesh.vertices.Length; i++)
                 {
-                    //mesh.uv[i] = new Vector2(vertices[i].x, vertices[i].z);
                     mesh.uv[i] = new Vector2(0, 0);
                 }
 

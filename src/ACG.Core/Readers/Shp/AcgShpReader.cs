@@ -26,16 +26,19 @@ namespace ACG.Core.Readers
 
             List<IAcgObject> objectList = new List<IAcgObject>();
 
-            if(this.ObjectType == AcgObjectType.Any) { throw new ArgumentException(); }
+            if (this.ObjectType == AcgObjectType.Any) { throw new ArgumentException(); }
 
             using (Shapefile shapefile = new Readers.Shapefile(filePath))
             {
                 foreach (Shape shape in shapefile)
                 {
                     AcgObject obj = null;
-                    if (this.ObjectType == AcgObjectType.Building) {
+                    if (this.ObjectType == AcgObjectType.Building)
+                    {
                         obj = new AcgBuilding();
-                    } else {
+                    }
+                    else
+                    {
                         obj = new AcgParcel();
                     }
 
@@ -51,10 +54,16 @@ namespace ACG.Core.Readers
                                 {
                                     points.Add(new Coordinate(point.X, point.Y));
                                 }
-                                points.Add(points[0]);
-                                LinearRing linearRing = new LinearRing(points.ToArray());
-                                Polygon polygon = new Polygon(linearRing);
-                                obj.Geometry = polygon;
+                                try
+                                {
+                                    LinearRing linearRing = new LinearRing(points.ToArray());
+                                    Polygon polygon = new Polygon(linearRing);
+                                    obj.Geometry = polygon;
+                                }
+                                catch
+                                {
+                                    continue;
+                                }
                             }
                             break;
 
