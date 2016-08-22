@@ -26,14 +26,14 @@ namespace ACG.Core.Readers
 
             string line = "", source = "", target = "";
             int position = 0;
-            List<AcgMapping> acgmappingList = new List<AcgMapping>();
-
+            
             line = file.ReadLine();
             while (line != null)
             {
                 switch (line)
                 {
                     case "[Building]":
+                        List<AcgMapping> acgmappingList = new List<AcgMapping>();
                         while ((line = file.ReadLine()) != null && line.Contains("="))
                         {
                             AcgMapping acgmapping = new AcgMapping();
@@ -48,6 +48,7 @@ namespace ACG.Core.Readers
                         break;
 
                     case "[Parcel]":
+                        List<AcgMapping> _acgmappingList = new List<AcgMapping>();
                         while ((line = file.ReadLine()) != null && line.Contains("="))
                         {
                             AcgMapping acgmapping = new AcgMapping();
@@ -56,9 +57,9 @@ namespace ACG.Core.Readers
                             target = line.Substring(position + 2, line.Length - position - 2);
                             acgmapping.Source = source;
                             acgmapping.Target = target;
-                            acgmappingList.Add(acgmapping);
+                            _acgmappingList.Add(acgmapping);
                         }
-                        this.Add("AcgParcel", acgmappingList);
+                        this.Add("AcgParcel", _acgmappingList);
                         break;
                 }
             }

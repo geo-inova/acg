@@ -43,7 +43,7 @@ namespace ACG.Core.Readers
                     foreach (LwPolylineVertex vertex in polyline.Vertexes)
                     {
                         Vector2 location = vertex.Location;
-                        points.Add(new Coordinate(location.X,location.Y));
+                        points.Add(new Coordinate(location.X, location.Y));
                     }
                     points.Add(points[0]);
 
