@@ -54,7 +54,7 @@ namespace ACG.Plugins.Unity
             AcgManager.EnableByTag("AcgBuilding", true);
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 13)]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 14)]
         private static void HideBuilding()
         {
             AcgManager.EnableByTag("AcgBuilding", false);

@@ -14,9 +14,11 @@ namespace ACG.Plugins.Unity
     /// <summary>
     /// Represents <see cref="AcgBuilding"/> Unity component.
     /// </summary>
+    [Serializable]
     public class AcgBuildingComponent : MonoBehaviour, IAcgObjectComponent
     {
         /// <inheritdoc/>
+        [SerializeField]
         public IAcgObject ObjectData { get; set; }
 
         //public Mesh BaseMesh { get; set; }

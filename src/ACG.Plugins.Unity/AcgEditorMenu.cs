@@ -48,19 +48,19 @@ namespace ACG.Plugins.Unity
             AcgManager.ImportBuildingsShp();
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Show", false, 13)]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Show", false, 50)]
         private static void ShowBuilding()
         {
             AcgManager.EnableByTag("AcgBuilding", true);
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 13)]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 51)]
         private static void HideBuilding()
         {
             AcgManager.EnableByTag("AcgBuilding", false);
         }
 
-        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Remove all", false, 24)]
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Remove all", false, 100)]
         private static void RemoveBuilding()
         {
             AcgManager.RemoveByTag("AcgBuilding");

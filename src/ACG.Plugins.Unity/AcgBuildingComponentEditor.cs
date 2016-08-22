@@ -21,6 +21,9 @@ namespace ACG.Plugins.Unity
         [SerializeField]
         UnityEngine.Object[] _targets;
 
+        Double heightFixed = 0;
+        Double heightFixedNew = 0;
+
         private static bool categoryVerticalDimensions = true;
 
         void OnEnable()
@@ -33,9 +36,6 @@ namespace ACG.Plugins.Unity
         /// </summary>
         public override void OnInspectorGUI()
         {
-            Double heightFixed = 0;
-            Double heightFixedNew = 0;
-
             AcgBuildingComponent cobj = (AcgBuildingComponent)_targets[0];
             if (cobj.ObjectData != null)
             {
