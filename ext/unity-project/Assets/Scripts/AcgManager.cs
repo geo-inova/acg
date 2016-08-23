@@ -43,71 +43,124 @@ namespace ACG.Plugins.Unity
         public static int ScaleFactorSignificantDigits = 2;
 
         /// <summary>
-        /// Enables or disables displaying Unity objects by specified tag.
+        /// Enables or disables displaying Unity objects by specified type.
         /// </summary>
-        /// <param name="name">Tag name.</param>
+        /// <param name="type">Object component type.</param>
         /// <param name="enabled">Object visibility.</param>
-        public static void EnableByTag(string name, bool enabled)
+        public static void EnableByType(Type type, bool enabled)
         {
-            GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag(name);
+            UnityEngine.Object[] objs = UnityEngine.Object.FindObjectsOfType(type);
 
-            foreach (GameObject go in gameObjectArray)
+            foreach (UnityEngine.Object obj in objs)
             {
+                MonoBehaviour mb = (MonoBehaviour)obj;
+                GameObject go = (GameObject)mb.gameObject;
                 go.GetComponent<Renderer>().enabled = enabled;
             }
         }
 
         /// <summary>
-        /// Removes Unity objects by specified tag.
+        /// Removes Unity objects by specified type.
         /// </summary>
-        /// <param name="name">Tag name.</param>
-        public static void RemoveByTag(string name)
+        /// <param name="type">>Object component type.</param>
+        public static void RemoveByType(Type type)
         {
-            GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag(name);
+            UnityEngine.Object[] objs = UnityEngine.Object.FindObjectsOfType(type);
 
-            foreach (GameObject go in gameObjectArray)
+            foreach (UnityEngine.Object obj in objs)
             {
+                MonoBehaviour mb = (MonoBehaviour)obj;
+                GameObject go = (GameObject)mb.gameObject;
                 UnityEngine.Object.DestroyImmediate(go);
             }
         }
 
-        /// <summary>
-        /// Adds specified Unity tag if it does not already exist.
-        /// </summary>
-        /// <param name="name">Tag name.</param>
-        public static void AddTag(string name)
-        {
 #if UNITY_EDITOR
+        /// <summary>
+        /// Selects Unity objects by specified type.
+        /// </summary>
+        /// <param name="type">>Object component type.</param>
+        public static void SelectByType(Type type)
+        {
+            UnityEngine.Object[] objs = UnityEngine.Object.FindObjectsOfType(type);
 
-            // Open tag manager
-            SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
-            SerializedProperty tagsProp = tagManager.FindProperty("tags");
-
-            // First check if it is not already present
-            bool found = false;
-            for (int i = 0; i < tagsProp.arraySize; i++)
+            List<GameObject> gos = new List<GameObject>();
+            foreach (UnityEngine.Object obj in objs)
             {
-                SerializedProperty t = tagsProp.GetArrayElementAtIndex(i);
-                if (t.stringValue.Equals(name)) { found = true; break; }
+                MonoBehaviour mb = (MonoBehaviour)obj;
+                GameObject go = (GameObject)mb.gameObject;
+                gos.Add(go);
             }
-
-            // if not found, add it
-            if (!found)
-            {
-                tagsProp.InsertArrayElementAtIndex(0);
-                SerializedProperty n = tagsProp.GetArrayElementAtIndex(0);
-                n.stringValue = name;
-            }
-
-            SerializedProperty sp = tagManager.FindProperty(name);
-            if (sp != null) sp.stringValue = name;
-
-            // and to save the changes
-            tagManager.ApplyModifiedProperties();
-#else
-            //TODO: Create and assign GameObject tag in-game.
-#endif
+            Selection.objects = gos.ToArray();
         }
+#endif
+
+        ///// <summary>
+        ///// Enables or disables displaying Unity objects by specified tag.
+        ///// </summary>
+        ///// <param name="name">Tag name.</param>
+        ///// <param name="enabled">Object visibility.</param>
+        //public static void EnableByTag(string name, bool enabled)
+        //{
+        //    GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag(name);
+
+        //    foreach (GameObject go in gameObjectArray)
+        //    {
+        //        go.GetComponent<Renderer>().enabled = enabled;
+        //    }
+        //}
+
+        ///// <summary>
+        ///// Removes Unity objects by specified tag.
+        ///// </summary>
+        ///// <param name="name">Tag name.</param>
+        //public static void RemoveByTag(string name)
+        //{
+        //    GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag(name);
+
+        //    foreach (GameObject go in gameObjectArray)
+        //    {
+        //        UnityEngine.Object.DestroyImmediate(go);
+        //    }
+        //}
+
+        //        /// <summary>
+        //        /// Adds specified Unity tag if it does not already exist.
+        //        /// </summary>
+        //        /// <param name="name">Tag name.</param>
+        //        public static void AddTag(string name)
+        //        {
+        //#if UNITY_EDITOR
+
+        //            // Open tag manager
+        //            SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
+        //            SerializedProperty tagsProp = tagManager.FindProperty("tags");
+
+        //            // First check if it is not already present
+        //            bool found = false;
+        //            for (int i = 0; i < tagsProp.arraySize; i++)
+        //            {
+        //                SerializedProperty t = tagsProp.GetArrayElementAtIndex(i);
+        //                if (t.stringValue.Equals(name)) { found = true; break; }
+        //            }
+
+        //            // if not found, add it
+        //            if (!found)
+        //            {
+        //                tagsProp.InsertArrayElementAtIndex(0);
+        //                SerializedProperty n = tagsProp.GetArrayElementAtIndex(0);
+        //                n.stringValue = name;
+        //            }
+
+        //            SerializedProperty sp = tagManager.FindProperty(name);
+        //            if (sp != null) sp.stringValue = name;
+
+        //            // and to save the changes
+        //            tagManager.ApplyModifiedProperties();
+        //#else
+        //            //TODO: Create and assign GameObject tag in-game.
+        //#endif
+        //        }
 
         #region Import Buildings
 

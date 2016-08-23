@@ -26,7 +26,7 @@ namespace ACG.Plugins.Unity
         {
             AcgParcel obj = (AcgParcel)this.ObjectData;
 
-            if (this.ObjectData != null)
+            if (obj != null)
             {
                 Mesh mesh = null;
 
@@ -35,14 +35,7 @@ namespace ACG.Plugins.Unity
                 Mesh baseMesh = AcgManager.GetMeshFromPolygon(pol);
                 if (baseMesh != null)
                 {
-                    //if (obj.Height != 0)
-                    //{
-                        mesh = AcgManager.GetExtrudedMesh(this.gameObject, baseMesh, 0.5f, false);
-                    //}
-                    //else
-                    //{
-                    //    mesh = baseMesh;
-                    //}
+                    mesh = AcgManager.GetExtrudedMesh(this.gameObject, baseMesh, 0.5f, false);
 
                     // Set up game object with mesh
                     MeshFilter filter = this.gameObject.GetComponent<MeshFilter>();
@@ -61,14 +54,6 @@ namespace ACG.Plugins.Unity
                     }
                 }
             }
-
-            // Apply tag to the game object
-            if (this.gameObject.tag == "Untagged")
-            {
-                AcgManager.AddTag("AcgParcel");
-                this.gameObject.tag = "AcgParcel";
-            }
         }
-
     }
 }

@@ -49,21 +49,27 @@ namespace ACG.Plugins.Unity
         }
 
         [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Show", false, 50)]
-        private static void ShowBuilding()
+        private static void ShowBuildings()
         {
-            AcgManager.EnableByTag("AcgBuilding", true);
+            AcgManager.EnableByType(typeof(AcgBuildingComponent), true);
         }
 
         [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Hide", false, 51)]
-        private static void HideBuilding()
+        private static void HideBuildings()
         {
-            AcgManager.EnableByTag("AcgBuilding", false);
+            AcgManager.EnableByType(typeof(AcgBuildingComponent), false);
         }
 
         [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Remove all", false, 100)]
-        private static void RemoveBuilding()
+        private static void RemoveBuildings()
         {
-            AcgManager.RemoveByTag("AcgBuilding");
+            AcgManager.RemoveByType(typeof(AcgBuildingComponent));
+        }
+        
+        [UnityEditor.MenuItem("AreaCAD-GIS/Buildings/Select all", false, 101)]
+        private static void SelectBuildings()
+        {
+            AcgManager.SelectByType(typeof(AcgBuildingComponent));
         }
 
         //Parcels
@@ -72,6 +78,30 @@ namespace ACG.Plugins.Unity
         private static void ImportParcelsShp()
         {
             AcgManager.ImportParcelsShp();
+        }
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Parcels/Show", false, 50)]
+        private static void ShowParcels()
+        {
+            AcgManager.EnableByType(typeof(AcgParcelComponent), true);
+        }
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Parcels/Hide", false, 51)]
+        private static void HideParcels()
+        {
+            AcgManager.EnableByType(typeof(AcgParcelComponent), false);
+        }
+        
+        [UnityEditor.MenuItem("AreaCAD-GIS/Parcels/Remove all", false, 100)]
+        private static void RemoveParcels()
+        {
+            AcgManager.RemoveByType(typeof(AcgParcelComponent));
+        }
+
+        [UnityEditor.MenuItem("AreaCAD-GIS/Parcels/Select all", false, 101)]
+        private static void SelectParcels()
+        {
+            AcgManager.SelectByType(typeof(AcgParcelComponent));
         }
     }
 
